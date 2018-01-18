@@ -42,4 +42,9 @@ cd $XDG_CONFIG_HOME/rofi/themes \
 cd $HOME/.Xresources-themes \
     && cat "${theme_name}" base_config > ../.Xresources \
     && xrdb $HOME/.Xresources \
-    && notify-send "Xresources Theme Updated" "${theme_name}"
+    && notify-send "Xresources Theme Updated" "${theme_name}" \
+    && sleep 0.5
+
+# i3 (Uses Xresources, so just restart it)
+i3 reload \
+   && notify-send "i3-gaps" "Configuration reloaded"
