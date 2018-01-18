@@ -1,0 +1,20 @@
+[urgency_low]
+# IMPORTANT: colors have to be defined in quotation marks.
+# Otherwise the "#" and following would be interpreted as a comment.
+frame_color = "#afc4db"
+foreground = "#a7a7a7"
+background = "#1e1e1e"
+timeout = 4
+
+[urgency_normal]
+frame_color = "#8f9d6a"
+foreground = "#a7a7a7"
+background = "#1e1e1e"
+#background = "#2B313C"
+timeout = 6
+
+[urgency_critical]
+frame_color = "#cf6a4c"
+foreground = "#a7a7a7"
+background = "#1e1e1e"
+timeout = 8

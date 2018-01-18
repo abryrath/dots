@@ -1,0 +1,6 @@
+visualizer.fps=20
+mpd.fifo.path=/tmp/mpd.fifo
+visualizers=spectrum,ellipse,lorenz
+audio.sources=mpd
+colors.scheme=purple
+colors.override.terminal=false
