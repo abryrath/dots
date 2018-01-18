@@ -2,4 +2,4 @@
 
 echo "$DOTS"
 
-stow -n --dir="${DOTS}"  --target="${HOME}" -S dots
+stow --dir="${DOTS}"  --target="${HOME}" -S dots

@@ -1,0 +1,95 @@
+
+" Setup vim environment
+"
+set nocompatible
+
+set runtimepath^=$HOME/.vim
+set runtimepath^=$HOME/.vim/after
+set runtimepath^=$HOME/.vim/autoload
+set runtimepath^=$HOME/.vim/contrib
+set runtimepath^=$HOME/.vim/plugin
+set runtimepath^=/usr/share/vim/vimfiles/eclim
+
+call plug#begin(expand('$HOME/.vim/contrib'))
+
+Plug 'junegunn/vim-plug'
+
+Plug 'Shougo/vimshell', { 'rev': '3787e5' }
+
+if has('python') || has('python3')
+  Plug 'SirVer/ultisnips' " Snippet engine
+  Plug 'honza/vim-snippets' " Repository of snippets
+  Plug 'Valloric/YouCompleteMe'
+endif
+
+Plug 'ervandew/supertab'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-sleuth'
+Plug 'tpope/vim-abolish'
+
+"
+" Syntax Highlighting
+"
+" C/C++
+Plug 'octol/vim-cpp-enhanced-highlight'
+" CMake
+Plug 'vhdirk/vim-cmake'
+" Rust
+Plug 'rust-lang/rust.vim'
+" sxhkd
+Plug 'baskerville/vim-sxhkdrc'
+
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/syntastic' " Syntax checker
+Plug 'tomtom/tcomment_vim'
+Plug 'majutsushi/tagbar'
+
+Plug 'airblade/vim-gitgutter'
+
+Plug 'suan/vim-instant-markdown'
+Plug 'nelstrom/vim-markdown-folding'
+
+Plug 'jeetsukumaran/vim-buffergator'
+
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'paranoida/vim-airlineish'
+
+Plug 'tomtom/tlib_vim'
+
+Plug 'chrisbra/Colorizer'
+Plug 'ap/vim-css-color'
+Plug 'KabbAmine/vCoolor.vim'
+
+Plug 'dracula/vim'
+
+Plug 'daylerees/colour-schemes', { 'rtp': 'vim/' }
+Plug 'chriskempson/base16-vim'
+Plug 'flazz/vim-colorschemes'
+
+Plug 'ConradIrwin/vim-bracketed-paste'
+Plug 'chrisbra/unicode.vim'
+
+Plug 'sheerun/vim-polyglot'
+Plug 'dpwright/vim-tup'
+
+Plug 'lekv/vim-clewn'
+
+Plug 'kassio/neoterm'
+
+Plug 'rhysd/vim-clang-format'
+
+call plug#end()
+
+filetype plugin indent on
+
+" Source configurations
+for g:rc in split(glob('$HOME/.vim/vimrc.d/*.vim'), '\n')
+  exe 'source' rc
+endfor
+
+" Source plugin configurations
+for g:rc in split(glob('$HOME/.vim/vimrc.d/plugins/*.vim'), '\n')
+  exe 'source' rc
+endfor
