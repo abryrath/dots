@@ -1,5 +1,0 @@
-        color-normal: "#3a3c4e, #f8f8f2, #3a3c4e, #caa9fa, #f8f8f2";
-	color-urgent: "#f1fa8c, #44475a, #8BE9FD, #44475a, #FF7AC6";
-	color-active: "#f1fa8c, #44475a, #8BE9FD, #44475a, #FF7AC6";
-	color-window: "#44475a, #f1fa8c, #f1fa8c";
-}
