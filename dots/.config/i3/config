@@ -48,10 +48,10 @@ bindsym $mod+m exec rofi -show run
 bindsym $mod+k exec rofi -show window
 
 # change focus2
-bindsym $mod+$left focus left
-bindsym $mod+$down focus down
-bindsym $mod+$up focus up
-bindsym $mod+$right focus right
+#bindsym $mod+$left focus left
+#bindsym $mod+$down focus down
+#bindsym $mod+$up focus up
+#bindsym $mod+$right focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -60,10 +60,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+$left move left
-bindsym $mod+Shift+$down move down
-bindsym $mod+Shift+$up move up
-bindsym $mod+Shift+$right move right
+#bindsym $mod+Shift+$left move left
+#bindsym $mod+Shift+$down move down
+#bindsym $mod+Shift+$up move up
+#bindsym $mod+Shift+$right move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left

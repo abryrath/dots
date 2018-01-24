@@ -5,6 +5,11 @@
 export LD_LIBRARY_PATH=/usr/lib/
 export PATH=/usr/local/bin:/usr/bin:/bin:/sbin:/usr/bin/core_perl
 
+if [[ -d /usr/bin/core_perl ]]
+then
+  export PATH=$PATH:/usr/bin/core_perl
+fi
+
 export LOCAL_ETC="${HOME}/.local/etc"
 export LOCAL_BIN="${HOME}/.local/bin"
 export LOCAL_LIB="${HOME}/.local/lib"
