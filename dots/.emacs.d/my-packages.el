@@ -27,6 +27,7 @@
     windmove
     w3m
     ini-mode
+    docker-compose-mode
     
     ;; terminal
     multi-term
