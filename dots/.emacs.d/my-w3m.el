@@ -17,6 +17,7 @@
 (setq w3m-home-page "https://duckduckgo.com/lite/")
 ;;(use-package w3m-search
 ;;             :config
+(require 'w3m-search)
 (add-to-list 'w3m-search-engine-alist '("DuckDuckGo" "https://duckduckgo.com/lite/?q=%s&kp=1"))
 (setq w3m-search-default-engine "DuckDuckGo")
       
