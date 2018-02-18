@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+log_file="$HOME/.rofi-theme-switcher.log"
+
 notify() {
     notify-send --icon=/usr/share/icons/Adwaita/16x16/categories/applications-system-symbolic.symbolic.png "${1}" "${2}"
 }
@@ -22,6 +24,7 @@ apply() {
             && sleep 0.5
     else
         notify-send -u critical "Error" "Dunst: No such theme: ${dunst_theme_file}"
+        echo "$(date)" "Error" "Dunst: No such theme: ${dunst_theme_file}" >> "${log_file}"
     fi
     
     # Termite
@@ -33,6 +36,7 @@ apply() {
             && sleep 0.5
     else
         notify-send -u critical "Error" "Termite: No such theme: ${termite_theme_file}"
+                echo "$(date)" "Error" "Termite: No such theme: ${termite_theme_file}" >> "${log_file}"
     fi
     
     # Rofi
@@ -44,6 +48,7 @@ apply() {
             && sleep 0.5
     else
         notify-send -u critical "Error" "Rofi: No such theme: ${rofi_theme_file}"
+                echo "$(date)" "Error" "ROfi: No such theme: ${rofi_theme_file}" >> "${log_file}"
     fi
     
     # Xorg
@@ -59,7 +64,7 @@ apply() {
     fi
 
     # i3 (Uses Xresources, so just restart it)
-    i3 reload \
+    i3 reload &>/dev/null \
         && notify "i3-gaps" "Configuration reloaded"
 }
 
