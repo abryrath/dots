@@ -17,7 +17,7 @@
       (:inherit nil :stipple nil :background "#282a36" :foreground "#f8f8f2" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 90 :width normal :foundry "nil" :family "Inconsolata for Powerline"))))
  '(package-selected-packages
    (quote
-    (matlab-mode sublime-themes systemd csv-mode w3m fish-mode ini-mode smart-mode-line-powerline-theme smart-mode-line dracula-theme auctex rjsx-mode flymake-jshint treemacs gulp-task-runner js2-mode multi-term vcl-mode json-mode docker-compose-mode dockerfile-mode flymake-php editorconfig ample-zen-theme python-pylint web-mode s rust-mode robe python-mode python-django projectile php+-mode paredit magit lua-mode helm flycheck elixir-mode company cider ample-theme airline-themes))))
+    (buffer-move matlab-mode sublime-themes systemd csv-mode w3m fish-mode ini-mode smart-mode-line-powerline-theme smart-mode-line dracula-theme auctex rjsx-mode flymake-jshint treemacs gulp-task-runner js2-mode multi-term vcl-mode json-mode docker-compose-mode dockerfile-mode flymake-php editorconfig ample-zen-theme python-pylint web-mode s rust-mode robe python-mode python-django projectile php+-mode paredit magit lua-mode helm flycheck elixir-mode company cider ample-theme airline-themes))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -26,7 +26,7 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:background nil)))))
 (tool-bar-mode -1)
-(set-face-attribute 'default t :font "Inconsolata for Powerline-10")
+;;(set-face-attribute 'default t :font "Inconsolata for Powerline-10")
 
 ;; disable lockfiles
 ;; see http://www.gnu.org/software/emacs/manual/html_node/emacs/Interlocking.html

@@ -38,7 +38,8 @@ set_from_resource $color15 i3wm.color15    #e6e6e6
 
 # Keybinds {{{
 # start a terminal
-bindsym $mod+Return exec termite
+bindsym $mod+Return exec xfce4-terminal --hide-menubar
+# bindsym $mod+Shift+k exec konsole
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -208,13 +209,19 @@ gaps outer 5
 #}}}
 
 # Bar {{{
-exec --no-startup-id $HOME/.local/bin/powerline-lemonbar.sh &> $HOME/.powerline-lemonbar.log
+#exec --no-startup-id $HOME/.local/bin/powerline-lemonbar.sh &> $HOME/.powerline-lemonbar.log
 #exec "killall powerline-lemonbar & powerline-lemonbar --i3 --height 16 -- -a 40 -b -f 'Source Code Pro for Powerline-11' -f 'FontAwesome-11'"
 # }}}
 
 # Composition, X, etc {{{
+exec xfce4-session
 exec --no-startup-id dunst &
 exec --no-startup-id $HOME/.local/bin/xrandr.sh &
 exec --no-startup-id compton &
-exec --no-startup-id xsetroot -solid '#b0b0b0' &
+exec --no-startup-id { nitrogen --restore || xsetroot -solid '#b0b0b0' } &
+exec xfconfd
+exec xfsettingsd
+exec xfce4-volumed-pulse
+exec xfce4-power-manager
+exec xfce4-panel
 # }}}

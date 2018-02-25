@@ -1,0 +1,42 @@
+/* Show title of unread tabs with red and italic font */
+/*
+.tab.unread .label {
+  color: red !important;
+  font-style: italic !important;
+}
+*/
+ 
+/* Add private browsing indicator per tab */
+/*
+.tab.private-browsing .label:before {
+  content: "🕶";
+}
+*/
+ 
+/* Hide border on tab bar, force its state to 'scroll', adjust margin-left for width of scrollbar. */
+#tabbar {
+    border: 0;
+    overflow-y: scroll !important;
+    margin-left: -18px !important;
+}
+ 
+/* Hide .twisty and adjust margins so favicons have 7px on left. */
+.tab .twisty {
+    visibility: hidden;
+    margin-left: -13px;
+}
+ 
+/* Push tab labels to the right so they're hidden while collapsed, but still look fine expanded. */
+.tab .label {
+    margin-left: 8px;
+}
+ 
+/* Hide 'new tab' button. */
+.newtab-button {
+    display: none;
+}
+ 
+/* Hide close buttons on tabs. */
+.tab .closebox {
+    visibility: collapse;
+}
