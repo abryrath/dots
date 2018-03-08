@@ -84,6 +84,11 @@ unset -f path_prepend
   export PATH="$PATH:$HOME/.cargo/bin"
 }
 
+# RUST_SRC_PATH
+type rustc >/dev/null 2>&1 && {
+  export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
+}
+
 # Yarn/NPM
 [ -d "$HOME/.yarn/bin" ] && {
   export PATH="$PATH:$HOME/.yarn/bin"

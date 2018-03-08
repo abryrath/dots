@@ -17,16 +17,18 @@
     org
     magit
     gitignore-mode
+    flymd
     projectile ;needs config
     paredit    ;needs config
     flycheck   ;needs config
     tramp
+    ;; apache2-mode
     nginx-mode
     exec-path-from-shell
-    treemacs
     windmove
     w3m
     ini-mode
+    dockerfile-mode
     docker-compose-mode
     
     ;; terminal

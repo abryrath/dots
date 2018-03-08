@@ -13,6 +13,10 @@
 ;; flycheck file may get large, so keep it external
 (load-file "~/.emacs.d/my-flycheck.el")
 
+;; flymd
+(require 'flymd)
+(load-file "~/.emacs.d/my-flymd.el")
+
 ;; same with projectile
 (load-file "~/.emacs.d/my-projectile.el")
 

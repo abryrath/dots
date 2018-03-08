@@ -1,4 +1,4 @@
-;; -*- emacs-lisp -*- <18/01/02 08:33:19 /Users/abrrath/.emacs.d/tramp>
+;; -*- emacs-lisp -*- <18/03/01 14:23:40 /Users/abrrath/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; You can delete it, forcing Tramp to reapply the checks.
 
@@ -20,8 +20,6 @@
   ("gid-string" "wheel")
   ("uid-integer" 0)
   ("git" "\\git"))
- (["ssh" nil "uscltpww6237.global.publicisgroupe.net" nil nil]
-  nil)
  (["ssh" "root" "23.253.159.222" nil nil]
   ("uname" "Linux 3.10.0-514.21.1.el7.x86_64")
   ("locale" "LC_ALL=en_US.utf8")
