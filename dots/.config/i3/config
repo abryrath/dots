@@ -227,5 +227,9 @@ exec xfconfd &
 exec xfsettingsd &
 exec xfce4-volumed-pulse &
 exec xfce4-power-manager &
-exec xfce4-panel &
+# exec xfce4-panel &
 # }}}
+
+bar {
+    status_command i3blocks
+}
