@@ -38,12 +38,12 @@ plugins=(
   docker-compose
   rust
   vim-interaction
-#  zsh-syntax-highlighting
+  zsh-syntax-highlighting
 )
 
 ext_plugins=(
   elixir-oh-my-zsh
-#  zsh-autosuggestions
+  zsh-autosuggestions
   warhol
   zsh-you-should-use
   zsh-256color
