@@ -73,7 +73,7 @@
   (setq multi-term-program "/bin/zsh"))
 
 (add-to-list 'custom-theme-load-path ".emacs.d/")
-(load-theme 'material-theme)
+(load-theme 'material)
 ;;(load-theme 'zenburn)
 ;;(load-theme 'spolsky)
 (require 'airline-themes)
