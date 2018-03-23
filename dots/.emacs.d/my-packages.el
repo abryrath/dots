@@ -22,7 +22,7 @@
     paredit    ;needs config
     flycheck   ;needs config
     tramp
-    ;; apache2-mode
+    apache-mode
     nginx-mode
     exec-path-from-shell
     windmove
@@ -41,6 +41,7 @@
     ample-theme
     ample-zen-theme
     dracula-theme
+    material-theme
     smart-mode-line
     smart-mode-line-powerline-theme
     

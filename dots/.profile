@@ -10,6 +10,11 @@ then
   export PATH=$PATH:/usr/bin/core_perl
 fi
 
+if [[ -d /usr/local/Cellar ]]
+then
+  export PATH="$(brew info emacs | grep -e '/usr/local/Cellar' | awk '{ print $1 }')/bin":$PATH
+fi
+
 export LOCAL_ETC="${HOME}/.local/etc"
 export LOCAL_BIN="${HOME}/.local/bin"
 export LOCAL_LIB="${HOME}/.local/lib"
