@@ -1,0 +1,23 @@
+/*
+	Lets not overkill this tiny extensin so keeping it simple
+	and not using LESS or SASS pre processors ....
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 14px;
+	height: 352px;
+	width: 468px;
+	overflow: hidden;
+}
+
+.browser-list {
+	height: 100%;
+	width: 100%;
+}

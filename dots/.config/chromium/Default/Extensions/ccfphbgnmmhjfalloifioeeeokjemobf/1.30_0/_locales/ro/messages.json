@@ -1,0 +1,11 @@
+{
+   "description": {
+      "message": "Găsiţi adresa IP rapid! A se vedea detalii ca geolocation, whois, DNS şi liste negre. Totul despre IP-ul."
+   },
+   "longdesc": {
+      "message": "Această cerere Arată informaţii detaliate despre adresa IP, de exemplu geolocation, ISP, DNS, whois, rutare, hosting, domeniu vecinii, DNSBL, BGP şi ASN informaţii. Funcţii: Rezumat al informaţiilor reţea ca ISP, ASN, BGP, subrețea, serverele DNS şi revers DNS. Controale pentru a vedea dacă adresa IP este listat pe DNS cele mai populare bazate pe bazele de date antispam. Controale pentru a vedea dacă adresa IP este listat pe cele mai populare blocklists. Vedea toate informaţiile de înregistrare oficial legate de adresa IP. Găsi alte site-uri gazduite pe aceeaşi adresă de IP (domeniu vecinii). Afişează poziţia geografică a adresa IP. Rezumat al ţării în care se află adresa IP.\n\nMy IP address - Find your IP address fast! See details like geolocation, whois, DNS and blacklists. All about your IP."
+   },
+   "name": {
+      "message": "Adresa mea IP"
+   }
+}

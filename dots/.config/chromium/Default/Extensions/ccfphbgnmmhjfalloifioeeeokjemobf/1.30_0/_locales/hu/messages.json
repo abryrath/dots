@@ -1,0 +1,11 @@
+{
+   "description": {
+      "message": "IP-címének gyors! Részletek, mint a geolocation, whois, DNS és feketelistákat. Szól a VI."
+   },
+   "longdesc": {
+      "message": "Ez az alkalmazás azt mutatja, hogy részletes információkat az IP-címét, például a térinformatikai, ISP, DNS, whois, routing, hosting, domain szomszédok, DNSBL, BGP és ASN információk. Funkciók: Mint a ISP, ASN, BGP, alhálózat, DNS-kiszolgálók és a címfeloldási DNS hálózati információk összefoglalása. Ellenőrzi, hogy ha az IP-cím szerepel, a leg--bb népszerű DNS alapú adatbázisok anti-löncshús. Ellenőrzi, hogy ha az IP-cím szerepel a leg--bb népszerű blocklists. Az IP-cím kapcsolódó összes hivatalos regisztrációs információk megtekintéséhez. Más websites szálló-ra ugyanaz IP-címét (tartomány szomszédok) talál. Azt a földrajzi helyet az IP-cím. Összefoglaló az ország, ahol az IP-cím található.\n\nMy IP address - Find your IP address fast! See details like geolocation, whois, DNS and blacklists. All about your IP."
+   },
+   "name": {
+      "message": "Az IP-címem"
+   }
+}

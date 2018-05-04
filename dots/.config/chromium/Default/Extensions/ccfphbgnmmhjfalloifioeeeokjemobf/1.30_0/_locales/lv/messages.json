@@ -1,0 +1,11 @@
+{
+   "description": {
+      "message": "Atrast jūsu IP adresi, ātri! Skatīt detaļas, piemēram, ģeogrāfiskās vietas, whois, DNS un melnos sarakstus. Visu par savu IP."
+   },
+   "longdesc": {
+      "message": "Šis pieteikums parāda detalizētu informāciju par jūsu IP adresi, piemēram, ģeogrāfiskās vietas, ISP, DNS, whois, maršrutēšanu, hostings, domēna kaimiņi, DNSBL, BGP, ASN informāciju. Funkcijas: Informāciju par tīklu, piemēram, ISP, ASN, BGP, apakštīkla, DNS serveriem un reverso DNS kopsavilkums. Pārbauda, ja jūsu IP adrese tiek parādīta uz populārākajiem DNS pamatojoties anti-spam datu bāzēm. Pārbauda, ja jūsu IP adrese tiek kotētas populārākajām blocklists. Skatīt visas oficiālās reģistrācijas informāciju, kas saistīta ar jūsu IP adresi. Atrast citas mājas lapas, kas izvietots uz to pašu IP adresi (domēna kaimiņiem). Parāda jūsu IP adresi, ģeogrāfisko atrašanās vietu. Kopsavilkums par valsti, kurā atrodas jūsu IP adresi.\n\nMy IP address - Find your IP address fast! See details like geolocation, whois, DNS and blacklists. All about your IP."
+   },
+   "name": {
+      "message": "Mana IP adrese"
+   }
+}

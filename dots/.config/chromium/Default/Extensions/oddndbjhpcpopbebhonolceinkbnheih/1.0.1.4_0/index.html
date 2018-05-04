@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Amcrest Web View</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+
+<body id="mainBody" class="main-body">
+    <div class="title-bar" initWidth>
+        <div class="title-bar-menu" initWidth>
+            <ul>
+                <li class="title-bar-menu-button">
+                    <a id="closeWindow" href="" class="title-bar-menu-button-close"></a>
+                </li>
+                <li class="title-bar-menu-button">
+                    <a id="maxWindow" href="" class="title-bar-menu-button-max"></a>
+                </li>
+                <li class="title-bar-menu-button">
+                    <a id="minWindow" href="" class="title-bar-menu-button-min"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="title-bar-tab" initWidth>
+            <ul class="title-bar-tab-ul">
+                <li class="title-bar-tab-ul-tabcontent">Amcrest Web View</li>
+            </ul>
+        </div>
+        <div class="title-toolbar" initWidth>
+            <div id="title-toolbar-button">
+                <a id="refresh" href="" class="title-toolbar-button-refresh"></a>
+            </div>
+            <div class="title-toolbar-address">
+                <input type="text" class="fn-width500 fn-lineheight20" id="l_ip_ipt" placeholder="Search or type URL" />
+                <input type="button" value="Go" id="l_go_btn" class="title-toolbar-address-button-go" />
+                <!-- <div>
+                <button id="save-file">fileSystem</button>
+            </div> -->
+            </div>
+        </div>
+    </div>
+    <div id="outListener" style="z-index:1; position:absolute; top:-10000px; left:0px; height:400px; width:500px; overflow:auto;">
+        <div id="listener" style="">
+            <embed name="nacl_module" id="nacl_module" width="100%" height="100%" path="glibc/Release" src="glibc/Release/WebPlugin_OK.nmf" type="application/x-nacl" />
+        </div>
+    </div>
+    <div id="status_field" style="display:none;">NO-STATUS</div>
+    <div id="enterTip">
+        <div>
+            <span>To begin, input the IP Address and port of your camera into the URL bar. Your camera's IP address and port can be found on the Amcrest IP Config Tool. Pushing "Enter" or selecting "Go" will load the web interface of the camera and present a login page. You should now have access to view your camera and configure settings.</span>
+        </div>
+        <div class="enTip">
+            <h3>An example is provided below where the IP address of the camera is provided in the URL bar:</h3>
+            <img src="image/example.png" alt="example">
+        </div>
+        <div>
+            <span>For a guide that covers adding, viewing and configuration of your camera through this powerful interface,</span>
+            <a href="" id="guider">please click here</a>
+        </div>
+        <div class="enTip">
+            <h3>You can also view a video tutorial about using the Chrome Web App below:</h3>
+            <webview src="https://www.youtube.com/embed/yeOfdrNaPxs" style="width:840px;height:470px;"></webview>
+        </div>
+        <div>
+            <span>Remember that our support staff is available to assist you with any issues that you may have. If you need assistance, please reach out to us by e-mail atsupport@amcrest.com, or contact us via phone toll-free at 818-212-7538.</span>
+        </div>
+    </div>
+    <div id="webviewarea">
+        <webview id="webv"></webview>
+    </div>
+    <div id="webHelp_window" style="position:absolute; left:0px; top: -10000px; width:500px; height:500px; z-index:19999;">
+        <div class="ui-help-title" id="webHelp_window_title">
+            <a class="ui-closeHelp-icon" id="window_help_title_close" href=""></a>
+        </div>
+        <webview id="webHelp" style="width:100%; height:100%;" src=""></webview>
+    </div>
+    <!--webview alert-->
+    <div class="ui-dialog" id="window_diaalert">
+        <div class="ui-dialog-title">
+            <a class="ui-dialog-icon" id="window_diaalert_title_close" href=""></a>
+        </div>
+        <div class="ui-dialog-content">
+            <div class="ui-autobox">
+                <div class="ui-autobox-content">
+                    <i class="ui-dialog-surebox-icon"></i>
+                    <span id="window_diaalert_str" class="ui-dialog-surebox-text"></span>
+                </div>
+            </div>
+        </div>
+        <div class="ui-button-box">
+            <a id="window_diaalert_close" class="ui-button" href="">Confirm</a>
+        </div>
+    </div>
+    <div id="lockAll">
+    </div>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>

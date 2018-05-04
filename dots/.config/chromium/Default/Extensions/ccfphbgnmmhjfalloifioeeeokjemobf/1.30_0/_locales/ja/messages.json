@@ -1,0 +1,11 @@
+{
+   "description": {
+      "message": "高速あなたの IP アドレスを見つける ！地理位置情報、whois、DNS ブラック リストのような詳細を参照してください。すべてについてあなたの ip アドレス。"
+   },
+   "longdesc": {
+      "message": "このアプリケーションで例ジオロケーション、ISP、DNS のためのあなたの IP アドレスに関する詳細な情報は whois のルーティング、ホスティング、ドメインの隣人、DNSBL、BGP と ASN 情報。ISP、ASN、BGP、サブネット、DNS サーバーおよび DNS などのネットワーク情報の機能: 概要。最も人気のある DNS の IP アドレスが表示されているかどうかにチェック ベースのアンチスパム データベース。あなたの IP アドレスは最も人気のあるブロック リストに記載されているかどうかを確認します。IP アドレスに関連するすべての公式の登録情報を参照してください。同じ IP アドレス (ドメイン近所の人） でホストされている他のウェブサイトを見つけます。あなたの IP アドレスの地理的な位置を示します。あなたの IP アドレスの国の概要です。\n\nMy IP address - Find your IP address fast! See details like geolocation, whois, DNS and blacklists. All about your IP."
+   },
+   "name": {
+      "message": "自分の IP アドレス"
+   }
+}

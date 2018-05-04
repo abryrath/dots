@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Browserstack Extension</title>
+  <link href="stylesheets/fonts.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/reset.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/live.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/live_v2.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/extension-popup.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/core.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+<body class="extension-popup">
+<!-- OS-Browser Listing -->
+<div class="extension-popup-wrapper">
+  <!-- Modal body -->
+  <div class="quick-launch-wrapper fitbox section quick-launch show" id="quickLaunchWrapper">
+    <div class="empty-quick-launch hide">
+      <h3>Your Quick Launch is empty!</h3>
+      <p>Drag a browser to the quick launch bar on the browser listing to add browsers to your Quick Launch.</p>
+    </div>
+    <div class="quick-launch-items">
+      <ul class="quick-launch-list"></ul>
+    </div>
+  </div>
+  <!-- /Modal body -->
+  <div class="extension-footer">
+    <div class="row">
+      <div class="col-sm-6">
+        <a href="http://www.browserstack.com/" class="footer-home-link" id="extension-home-link">
+          <img src="http://www.browserstack.com/images/extensions/footer-logo.png" alt="BrowserStack">
+        </a>
+      </div>
+      <div class="col-sm-6 text-right footer-links">
+        <ul>
+          <li>
+            <a href="http://www.browserstack.com/start" class="sign-in" id="extension-start-link">Sign In</a>
+          </li>
+        </ul>
+        <ul class="hide">
+          <li>
+            <a href="https://www.browserstack.com/start" class="extension-popup-link" data-url-params="&amp;quickLaunch=1">Edit</a>
+          </li>
+          <li>
+            <a href="https://www.browserstack.com/start" class="extension-popup-link">View All</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /OS-Browser Listing -->
+
+<script src="scripts/jquery.js" type="text/javascript"></script>
+<script src="scripts/browserstackObject.js" type="text/javascript"></script>
+<script src="scripts/constants.js" type="text/javascript"></script>
+<script src="scripts/jquery.browser.min.js" type="text/javascript"></script>
+<script src="scripts/jquery-migrate-1.2.1.min.js"></script>
+<script src="scripts/jquery.ba-bbq.js" type="text/javascript"></script>
+<script src="scripts/firefoxMessengerApi.js" type="text/javascript"></script>
+<script src="scripts/common-browser-list-bindings.js" type="text/javascript"></script>
+<script src="scripts/extension-browser-list.js" type="text/javascript"></script>
+<script src="scripts/keyboardnav.js" type="text/javascript"></script>
+<script src="scripts/quick_launch.js" type="text/javascript"></script>
+<script src="scripts/bs-init.js" type="text/javascript"></script>
+<script src="scripts/bs-urls.js"></script>
+<script src="scripts/bs-ui-cookies.js"></script>
+<script src="scripts/bs-tab-manager.js"></script>
+<script src="scripts/bs-message-handler.js"></script>
+</body>
+</html>

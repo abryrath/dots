@@ -1,0 +1,11 @@
+{
+   "description": {
+      "message": "Rasti savo IP adresą greitai! Ieškokite informacijos, kaip geografinės vietos, whois, DNS ir juoduosius sąrašus."
+   },
+   "longdesc": {
+      "message": "Ši programa rodo detalią informaciją apie jūsų IP adresą, pavyzdžiui, geografinės vietos, ISP, DNS, whois, technologinės kortelės, Hostingas, domeno kaimynai, DNSBL, BGP ir ASN informaciją. Funkcijos: Santrauka tinklo informaciją kaip ISP, ASN, BGP, potinklio, DNS serverius ir reverse DNS. Tikrina, jei jūsų IP adresas yra sąraše populiariausias DNS pagal apsaugos nuo pašto šiukšlių duomenų bazių. Patikrina, jei jūsų IP adresas yra įtrauktos į populiariausių blocklists. Pamatyti visos oficialios registracijos informaciją, susijusią su jūsų IP adresą. Rasti kitas tinklapis priglobtos to paties IP adreso (domeno kaimynai). Rodo geografinę padėtį, jūsų IP adresą. Kai jūsų IP adresas yra šalies santrauka.\n\nMy IP address - Find your IP address fast! See details like geolocation, whois, DNS and blacklists. All about your IP."
+   },
+   "name": {
+      "message": "Mano IP adresas"
+   }
+}

@@ -1,0 +1,11 @@
+{
+   "description": {
+      "message": "Tìm địa chỉ IP của bạn nhanh chóng! Xem thông tin chi tiết như vị trí địa lý, whois, DNS và nâng. Tất cả về IP của bạn."
+   },
+   "longdesc": {
+      "message": "Ứng dụng này hiển thị các thông tin chi tiết về các địa chỉ IP của bạn, ví dụ như vị trí địa lý, ISP, DNS, whois, định tuyến, lưu trữ, tên miền hàng xóm, DNSBL, BGP và ASN thông tin. Chức năng: Bản tóm tắt thông tin trên mạng như ISP, ASN, BGP, mạng con, máy chủ DNS và DNS đảo ngược. Kiểm tra xem nếu địa chỉ IP của bạn được liệt kê trên các DNS phổ biến nhất dựa trên cơ sở dữ liệu chống thư rác. Kiểm tra để xem nếu địa chỉ IP của bạn được liệt kê trên Blocklists một phổ biến nhất. Xem tất cả các thông tin đăng ký chính thức liên quan đến địa chỉ IP của bạn. Tìm các trang web lưu trữ trên cùng một địa chỉ IP (tên miền hàng xóm). Cho thấy vị trí địa lý của địa chỉ IP của bạn. Bản tóm tắt của quốc gia, nơi đặt địa chỉ IP của bạn.\n\nMy IP address - Find your IP address fast! See details like geolocation, whois, DNS and blacklists. All about your IP."
+   },
+   "name": {
+      "message": "Địa chỉ IP của tôi"
+   }
+}

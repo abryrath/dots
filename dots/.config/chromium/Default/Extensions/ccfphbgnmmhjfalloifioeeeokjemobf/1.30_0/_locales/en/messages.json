@@ -1,0 +1,11 @@
+{
+   "description": {
+      "message": "Find your IP address fast! See details like geolocation, whois, DNS and blacklists. All about your IP."
+   },
+   "longdesc": {
+      "message": "This application shows detailed information about your IP address, for example the geolocation, ISP, DNS, whois, routing, hosting, domain neighbors, DNSBL, BGP and ASN information. Functions: Summary of the network information like ISP, ASN, BGP, subnet, DNS servers and reverse DNS. Checks to see if your IP address is listed on the most popular DNS based anti-spam databases. Checks to see if your IP address is listed on the most popular blocklists. See all official registration information related to your IP address. Find other websites hosted on the same IP address (domain neighbors). Shows the geographical location of your IP address. Summary of the country where your IP address is located.\n\nMy IP address - Find your IP address fast! See details like geolocation, whois, DNS and blacklists. All about your IP."
+   },
+   "name": {
+      "message": "My IP address"
+   }
+}

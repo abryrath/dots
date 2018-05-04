@@ -1,0 +1,18 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://patorjk.com/software/taag/"
+      },
+      "urls": [ "http://patorjk.com/software/taag/" ]
+   },
+   "description": "Turns text to large ASCII Art. Figlet and AOL fonts supported. Over 300+ fonts.",
+   "icons": {
+      "128": "128.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCnFUKBUyuu2bNTR03EbUo61h9WksL09/aTU51Y23BflUZqYT2bs2ts9S5sr1G84WXtZGs0A9T0igt46eTgjX5e4t1hBdKDhj+qUzKOX2isYMhnQaMKF28g3SsqBnjVtZsq4lFha5zCVTEq52JQBZo/n40vLS5AUqTweEo/8k5JvQIDAQAB",
+   "manifest_version": 2,
+   "name": "Text to ASCII Art",
+   "offline_enabled": true,
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "2.0.1"
+}

@@ -1,0 +1,10 @@
+{
+   "appDesc": {
+      "description": "The description of the application, displayed in the web store.",
+      "message": "File conversion, covering 1100+ formats, including documents, images, video, audio, eBook, CAD, and compression."
+   },
+   "appName": {
+      "description": "The title of the application, displayed in the web store.",
+      "message": "Zamzar - Convert Files"
+   }
+}

@@ -1,0 +1,18 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://www.guitaristsreference.com/"
+      },
+      "urls": [ "http://www.guitaristsreference.com/" ]
+   },
+   "description": "All Guitar Chords, Scales, Triads, Arpeggios, Chord Finder Tool & more",
+   "icons": {
+      "128": "128.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDISvBayZIe/if/c97OKbrZz5FnSrZ/N0qxAW+UKt7BMtx1W7he/DxsBtTtQbAAb8FiQB8PbHyHvAzObYBE3OjI+a+b+ZyhpScntpur5wGzlW5Qz//DOQnAhFCqNvMGXmU3mwAPwj155mlgRkQv3t6AUAZLOEIptEQiSjrLydbzhQIDAQAB",
+   "manifest_version": 2,
+   "name": "Guitarist's Reference",
+   "permissions": [ "unlimitedStorage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.0"
+}

@@ -1,0 +1,20 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "background.js" ]
+      }
+   },
+   "description": "App Version of devdocs.io and on github @ https://github.com/Thibaut/devdocs",
+   "icons": {
+      "128": "assets/icon_128.png",
+      "16": "assets/icon_16.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqIKAp7xghD1IkMPwueGvtooEkQ7kc4tlUKXNyLLiWp28UOLBVzHAya741mBMV0aHVCaofhcfvBvZcclle8BwYeUCjpADuxUmJ0JtUPOIEHP+oJAqfMYshdxZsFQohx6FzA43DgOY8u5+Hideh3ALJCLFxPf0CHSRWFtZoXYJS7xIpOgsUs/8fGIOgm4e5IYjrJeJCfjveQ+w5HCfN61Ttl5Ton0sJ5qjZ+/e/wDaU3FrKJ2QXmXy4W61PeH0BwaZrUSW5N5shsJCXTizuO+txkyqkD7WsHl3zbwKwbIgU9CBRNFOvE1JxFKGX6PdcS/y7ztbM1R8pgHJQCka2lJxjwIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "38",
+   "name": "DevDocs Standalone",
+   "permissions": [ "webview" ],
+   "short_name": "devdocs-standalone",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.0.1"
+}

@@ -1,0 +1,11 @@
+{
+   "description": {
+      "message": "Mencari alamat IP anda cepat! Lihat butiran seperti geolokasi, whois, DNS dan blacklists. Semua tentang harta intelek anda."
+   },
+   "longdesc": {
+      "message": "Permohonan ini menunjukkan maklumat terperinci mengenai alamat IP anda, sebagai contoh geolokasi, ISP, DNS, whois, penghalaan, hosting, domain jiran-jiran, DNSBL, BGP dan ASN maklumat. Fungsi: Ringkasan maklumat rangkaian seperti ISP, ASN, BGP, subnet, pelayan DNS dan DNS terbalik. Semak untuk melihat jika alamat IP anda tersenarai di DNS paling popular berasaskan pangkalan data anti spam. Menyemak untuk melihat jika alamat IP anda tersenarai di blocklists paling popular. Lihat semua maklumat pendaftaran rasmi yang berkaitan dengan alamat IP. Mencari laman-laman lain yang dihoskan pada alamat IP yang sama (jiran-jiran domain). Menunjukkan lokasi geografi alamat IP anda. Ringkasan di negara di mana alamat IP ini terletak.\n\nMy IP address - Find your IP address fast! See details like geolocation, whois, DNS and blacklists. All about your IP."
+   },
+   "name": {
+      "message": "Alamat IP saya"
+   }
+}

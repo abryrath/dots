@@ -1,0 +1,30 @@
+{
+   "background": {
+      "page": "background.html",
+      "persistent": true
+   },
+   "browser_action": {
+      "default_icon": "assets/beebs/icon.png",
+      "default_title": ""
+   },
+   "content_scripts": [ {
+      "js": [ "content.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_end"
+   } ],
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js https://www.google-analytics.com/analytics.js; chrome-extension://bjemkbdekdodeojbfldikjfbehnmocdo/lib/yk.js; object-src 'self'",
+   "description": "A simple extension that will allow you to watch BBC iPlayer, 40D - Channel 4 and ITV Player.",
+   "icons": {
+      "128": "ukflag.png",
+      "19": "ukflag.png",
+      "32": "ukflag.png",
+      "48": "ukflag.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiIHRc8NwyVSAXZIYXKbc6jUs96/pCOnH/k1+Drhjwmanmj1Bw6Wq5GQGDstKDaLAXJTLJiNhsKhdvIEyODnB4df0Tkex/sHJHAUDF2FyNtAbhDfPBXdGcWyKuwtNvV0tF+ux7+vxtM4Gi7uUZruOH8wnA0S3c92uyXPtWXeVc+A7LghLObXujn/VIfUTk0t9SxjwkWNGgewdNtyOWUSkTm1gppcSnb5Qm/MKah1En5zYIjZg1TOj+ZHv/7upmHl+hxcwYmgNisuX+NmWzx03kexxTp/ClSvMAMzUCsLUrIiRJX7yP1AsfhpjD2zMC11Ye1NZJo+e6zrAKNIG9Z7/0wIDAQAB",
+   "manifest_version": 2,
+   "name": "Beebs - Access BBC iPlayer, ITV & Channel 4",
+   "permissions": [ "tabs", "http://*/*", "https://*/*", "notifications", "contextMenus", "history", "background", "proxy", "storage", "management", "webRequest", "webRequestBlocking", "cookies" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "7.0.7",
+   "web_accessible_resources": [ "lib/yk2.js" ]
+}

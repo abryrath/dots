@@ -1,0 +1,11 @@
+{
+   "description": {
+      "message": "Etsi IP-osoitteen nopeasti! Lisätietoja kuten geolocation, whois, DNS ja mustia listoja. Kyse IP."
+   },
+   "longdesc": {
+      "message": "Tämä sovellus näyttää yksityiskohtaisia tietoja IP-osoite geolocation, ISP, DNS, esimerkiksi whois, reititys, hosting, toimialueen naapureita, DNSBL, BGP ja ASN tiedot. Toiminnot: Yhteenveto verkon tiedot kuten ISP, ASN, BGP, aliverkon, DNS-palvelimet ja käänteisen DNS. Tarkistaa, jos IP-osoite näkyy Suosituimmat DNS perustuu anti-spam tietokannat. Tarkistaa, jos IP-osoite näkyy Suosituimmat blocklists. Katso kaikki virallinen rekisteröintitiedot IP-osoite. Etsiä muut sivustot isännöidään samasta IP-osoitteesta (domain naapurit). Näyttää maantieteellisen sijainnin IP-osoite. Yhteenveto maassa, jossa IP-osoite.\n\nMy IP address - Find your IP address fast! See details like geolocation, whois, DNS and blacklists. All about your IP."
+   },
+   "name": {
+      "message": "IP-osoitteeni"
+   }
+}

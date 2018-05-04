@@ -1,0 +1,11 @@
+{
+   "description": {
+      "message": "找到您的 IP 地址快速 ！看看像地理定位、 whois、 DNS 和黑名单的详细信息。所有关于你的 IP。"
+   },
+   "longdesc": {
+      "message": "此应用程序显示有关您的 IP 地址，例如地理定位、 ISP、 DNS，详细的信息 whois，路由、 托管、 域的邻居，DNSBL，BGP 和 ASN 信息。网络信息 （如 ISP、 ASN、 BGP、 子网、 DNS 服务器和反向 DNS 的功能： 摘要。检查以查看您的 IP 地址是否列出上最受欢迎的 DNS 根据反垃圾邮件数据库。检查您的 IP 地址是否列在最受欢迎的 blocklists 上。请参阅有关您的 IP 地址的所有正式登记资料。找到相同的 IP 地址 （域邻居） 承载的其他网站。显示您的 IP 地址的地理位置。您的 IP 地址所在的国家的摘要。\n\nMy IP address - Find your IP address fast! See details like geolocation, whois, DNS and blacklists. All about your IP."
+   },
+   "name": {
+      "message": "我的 IP 地址"
+   }
+}

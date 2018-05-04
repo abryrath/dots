@@ -1,0 +1,11 @@
+{
+   "description": {
+      "message": "Ugotovite vaš IP naslov hitro! Glej podrobnosti kot geolocation, whois, DNS in črnih list. Vse o vašem IP."
+   },
+   "longdesc": {
+      "message": "Ta program prikazuje podrobne informacije o IP naslov, na primer geolocation, ISP, DNS, whois, usmerjanje, gostovanje, domene sosede, DNSBL, BGP in ASN informacije. Funkcij: Povzetek informacije o omrežju kot ISP, ASN, BGP, podomrežje, DNS strežniki in reverse DNS. Preveri, če je vaš IP naslov, ki kotirajo na najbolj priljubljenih DNS temelji anti-spam podatkovnih baz. Preveri, če je vaš IP naslov, ki kotirajo na najbolj priljubljenih blocklists. Glej vse uradno registracijo informacij, povezanih z vaš IP naslov. Našli druge spletne strani gostuje na isti IP-naslov (domena sosedje). Prikazuje geografsko lokacijo vašega IP naslova. Povzetek v državi, kjer se nahaja vaš IP naslov.\n\nMy IP address - Find your IP address fast! See details like geolocation, whois, DNS and blacklists. All about your IP."
+   },
+   "name": {
+      "message": "Moj naslov IP"
+   }
+}

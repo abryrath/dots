@@ -1,0 +1,11 @@
+{
+   "description": {
+      "message": "IP adresiniz hızlı bul! Geolocation, whois, DNS ve kara gibi ayrıntıları bakın. Tüm IP hakkında."
+   },
+   "longdesc": {
+      "message": "Bu uygulama, IP adresinizi, ISS, DNS, geolocation. Örneğin hakkında ayrıntılı bilgi gösterir whois, yönlendirme, hosting, etki alanı komşuları, DNSBL, BGP ve ASN bilgi. İşlevler: Özet ağ bilgi ISP, ASN, BGP, alt ağ, DNS sunucuları ve ters DNS gibi. IP adresiniz en popüler DNS listelenip listelenmediğini denetler, Anti-Spam veritabanları dayalı. IP adresiniz en popüler blocklists listelenip listelenmediğini denetler. Senin IP adres yazmak ile ilgili tüm resmi kayıt bilgileri bakın. Aynı IP adresi (etki alanı komşular) barındırılan diğer Web sitelerinde bulabilirsiniz. IP adresiniz coğrafi konumunu gösterir. Özet-in IP adresiniz olduğu ülke.\n\nMy IP address - Find your IP address fast! See details like geolocation, whois, DNS and blacklists. All about your IP."
+   },
+   "name": {
+      "message": "IP adresim"
+   }
+}

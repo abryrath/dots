@@ -1,0 +1,11 @@
+{
+   "description": {
+      "message": "Find din IP adresse hurtigt! Se detaljer som geolocation, whois, DNS og sortlister. Alt om din IP."
+   },
+   "longdesc": {
+      "message": "Dette program viser detaljerede oplysninger om din IP-adresse, for eksempel geolocation, ISP, DNS, whois, routing, hosting, domæne naboer, DNSBL, BGP og ASN oplysninger. Funktioner: Resumé af netværksoplysninger som ISP, ASN, BGP, undernet, DNS-servere og omvendt DNS. Kontrollerer, om din IP-adresse er angivet på de mest populære DNS baseret anti-spam-databaser. Kontrollerer, om din IP-adresse er angivet på de mest populære blocklists. Se alle officielle registreringsoplysninger relateret til din IP-adresse. Finde andre hjemmesider hostet på samme IP-adresse (domain naboer). Viser den geografiske placering af din IP-adresse. Resumé af det land, hvor din IP-adresse.\n\nMy IP address - Find your IP address fast! See details like geolocation, whois, DNS and blacklists. All about your IP."
+   },
+   "name": {
+      "message": "Min IP-adresse"
+   }
+}

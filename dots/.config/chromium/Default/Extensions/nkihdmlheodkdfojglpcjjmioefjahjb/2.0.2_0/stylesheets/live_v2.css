@@ -1,0 +1,158 @@
+.os-browser-list {
+  background: white;
+  width: 960px;
+  width: 966.5px\9;
+  border-radius: 4px;
+  height: auto;
+  top: 20%;
+}
+.os-browser-list a {
+  outline: 0;
+}
+.os-browser-list.is-docked {
+  display: none;
+}
+
+.os-list-container {
+  width: 190px;
+  border-right: 1px solid #a2a2a2;
+  float: left;
+  background: #eeeeee;
+  border-radius: 4px 0 0 4px;
+  overflow: hidden;
+}
+
+.item-list {
+  padding-left: 0;
+}
+
+.os-list .item.sel .item-link {
+  background: #48afeb;
+  color: #fff;
+}
+.os-list .item:hover a {
+  background: #bfdced;
+}
+.os-list .item-link {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #000;
+  text-decoration: none;
+}
+.os-list .item-link .os-smalltext {
+  display: none;
+}
+.os-list .icon {
+  clear: both;
+  float: left;
+  position: relative;
+  display: block;
+  margin: 0 5px 0 7px;
+  width: 30px;
+  height: 30px;
+}
+
+.browser-list .item-list:last-child .items-container {
+  border-right: none;
+}
+.browser-list .items {
+  min-height: 425px;
+}
+.browser-list .items-container {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.browser-list .items-container:after {
+  content: '';
+  width: 0;
+  height: 0;
+  display: block;
+  clear: both;
+}
+
+.os-browser-list .item-list.browser.edge {
+  display: none;
+}
+.os-browser-list .win10 .item-list.browser.edge {
+  display: block;
+}
+.os-browser-list .maclion .item-list.browser.yandex, .os-browser-list .macsl .item-list.browser.yandex {
+  display: none;
+}
+.os-browser-list .maclion .item-list.browser.opera, .os-browser-list .macsl .item-list.browser.opera {
+  margin-right: 0;
+}
+.os-browser-list .maclion .item-list.browser.opera .item-head, .os-browser-list .macsl .item-list.browser.opera .item-head {
+  border-radius: 0 4px 0 0;
+}
+.os-browser-list .maclion .item-list.browser.opera .items-container, .os-browser-list .macsl .item-list.browser.opera .items-container {
+  border-radius: 0 0 4px 0;
+  border-right: none;
+}
+.os-browser-list .mac .item-list.browser.yandex .items {
+  width: 88px;
+}
+.os-browser-list .mac .item-list.browser.yandex .items .item {
+  width: 88px;
+}
+.os-browser-list .win8 .item-list.browser.yandex .items, .os-browser-list .win8-1 .item-list.browser.yandex .items {
+  width: 83px;
+}
+.os-browser-list .win8 .item-list.browser.yandex .items .item, .os-browser-list .win8-1 .item-list.browser.yandex .items .item {
+  width: 83px;
+}
+
+.item-head {
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 1px solid #d0d0d0 \9;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  height: 43px;
+  line-height: 42px;
+  color: #000;
+  background: #f6f6f6;
+}
+.android .item-head {
+  border-right: 1px solid #d0d0d0 \9;
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.android-listing-header,
+.ios-listing-header {
+  clear: both;
+}
+
+.ios-listing-header.emulators .tablet {
+  text-align: left;
+  text-indent: 76px;
+}
+
+.android .item-head.emulator {
+  float: left;
+  border-top: 1px solid #d0d0d0 \9;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  color: #aaa;
+}
+.android .item-head.mobile.emulator {
+  width: 512px;
+}
+.android .item-head.tablet.emulator {
+  width: 256px;
+}
+
+.ios .item-head.emulator {
+  float: left;
+  border-top: 1px solid #d0d0d0 \9;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  color: #aaa;
+}
+.ios .item-head.mobile.emulator {
+  width: 256px;
+}
+.ios .item-head.tablet.emulator {
+  width: 512px;
+}

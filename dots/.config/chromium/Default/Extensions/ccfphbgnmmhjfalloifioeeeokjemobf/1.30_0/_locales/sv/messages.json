@@ -1,0 +1,11 @@
+{
+   "description": {
+      "message": "Hitta din IP-adress snabbt! Se detaljer som geolocation, whois, DNS- och svartlistor. Allt om din IP."
+   },
+   "longdesc": {
+      "message": "Den här applikationen visar detaljerad information om din IP-adress, till exempel geolocation, ISP, DNS, whois, routing, hosting, grannar, DNSBL, BGP och ASN domäninformation. Funktioner: Sammanfattning av nätverksinformationen som ISP, ASN, BGP, undernät, DNS-servrar och omvänd DNS. Kontroller för att se om din IP-adress är noterat på den mest populära DNS baserad anti-spam databaser. Kontrollerar om din IP-adress är noterat på den mest populära blocklistor. Se all officiell registreringsinformation relaterad till din IP-adress. Hitta andra webbplatser som finns på samma IP-adress (domain grannar). Visar den geografiska placeringen av din IP-adress. Sammanfattning av det land där din IP-adress.\n\nMy IP address - Find your IP address fast! See details like geolocation, whois, DNS and blacklists. All about your IP."
+   },
+   "name": {
+      "message": "Min IP-adress"
+   }
+}

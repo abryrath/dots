@@ -1,0 +1,20 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://www.tcpiputils.com/inc/tools.php?myipapp=1"
+      },
+      "urls": [ "http://www.tcpiputils.com/" ]
+   },
+   "default_locale": "en",
+   "description": "__MSG_description__",
+   "icons": {
+      "128": "icon128.png",
+      "32": "icon32.png",
+      "64": "icon64.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDhoPXkg0KU8fN1PAggtsaMO4WOCJKrkZTsOoUmUYsWb0rXoL2GuKhOAAf7lpBFoi6fqbzBxjoEAHbH7R9BBpJrOTrE16v2pvKh35VA8jaK4MbDAuQG/7ds8/iOe5mxTUHxiC+v+TcPSW0G8ddtvkigX9z27XjrLJiC01F5EbAjHwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_name__",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.30"
+}

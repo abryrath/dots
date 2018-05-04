@@ -1,0 +1,11 @@
+{
+   "description": {
+      "message": "Trobar la seva adreça IP ràpid! Veure detalls com la geolocalització, whois, DNS i llistes negres. Tot sobre el seu IP."
+   },
+   "longdesc": {
+      "message": "Aquesta aplicació Mostra informació detallada sobre la seva adreça IP, per exemple la geolocalització, ISP, DNS, whois, encaminament, allotjament, dominis veïns, DNSBL, BGP i ASN informació. Funcions: Resum de la informació de la xarxa com ISP, ASN, BGP, subxarxa, servidors de DNS i DNS invers. Comprovacions per veure si la seva adreça IP és que apareixen en el més popular DNS basat en bases de dades antispam. Comprovacions per veure si la seva adreça IP és que apareixen en els blocklists més populars. Veure tota la informació matrícula oficial relacionats amb la seva adreça IP. Trobar altres llocs web allotjats en la mateixa adreça IP (veïns de domini). Mostra la ubicació geogràfica de l'adreça IP. Resum del país on es troba la seva adreça IP.\n\nMy IP address - Find your IP address fast! See details like geolocation, whois, DNS and blacklists. All about your IP."
+   },
+   "name": {
+      "message": "La meva adreça IP"
+   }
+}

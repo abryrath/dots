@@ -1,0 +1,11 @@
+{
+   "description": {
+      "message": "빨리 당신의 IP 주소를 찾아! 블랙 리스트, DNS, whois, 지리적 위치 같은 세부 정보를 참조 하십시오. 모두에 대 한 귀하의 IP."
+   },
+   "longdesc": {
+      "message": "이 응용 프로그램 표시 예를 들어 지리적 위치, ISP, DNS를, 당신의 IP 주소에 대 한 자세한 내용은 후이즈, 라우팅, 호스팅, 도메인 이웃, 있다, BGP ASN 정보. 기능: ISP, ASN, BGP, 서브넷, DNS 서버 및 역방향 DNS 같은 네트워크 정보의 요약. 당신의 IP 주소는 가장 인기 있는 DNS에 나열 되어 있는지 확인 합니다 안티 스팸 데이터베이스를 기반으로 합니다. 가장 인기 있는 blocklists에 IP 주소가 나열 되어 있는지 확인 합니다. 당신의 IP 주소와 관련 된 모든 공식 등록 정보 보기 동일한 IP 주소 (도메인 이웃)에 호스팅하는 다른 웹 사이트를 찾아. 당신의 IP 주소의 지리적 위치를 보여줍니다. 당신의 IP 주소는 국가의 요약.\n\nMy IP address - Find your IP address fast! See details like geolocation, whois, DNS and blacklists. All about your IP."
+   },
+   "name": {
+      "message": "내 IP 주소"
+   }
+}

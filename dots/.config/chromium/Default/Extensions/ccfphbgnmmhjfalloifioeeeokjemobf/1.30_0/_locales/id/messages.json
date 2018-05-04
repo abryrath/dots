@@ -1,0 +1,11 @@
+{
+   "description": {
+      "message": "Menemukan alamat IP Anda cepat! Lihat rincian seperti geolocation, whois, DNS dan blacklist. Semua tentang IP Anda."
+   },
+   "longdesc": {
+      "message": "Aplikasi ini menunjukkan informasi rinci tentang alamat IP, misalnya geolocation, ISP, DNS, whois, routing, hosting, domain tetangga, DNSBL, BGP dan ASN informasi. Fungsi: Ringkasan informasi jaringan seperti ISP, ASN, BGP, subnet, DNS server dan reverse DNS. Memeriksa jika alamat IP Anda tercantum pada DNS paling populer berbasis anti-spam database. Memeriksa untuk melihat jika alamat IP Anda tercantum pada Blocklists dengan yang paling populer. Lihat semua informasi registrasi resmi yang terkait dengan alamat IP Anda. Menemukan situs-situs lain yang di-host pada alamat IP yang sama (domain tetangga). Menunjukkan lokasi geografis dari alamat IP Anda. Ringkasan dari negara mana alamat IP terletak.\n\nMy IP address - Find your IP address fast! See details like geolocation, whois, DNS and blacklists. All about your IP."
+   },
+   "name": {
+      "message": "Alamat IP saya"
+   }
+}

@@ -1,0 +1,10 @@
+[cache]
+TrashCollectionMigrated=true
+
+[idle]
+IdleRidPath=/INBOX,imap://abryrath@gmail.com@imap.gmail.com/
+
+[network]
+Authentication=9
+ImapServer=imap.gmail.com
+UserName=abryrath@gmail.com

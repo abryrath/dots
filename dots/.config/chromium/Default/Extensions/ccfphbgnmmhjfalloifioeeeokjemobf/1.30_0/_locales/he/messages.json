@@ -1,0 +1,11 @@
+{
+   "description": {
+      "message": "למצוא את כתובת ה-IP שלך מהר! ראה פרטים כמו geolocation, whois, DNS ו- blacklists. הכל על ה-IP שלך."
+   },
+   "longdesc": {
+      "message": "יישום זה מציג מידע מפורט אודות כתובת ה-IP שלך, לדוגמה geolocation, ספק שירותי האינטרנט, DNS, whois, ניתוב, אירוח, מחשבים שכנים, DNSBL, BGP ו- ASN מידע. פונקציות: סיכום של מידע רשת כמו ISP, ASN, BGP, רשת, שרתי DNS ו- DNS הפוכה. תבדוק אם כתובת ה-IP שלך מופיע ברשימה על ה-DNS הפופולרי ביותר מבוסס מסדי נתונים של אנטי ספאם. בודק אם כתובת ה-IP שלך כתוב בשטר של blocklists הפופולרי ביותר. לראות את כל פרטי הרישום הרשמי הקשורים את כתובת ה-IP שלך. למצוא אתרי אינטרנט אחרים מתארח על אותה כתובת IP (מחשבים השכנים). מראה את המיקום הגיאוגרפי של כתובת ה-IP שלך. סיכום של המדינה שבו נמצא את כתובת ה-IP שלך.\n\nMy IP address - Find your IP address fast! See details like geolocation, whois, DNS and blacklists. All about your IP."
+   },
+   "name": {
+      "message": "כתובת ה-IP שלי"
+   }
+}

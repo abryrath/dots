@@ -1,0 +1,11 @@
+{
+   "description": {
+      "message": "Uw IP-adres snel vinden! Zie details zoals geolocation, whois, DNS- en zwarte lijsten. Alles over uw IP."
+   },
+   "longdesc": {
+      "message": "Deze toepassing bevat gedetailleerde informatie over uw IP-adres, bijvoorbeeld de geolocation, ISP, DNS, whois, routering, hosting, domein buren, DNSBL, BGP en ASN informatie. Functies: Samenvatting van de netwerkinformatie zoals ISP, ASN, BGP, subnet, DNS-servers en omgekeerde DNS. Controles om te zien of uw IP-adres wordt weergegeven op de meest populaire DNS gebaseerde anti-anti-spam databases. Controleert als uw IP-adres wordt weergegeven op de meest populaire blocklists. Zie alle officiële registratie informatie met betrekking tot uw IP-adres. Vind andere websites gehost op hetzelfde IP-adres (domein buren). Toont de geografische locatie van uw IP-adres. Samenvatting van het land waar uw IP-adres zich bevindt.\n\nMy IP address - Find your IP address fast! See details like geolocation, whois, DNS and blacklists. All about your IP."
+   },
+   "name": {
+      "message": "Mijn IP-adres"
+   }
+}

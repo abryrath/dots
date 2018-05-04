@@ -1,0 +1,11 @@
+{
+   "description": {
+      "message": "Vyhľadanie adresy IP rýchlo! Zobraziť detaily ako geolocation, whois, DNS a blacklisty. Všetkým o IP."
+   },
+   "longdesc": {
+      "message": "Táto aplikácia zobrazuje podrobné informácie o vašej IP adresy, napríklad geolocation, ISP, DNS, whois, smerovanie, hosting, doménu susedov, DNSBL, BGP a ASN informácie. Funkcie: Súhrn informácií o sieti ako ISP, ASN BGP, podsiete, DNS servery a reverzné DNS. Kontroly, aby zistili, či vaša IP adresa je uvedené na najpopulárnejšie DNS založené antispamové databázy. Skontroluje, či vaša IP adresa je uvedená na najpopulárnejšie blocklists. Pozrite si všetky úradné registračné informácie týkajúce sa vašej IP adresy. Nájsť iné stránky hostované na rovnakú IP adresu (doménu susedov). Ukazuje zemepisné umiestnenie vašej IP adresy. Zhrnutie z krajiny, kde sa nachádza vaša IP adresa.\n\nMy IP address - Find your IP address fast! See details like geolocation, whois, DNS and blacklists. All about your IP."
+   },
+   "name": {
+      "message": "Moja adresa IP"
+   }
+}

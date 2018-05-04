@@ -1,0 +1,11 @@
+{
+   "description": {
+      "message": "Leia oma IP aadressi Kiire! Vaata üksikasju nagu Geolokatsioon, whois, DNS ja mustades nimekirjades. Kõike teie IP."
+   },
+   "longdesc": {
+      "message": "See rakendus näitab üksikasjalikku teavet teie IP-aadressi nt Geolokatsioon ISP, DNS, whois, marsruut, hosting, domeeni naabreid, DNSBL, BGP ja ASN teavet. Tegevused: Kokkuvõte võrguteave nagu ISP, ASN, BGP, alamvõrgu, DNS serverite ja reverse DNS. Kontrollib, kas teie IP-aadress on loetletud populaarsemaid DNS alusel anti-spam andmebaase. Kontrollib, kas teie IP-aadress on loetletud populaarsemaid blocklists. Vaata kõiki registreerimise teave teie IP-aadress. Leia mud veebilehed toimus sama IP aadressi (domeeni naabrid). Näitab geograafilist asukohta IP-aadressi. Kokkuvõte IP-aadressi riigi.\n\nMy IP address - Find your IP address fast! See details like geolocation, whois, DNS and blacklists. All about your IP."
+   },
+   "name": {
+      "message": "Minu IP aadress"
+   }
+}

@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <script src="popup.js"></script>
+    
+    <style>
+        body,
+        body div table {
+            font-family: 'Open Sans', arial, sans-serif;
+            background-color: #E5E5E5;
+            font-size: 13px;
+            text-shadow: 0px 1px rgba(255, 255, 255, 0.5);
+            width: 180px;
+            height: 120px;
+        }
+        
+        #loader {
+            display: none;
+        }
+        
+        input[type="checkbox"],#help {
+            text-align: right;
+        }
+        
+        button {
+            width: 98%;
+        }
+        
+        input[type="checkbox"] {
+            float: right;
+            margin: 0px 6px 0px 0px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="loader">
+        <img src="ajax-loader.gif" width="16px" height="16px" name="loading" alt="searching and replacing...">
+    </div>
+    <div id="content">
+        <table>
+            <tr>
+                <td>
+                    <span class="clearable">
+			<label for="search">Search for</label>
+			<input class="data_field" name="search" id="search"></input>
+            </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="clearable">
+			<label for="replace">Replace with</label>
+			<input class="data_field" name="replace" id="replace"></input>
+            </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="case">Match Case?</label>
+                    <input name="case" id="case" type="checkbox"></input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="type">Input fields only?</label>
+                    <input name="type" id="type" type="checkbox"></input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="regex">Regular Expression?</label>
+                    <input name="regex" id="regex" type="checkbox"></input>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="next">Replace Next</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="all">Replace All</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+<div id="help"><a href="#">Help</a></div>
+
+</body>
+
+</html>

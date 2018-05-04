@@ -1,0 +1,35 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "scripts/jquery.js", "scripts/constants.js", "scripts/bs-tab-manager.js", "scripts/browserstackObject.js", "scripts/quick_launch.js", "scripts/bs-urls.js", "scripts/bs-ui-cookies.js", "scripts/bs-message-handler.js", "scripts/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "images/browser_icon.png",
+      "default_popup": "popup.html"
+   },
+   "commands": {
+      "_execute_browser_action": {
+         "suggested_key": {
+            "chromeos": "Ctrl+Shift+E",
+            "linux": "Ctrl+Shift+E",
+            "mac": "Command+Shift+E",
+            "windows": "Ctrl+Shift+E"
+         }
+      }
+   },
+   "description": "BrowserStack lets you test your websites straight from your browser on 700+ real mobile and desktop browsers.",
+   "externally_connectable": {
+      "matches": [ "*://*.browserstack.com/*" ]
+   },
+   "icons": {
+      "128": "images/icon_128.png",
+      "16": "images/icon_16.png",
+      "48": "images/icon_48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiFf9vUp64BUuiAgulP1aIPkiEOXGcOEUACRnDHC6c1yrT2xdPGlY2LPU9Ak/77JQbNNegpOk5vhQtGIwCs8jp3CLTQbieIkKm6ObrK1PTmVNaXXNlFX4REQgmmkFFcYkWws2WiFtU+HZBdkkkAXttwMa9zNuyQ9XNFtjBbHNqPQMJ2LtZRJzIFLdSrQtqlc42Ce5SytuaoF1YabwiOAelEYlcOTr4tCdI1exdNL6HBbpYhO8J+8JjtsNZZXuXIuIyXGKbnatbm9UjvzG56DpduQ8F8Pdp5HXMRqlpfmTuAxQnuB+kU5c+McaQj61b2ZzpLyal3zyha4jHPTlbPQhuQIDAQAB",
+   "manifest_version": 2,
+   "name": "BrowserStack",
+   "permissions": [ "tabs", "cookies", "*://*.browserstack.com/" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.0.2"
+}

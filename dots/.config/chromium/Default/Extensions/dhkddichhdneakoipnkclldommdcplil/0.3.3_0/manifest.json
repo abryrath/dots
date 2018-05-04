@@ -1,0 +1,18 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://www.zamzar.com/?s=cwa"
+      },
+      "urls": [ "http://www.zamzar.com/" ]
+   },
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "icons": {
+      "128": "icon_128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlwZ0Thz01WjTspSlyg5LGEScO3mFmBkELRw0R7lns5T6caZQgIkRbEMi2+DydYWUasLmfhXVnmS8PVZT+JeX50GbigPJu3hn3v5rPpE3YNxcMOtE9IIqrqZJJ3eTHZo2U827aA0Rm+oOT/6YKG+FduSlPPZ7QUpx2qB994OUbQCzI+dzlYtC3p0fX4KlQmdW2a8AAkz2v/N++1eh6Sm/dPs4B6sMOKBb+YvPCRMVu7lz3N7gvL8qfnTBlfwttzVebexwfuF6XvaGmCApdjrL9zJDH0GWwnpEBoNPCQdGeU7QyZvPtH/wz5nMxPdbu1HwrtMIe0gP21FDek+dk8L2EwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_appName__",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.3.3"
+}

@@ -1,0 +1,11 @@
+{
+   "description": {
+      "message": "Encontre o seu endereço IP rápido! Ver detalhes como localização geográfica, whois, DNS e listas negras. Tudo sobre o seu IP."
+   },
+   "longdesc": {
+      "message": "Este aplicativo mostra informações detalhadas sobre seu endereço IP, por exemplo, a localização geográfica, ISP, DNS, whois, roteamento, hospedagem, informações domínios vizinhos, DNSBL, BGP e ASN. Funções: Resumo as informações de rede como ISP, ASN, BGP, sub-rede, servidores DNS e DNS reverso. Verificações para ver se o seu endereço IP está listado no DNS mais populares com base em bancos de dados do anti-spam. Verifica se o seu endereço IP está listado no blocklists mais popular. Ver todas as informações de registo oficial relacionadas com seu endereço IP. Encontre outros sites hospedados no mesmo endereço IP (vizinhos de domínio). Mostra a localização geográfica do seu endereço IP. Resumo do país onde se encontra seu endereço IP.\n\nMy IP address - Find your IP address fast! See details like geolocation, whois, DNS and blacklists. All about your IP."
+   },
+   "name": {
+      "message": "Meu endereço IP"
+   }
+}

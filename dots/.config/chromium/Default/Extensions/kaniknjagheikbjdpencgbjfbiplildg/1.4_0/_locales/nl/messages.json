@@ -1,0 +1,10 @@
+{
+   "appDesc": {
+      "description": "The description of the application, displayed in the web store.",
+      "message": "uur. de tijd."
+   },
+   "appName": {
+      "description": "The title of the application, displayed in the web store.",
+      "message": "Awesome Time. 3D Clock."
+   }
+}
