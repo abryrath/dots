@@ -38,8 +38,8 @@ set_from_resource $color15 i3wm.color15    #e6e6e6
 
 # Keybinds {{{
 # start a terminal
-#bindsym $mod+Return exec xfce4-terminal --hide-menubar
-bindsym $mod+Shift+k exec konsole
+bindsym $mod+Return exec xfce4-terminal --hide-menubar
+# bindsym $mod+Shift+k exec konsole
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -218,33 +218,18 @@ gaps outer 5
 exec --no-startup-id compton --config $HOME/.config/compton/compton.conf &
 exec --no-startup-id emacs --daemon &
 
-# exec xfce4-session
+exec xfce4-session
 exec --no-startup-id dunst &
-#exec --no-startup-id $HOME/.local/bin/xrandr.sh &
+exec --no-startup-id $HOME/.local/bin/xrandr.sh &
 exec --no-startup-id compton &
-#exec --no-startup-id { nitrogen --restore || xsetroot -solid '#b0b0b0' } &
-#exec xfconfd &
-#exec xfsettingsd &
-#exec xfce4-volumed-pulse &
-#exec xfce4-power-manager &
+exec --no-startup-id { nitrogen --restore || xsetroot -solid '#b0b0b0' } &
+exec xfconfd &
+exec xfsettingsd &
+exec xfce4-volumed-pulse &
+exec xfce4-power-manager &
 # exec xfce4-panel &
 # }}}
 
-#bar {
-#    status_command i3blocks
-#}
-
-
-exec --no-startup-id wmctrl -c Plasma
-for_window [title="Desktop — Plasma"] kill; floating enable; border none
-
-## Avoid tiling popups, dropdown windows from plasma
-# for the first time, manually resize them, i3 will remember the setting for floating windows
-for_window [class="plasmashell"] floating enable;
-for_window [class="Plasma"] floating enable; border none
-for_window [title="plasma-desktop"] floating enable; border none
-for_window [title="win7"] floating enable; border none
-for_window [class="krunner"] floating enable; border none
-for_window [class="Kmix"] floating enable; border none
-for_window [class="Klipper"] floating enable; border none
-for_window [class="Plasmoidviewer"] floating enable; border none
+bar {
+    status_command i3blocks
+}
