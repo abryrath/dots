@@ -15,6 +15,7 @@
  '(default nil)
  '(ecb-options-version "2.50")
  '(ecb-source-path (quote (("/" "/"))))
+ '(ede-project-directories (quote ("/Users/abrrath/Code/c-socket-server")))
  '(global-linum-mode t)
  '(package-selected-packages
    (quote
@@ -96,6 +97,9 @@
 ;; w3m
 (load "~/.emacs.d/my-w3m.el")
 
+;; Semantic/CEDET
+(load "~/.emacs.d/my-semantic.el")
+
 ;; ECB - Emacs Code Browser
 (load "~/.emacs.d/my-ecb.el")
 
@@ -103,8 +107,25 @@
 (load "~/.emacs.d/my-compilation-commands.el")
 
 ;; macOS Path correction
-(when (memq window-system '(mac ns x))
-  (exec-path-from-shell-initialize))
+;(when (memq window-system '(mac ns x))
+;  (exec-path-from-shell-initialize))
+
+(setq exec-path
+      '(
+        "/usr/local/bin"
+        "/usr/bin"
+        "/usr/sbin"
+        "/usr/local/sbin"
+        "/bin"
+        "/sbin"
+        ))
+(setenv "PATH"
+        (concat
+         "/usr/local/bin" ":"
+         "/bin" ":"
+         "/sbin" ":"
+         "/usr/local/sbin" ":"
+         (getenv "PATH")))
 ;; Add firefox binary for macOS
 (when (string-equal system-type "darwin")
   (setq browse-url-firefox-program "/Applications/Firefox.app/Contents/MacOS/firefox"))

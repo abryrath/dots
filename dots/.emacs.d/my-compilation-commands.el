@@ -18,11 +18,17 @@
 (setq compilation-finish-function 'colorize-compilation)
 
 (defun dr-react-build-dev ()
-  "Run it on the current file."
+  "Run a WebPack dev build for the Disney Rewards ReactJS app."
   (interactive)
   (save-buffer)
   (shell-command "cd ~/Bitbucket/docker-disneyrewards/ && env PATH=/usr/local/bin:/usr/bin docker-compose run --rm react yarn build:dev &"))
 (global-set-key "\C-ct" 'dr-react-build-dev)
+
+(defun dr-react-build-prod ()
+  "Run a WebPack production build for the Disney Rewards ReactJS app."
+  (interactive)
+  (save-buffer)
+  (shell-command "cd ~/Bitbucket/docker-disneyrewards/ && env PATH=/usr/local/bin:/usr/bin docker-compose run --rm react yarn build &"))
 
 (defun dr-docker-up ()
   "Bring the DisneyRewards docker project up."
