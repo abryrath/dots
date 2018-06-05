@@ -218,7 +218,7 @@ gaps outer 5
 exec --no-startup-id compton --config $HOME/.config/compton/compton.conf &
 exec --no-startup-id emacs --daemon &
 
-# exec xfce4-session
+exec xfce4-session
 exec --no-startup-id dunst &
 exec --no-startup-id $HOME/.local/bin/xrandr.sh &
 exec --no-startup-id compton &
@@ -232,21 +232,4 @@ exec xfce4-power-manager &
 
 bar {
     status_command i3blocks
-    position                bottom
-    tray_output             primary
-    separator_symbol        "·"              
-    workspace_buttons       yes              
-    strip_workspace_numbers yes              
-    
-    colors {
-           background  #212121
-           statusline  #DDDDDD
-           separator   #666666
-           # class             border  backgr. text
-           focused_workspace   #2B83A6 #2B83A6 #FFFFFF
-           active_workspace    #212121 #212121 #FFFFFF
-           inactive_workspace  #212121 #212121 #86888C
-           urgent_workspace    #D64E4E #D64E4E #FFFFFF
-    }
-    # -c $HOME/.i3blocks.conf
 }

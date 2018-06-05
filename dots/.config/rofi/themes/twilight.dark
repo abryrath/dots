@@ -1,7 +1,0 @@
-           /* bg        fg       bgalt    h_bg     h_fg */
-color-normal: "#1e1e1e, #a7a7a7, #1e1e1e, #afc4db, #1e1e1e";
-color-urgent: "#f1fa8c, #44475a, #8BE9FD, #44475a, #FF7AC6";
-color-active: "#f1fa8c, #44475a, #8BE9FD, #44475a, #FF7AC6";
-           /* bg        border   sep */
-color-window: "#5f5a60, #acf4db, #f1fa8c";
-}
