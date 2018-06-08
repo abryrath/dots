@@ -99,5 +99,5 @@ type rustc >/dev/null 2>&1 && {
   export PATH="$PATH:$HOME/.yarn/bin"
 }
 
-export PATH="$PATH:/usr/local/sbin"
+export PATH="$HOME/bin:$PATH:/usr/local/sbin"
 export MANPATH="$MANPATH:/usr/local/share/man:/usr/share/man"

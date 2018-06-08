@@ -14,7 +14,7 @@
 #       'stdout' or 'stderr' can be used instead of an actual filepath.
 #
 
-chunkc core::log_file stdout
+chunkc core::log_file ~/.test
 
 #
 # NOTE: specify the desired level of logging.
@@ -42,11 +42,11 @@ chunkc core::hotload 0
 #
 
 chunkc set global_desktop_mode           bsp
-chunkc set global_desktop_offset_top     20
-chunkc set global_desktop_offset_bottom  20
-chunkc set global_desktop_offset_left    20
-chunkc set global_desktop_offset_right   20
-chunkc set global_desktop_offset_gap     15
+chunkc set global_desktop_offset_top     2
+chunkc set global_desktop_offset_bottom  2
+chunkc set global_desktop_offset_left    2
+chunkc set global_desktop_offset_right   2
+chunkc set global_desktop_offset_gap     2
 
 #
 # NOTE: syntax for desktop-specific settings
@@ -60,8 +60,8 @@ chunkc set global_desktop_offset_gap     15
 # chunkc set 3_desktop_offset_gap          30
 #
 
-chunkc set desktop_padding_step_size     10.0
-chunkc set desktop_gap_step_size         5.0
+chunkc set desktop_padding_step_size     2.0
+chunkc set desktop_gap_step_size         2.0
 
 chunkc set bsp_spawn_left                1
 chunkc set bsp_optimal_ratio             1.618
@@ -116,7 +116,7 @@ chunkc set ffm_bypass_modifier           fn
 chunkc core::load border.so
 chunkc core::load tiling.so
 chunkc core::load ffm.so
-
+chunkc core::load blur.so
 #
 # NOTE: sample rules for the tiling plugin
 #

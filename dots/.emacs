@@ -19,7 +19,7 @@
  '(global-linum-mode t)
  '(package-selected-packages
    (quote
-    (ecb vue-mode material-theme markdown-mode+ flymd apache-mode zenburn-theme buffer-move matlab-mode sublime-themes systemd csv-mode w3m fish-mode ini-mode smart-mode-line-powerline-theme smart-mode-line dracula-theme auctex rjsx-mode flymake-jshint treemacs gulp-task-runner multi-term vcl-mode json-mode docker-compose-mode dockerfile-mode flymake-php editorconfig ample-zen-theme python-pylint web-mode s rust-mode robe python-mode python-django projectile php+-mode paredit magit lua-mode helm flycheck elixir-mode company cider ample-theme airline-themes))))
+    (diffview ecb vue-mode material-theme markdown-mode+ flymd apache-mode zenburn-theme buffer-move matlab-mode sublime-themes systemd csv-mode w3m fish-mode ini-mode smart-mode-line-powerline-theme smart-mode-line dracula-theme auctex rjsx-mode flymake-jshint treemacs gulp-task-runner multi-term vcl-mode json-mode docker-compose-mode dockerfile-mode flymake-php editorconfig ample-zen-theme python-pylint web-mode s rust-mode robe python-mode python-django projectile php+-mode paredit magit lua-mode helm flycheck elixir-mode company cider ample-theme airline-themes))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -72,10 +72,11 @@
 
 ;; terminal settings
 (require 'multi-term)
-(if
-    (file-exists-p "/usr/bin/zsh")
+(if (file-exists-p "/usr/bin/zsh")
     (setq multi-term-program "/usr/bin/zsh")
-  (setq multi-term-program "/bin/zsh"))
+  (if (file-exists-p "/bin/zsh")
+      (setq multi-term-program "/bin/zsh")
+    (if (file-exists-p "/bin/bash") (setq multi-term-program "/bin/bash"))))
 
 (add-to-list 'custom-theme-load-path ".emacs.d/")
 (require 'material-theme)
@@ -85,6 +86,8 @@
 
 ;; Window movement
 (load "~/.emacs.d/my-windmove.el")
+;; Sunrise Commander
+(load "~/.emacs.d/sunrise-commander.el")
 
 ;; Ruby
 (load "~/.emacs.d/my-ruby.el")
@@ -125,13 +128,20 @@
          "/bin" ":"
          "/sbin" ":"
          "/usr/local/sbin" ":"
+         (getenv "HOME") "/.cargo/bin" ":"
          (getenv "PATH")))
+;;(when (string-equal system-type "darwin")
+(setenv "RUST_SRC_PATH" (concat (getenv "HOME") "/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src"))
+;)
+;(when (string-equal system-type "linux")
+;  (setenv "RUST_SRC_PATH" (concat (get-env "HOME") "/.rustup/toolchains/stable-x86_64-unknown-linux/lib/rustlib/src/rust/src")))
+
 ;; Add firefox binary for macOS
 (when (string-equal system-type "darwin")
   (setq browse-url-firefox-program "/Applications/Firefox.app/Contents/MacOS/firefox"))
 
 (when (eq system-type 'darwin)
-  (set-face-attribute 'default nil :family "Iosevka Nerd Font Mono")
+  (set-face-attribute 'default nil :family "Envy Code R")
   )
 
 (provide '.emacs)

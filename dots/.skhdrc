@@ -70,8 +70,8 @@
 # default, test < cmd - return : open -na /Applications/Terminal.app
 
 # open terminal, blazingly fast compared to iTerm/Hyper
-cmd - return : /Applications/Kitty.app/Contents/MacOS/kitty --single-instance
-
+#cmd - return : /Applications/Kitty.app/Contents/MacOS/kitty --single-instance
+cmd - return : /Applications/iTerm.app/Contents/MacOS/iTerm2 
 # open qutebrowser
 cmd + shift - return : ~/Scripts/qtb.sh
 
@@ -139,12 +139,13 @@ shift + lalt - 6 : chunkc tiling::window --send-to-desktop 6
 shift + cmd - x : chunkc tiling::window --send-to-desktop $(chunkc get _last_active_desktop); chunkc tiling::desktop --focus $(chunkc get _last_active_desktop)
 shift + cmd - z : chunkc tiling::window --send-to-desktop prev; chunkc tiling::desktop --focus prev
 shift + cmd - c : chunkc tiling::window --send-to-desktop next; chunkc tiling::desktop --focus next
-shift + cmd - 1 : chunkc tiling::window --send-to-desktop 1; chunkc tiling::desktop --focus 1
-shift + cmd - 2 : chunkc tiling::window --send-to-desktop 2; chunkc tiling::desktop --focus 2
-shift + cmd - 3 : chunkc tiling::window --send-to-desktop 3; chunkc tiling::desktop --focus 3
-shift + cmd - 4 : chunkc tiling::window --send-to-desktop 4; chunkc tiling::desktop --focus 4
-shift + cmd - 5 : chunkc tiling::window --send-to-desktop 5; chunkc tiling::desktop --focus 5
-shift + cmd - 6 : chunkc tiling::window --send-to-desktop 6; chunkc tiling::desktop --focus 6
+# Commenting these for now, as they interfere with screenshot commandsd
+#shift + cmd - 1 : chunkc tiling::window --send-to-desktop 1; chunkc tiling::desktop --focus 1
+#shift + cmd - 2 : chunkc tiling::window --send-to-desktop 2; chunkc tiling::desktop --focus 2
+#shift + cmd - 3 : chunkc tiling::window --send-to-desktop 3; chunkc tiling::desktop --focus 3
+#shift + cmd - 4 : chunkc tiling::window --send-to-desktop 4; chunkc tiling::desktop --focus 4
+#shift + cmd - 5 : chunkc tiling::window --send-to-desktop 5; chunkc tiling::desktop --focus 5
+#shift + cmd - 6 : chunkc tiling::window --send-to-desktop 6; chunkc tiling::desktop --focus 6
 # shift + cmd - 7 : chunkc tiling::window --send-to-desktop 7; chunkc tiling::desktop --focus 7
 
 # focus monitor
@@ -226,3 +227,6 @@ ctrl + lalt - d : chunkc tiling::desktop --layout float
 ctrl + lalt - w : chunkc tiling::desktop --deserialize ~/.chunkwm_layouts/dev_1
 
 ctrl + lalt - p : echo "$(date): received ctrl + lalt - p" >> ~/.test
+
+ctrl + lalt - r : bash -c 'echo "Killing chunkwm..." >> ~/.test 2>&1 && pkill chunk >> ~/.test 2>&1 && echo "Starting ChunkWM..." >> ~/.test 2>&1 && exec chunkwm --config $HOME/.chunkwmrc&'
+lshift + alt - e : /usr/local/opt/emacs/bin/emacsclient -c $HOME &
