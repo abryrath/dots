@@ -1,5 +1,12 @@
+[Desktop Entry]
+DefaultProfile=
+
+[Favorite Profiles]
+Favorites=
+
 [MainWindow]
-Height 2160=1236
-State=AAAA/wAAAAD9AAAAAAAAAw4AAAS6AAAABAAAAAQAAAAIAAAACPwAAAAA
+Height 2160=479
+MenuBar=Enabled
+State=AAAA/wAAAAD9AAAAAAAAA6wAAAHOAAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
-Width 3840=782
+Width 3840=940

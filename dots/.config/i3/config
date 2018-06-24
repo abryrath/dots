@@ -38,8 +38,8 @@ set_from_resource $color15 i3wm.color15    #e6e6e6
 
 # Keybinds {{{
 # start a terminal
-bindsym $mod+Return exec xfce4-terminal --hide-menubar
-# bindsym $mod+Shift+k exec konsole
+# bindsym $mod+Return exec xfce4-terminal --hide-menubar
+bindsym $mod+Shift+k exec konsole --hide-menubar
 
 # kill focused window
 bindsym $mod+Shift+q kill
