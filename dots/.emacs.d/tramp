@@ -1,43 +1,6 @@
-;; -*- emacs-lisp -*- <18/03/01 14:23:40 /Users/abrrath/.emacs.d/tramp>
+;; -*- emacs-lisp -*- <18/06/04 11:12:04 /Users/abrrath/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; You can delete it, forcing Tramp to reapply the checks.
 
-((["sudo" "root" "uscltpww6237.global.publicisgroupe.net" nil nil]
-  ("uname" "Darwin 15.6.0")
-  ("locale" "LC_ALL=en_US.UTF-8")
-  ("test" "test")
-  ("remote-path"
-   ("/usr/bin" "/bin" "/usr/sbin" "/sbin" "/usr/local/bin" "/usr/local/sbin"))
-  ("remote-shell" "/bin/sh")
-  ("file-exists" "test -e")
-  ("perl-file-spec" t)
-  ("perl-cwd-realpath" t)
-  ("perl" "\\perl")
-  ("readlink" nil)
-  ("stat" nil)
-  ("id" "/usr/bin/id")
-  ("gid-integer" 0)
-  ("gid-string" "wheel")
-  ("uid-integer" 0)
-  ("git" "\\git"))
- (["ssh" "root" "23.253.159.222" nil nil]
-  ("uname" "Linux 3.10.0-514.21.1.el7.x86_64")
-  ("locale" "LC_ALL=en_US.utf8")
-  ("test" "test")
-  ("remote-path"
-   ("/usr/bin" "/bin" "/sbin" "/usr/sbin" "/usr/local/bin" "/usr/local/sbin"))
-  ("remote-shell" "/bin/sh")
-  ("file-exists" "test -e")
-  ("perl-file-spec" t)
-  ("perl-cwd-realpath" t)
-  ("perl" "\\perl")
-  ("ls" "/usr/bin/ls --color=never")
-  ("ls-dired" t)
-  ("stat" nil)
-  ("id" "/usr/bin/id")
-  ("gid-integer" 0)
-  ("readlink" "\\readlink")
-  ("gid-string" "root")
-  ("uid-integer" 0)
-  ("env-u-option" t)
-  ("git" "\\git")))
+(((tramp-file-name "sudo" "root" nil "uscltpww6237.global.publicisgroupe.net" nil nil nil)
+  nil))
