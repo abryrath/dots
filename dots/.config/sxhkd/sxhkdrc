@@ -4,8 +4,9 @@
 
 # terminal emulator
 super + Return
-	konsole --hide-menubar --profile Breeze
-#	urxvt
+      st
+#	konsole --hide-menubar --profile Breeze
+
 
 # program launcher
 super + @space
