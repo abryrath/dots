@@ -38,9 +38,9 @@ module-margin-right = 1
 font-0 = Envy Code R:pixelsize=10;1
 font-1 = MaterialIcons:pixelsize=16;antialias=false;4
 
-modules-left = volume
-modules-center = bspwm
-modules-right = date
+modules-left = volume menu-actions bspwm
+modules-center = xwindow
+modules-right = wireless-network battery date
 
 tray-position = right
 tray-padding = 2
@@ -51,8 +51,9 @@ wm-restack = bspwm
 # BSPWM module configuration
 [module/bspwm]
 type = internal/bspwm
+format = " <label-state> <label-mode>"
 label-focused = %name%
-label-focused-background = ${colors.green-alt}
+label-focused-background = ${colors.blue}
 label-focused-underline = ${colors.red-alt}
 label-focused-padding = 1
 label-occupied = %name%
@@ -93,7 +94,7 @@ bar-volume-empty-foreground = ${xrdb:color0}
 
 
 [module/date]
-type =internal/date
+type = internal/date
 interval = 5.0
 date = 
 date-alt = " %Y-%m-%d"
@@ -102,3 +103,57 @@ time-alt = %H:%M:%S
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground}
 label = %date% %time%
+
+[module/xwindow]
+type = internal/xwindow
+
+[module/menu-actions]
+type = custom/menu
+
+label-open = Apps
+label-xlose = x
+label-separator = | 
+
+menu-0-0 = Power
+menu-0-0-exec = menu-open-1
+menu-0-1 = Actions
+menu-0-1-exec = menu-open-2
+
+menu-1-0 = Logout
+menu-1-0-exec = pkill X > /dev/null 2>&1
+menu-1-1 = Shutdown
+menu-1-1-exec = sudo systemctl poweroff
+menu-1-2 = Reboot
+menu-1-2-exex = sudo systemctl reboot
+
+menu-2-0 = Scrot
+menu-2-0-exec = scrot &
+
+[module/wired-network]
+type = internal/network
+
+[module/wireless-network]
+type = internal/network
+interface = wlp107s0
+interval = 3.0
+ping-interval = 5
+
+format-connected = <ramp-signal> <label-connected>
+label-connected = %essid% %downspeed:9%
+ramp-signal-0 = 
+
+
+[module/battery]
+type = internal/battery
+battery = BAT1
+adapter = ADP1
+
+time-format = %H:%M
+format-charging = <animation-charging> <label-charging>
+format-discharging = <ramp-capacity> <label-discharging>
+
+label-charging = Charging %percentage%%
+label-discharging = Discharging %percentage%%
+
+ramp-capacity-0 = 
+animation-charging-0 = 

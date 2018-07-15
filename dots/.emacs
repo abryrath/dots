@@ -64,7 +64,8 @@
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
-;;(package-initialize)
+
+(package-initialize)
 
 (load "~/.emacs.d/my-packages.el")
 (load "~/.emacs.d/my-load-packages.el")
@@ -103,7 +104,7 @@
 (load "~/.emacs.d/my-semantic.el")
 
 ;; ECB - Emacs Code Browser
-(load "~/.emacs.d/my-ecb.el")
+;;(load "~/.emacs.d/my-ecb.el")
 
 ;; Custom compilation commands
 (load "~/.emacs.d/my-compilation-commands.el")
