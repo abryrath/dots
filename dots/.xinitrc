@@ -37,11 +37,16 @@ fi
 #xterm -geometry 80x50+494+51 &
 #xterm -geometry 80x20+494-0 &
 #exec xterm -geometry 80x66+0+0 -name login
+
+if [[ $(hostname) == 'arch-yoga' ]]; then
+    xrandr --output eDP-1 --mode 2880x1620
+fi
+
 exec compton --config ~/.config/compton/compton.conf&
 exec nitrogen --restore &
 exec sxhkd &
 exec bspwm &
-
-exec konsole --hide-menubar --profile Breeze
+exec polybar x &
+exec st
 
 
