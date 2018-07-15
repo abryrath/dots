@@ -41,7 +41,8 @@ exec compton --config ~/.config/compton/compton.conf&
 exec nitrogen --restore &
 exec sxhkd &
 exec bspwm &
-
-exec konsole --hide-menubar --profile Breeze
+exec polybar x &
+exec st
+#exec konsole --hide-menubar --profile Breeze
 
 

@@ -1,14 +1,26 @@
 [colors]
-background = ${xrdb:background:#222}
-foreground = ${xrdb:foreground:#222}
-foreground-alt = #555;
-primary = #ffb52a
-secondary = #e60053
-alert = #bd2c40
+background = ${xrdb:background:#282A36}
+foreground = ${xrdb:foreground:#F8F8F2}
+
+black = ${xrdb:color0}
+black-alt = ${xrdb:color8}
+red = ${xrdb:color1}
+red-alt = ${xrdb:color9}
+green = ${xrdb:color2}
+green-alt = ${xrdb:color10}
+yellow = ${xrdb:color3}
+yellow-alt = ${xrdb:color11}
+blue = ${xrdb:color4}
+blue-alt = ${xrdb:color12}
+magenta = ${xrdb:color5}
+magenta-alt = ${xrdb:color13}
+cyan = ${xrdb:color6}
+cyan-alt = ${xrdb:color14}
+white = ${xrdb:color7}
+white-alt = ${xrdb:color15}
 
 
 # Main bar configuration
-
 [bar/x]
 width = 100%
 height = 32
@@ -16,20 +28,19 @@ offset-x = 0
 offset-y = 0
 radius = 0.0
 fixed-center = true
-background = ${xrdb:background}
-foreground = ${xrdb:foreground:#ff000000}
+background = ${colors.background}
+foreground = ${colors.foreground}
 padding-left = 1
 padding-right = 1
 module-margin-left = 1
 module-margin-right = 1
 
 font-0 = Envy Code R:pixelsize=10;1
-font-1 = MaterialIcons:pixelsize=16;antialias=false;2
+font-1 = MaterialIcons:pixelsize=16;antialias=false;4
 
 modules-left = volume
 modules-center = bspwm
 modules-right = date
-#wlan cpu date
 
 tray-position = right
 tray-padding = 2
@@ -38,21 +49,20 @@ wm-restack = bspwm
 
 
 # BSPWM module configuration
-
 [module/bspwm]
 type = internal/bspwm
 label-focused = %name%
-label-focused-background = ${xrdb:color1:#ff0000}
-label-focused-underline = ${xrdb:color9:#ff0000}
+label-focused-background = ${colors.green-alt}
+label-focused-underline = ${colors.red-alt}
 label-focused-padding = 1
 label-occupied = %name%
-label-occupied-foreground = ${xrdb:color1:#ff000000}
+label-occupied-foreground = ${colors.blue}
 label-occupied-padding = 1
 label-urgent = %name%
-label-urgent-background = ${xrdb:color1:#ff0000}
+label-urgent-background = ${colors.red}
 label-urgent-padding = 1
 label-empty = %name%
-label-empty-foreground = ${xrdb:foreground:#ff0000}
+label-empty-foreground = ${colors.foreground}
 label-empty-padding = 1
 
 
@@ -60,9 +70,9 @@ label-empty-padding = 1
 type = internal/volume
 form-volume = <label-volume> <bar-volume>
 label-volume = " "
-label-volume-foreground = ${colors.foreground-alt}
+label-volume-foreground = ${colors.foreground}
 format-muted-prefix = " "
-format-muted-foreground = ${colors.foreground-alt}
+format-muted-foreground = ${colors.foreground}
 label-muted = sound muted
 bar-volume-width = 10
 bar-volume-foreground-0 = ${xrdb:color2}
@@ -73,11 +83,11 @@ bar-volume-foreground-4 = ${xrdb:color2}
 bar-volume-foreground-5 = ${xrdb:color3}
 bar-volume-foreground-6 = ${xrdb:color1}
 bar-volume-gradient = false
-bar-volume-indicator = -
+bar-volume-indicator = x
 bar-volume-indicator-font = 0
-bar-volume-fill = -
+bar-volume-fill = x
 bar-volume-fill-font = 0
-bar-volume-empty = -
+bar-volume-empty = x
 bar-volume-empty-font = 0
 bar-volume-empty-foreground = ${xrdb:color0}
 
@@ -85,10 +95,10 @@ bar-volume-empty-foreground = ${xrdb:color0}
 [module/date]
 type =internal/date
 interval = 5.0
-date =
+date = 
 date-alt = " %Y-%m-%d"
 time = %H:%M
 time-alt = %H:%M:%S
 format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-foreground = ${colors.foreground}
 label = %date% %time%
