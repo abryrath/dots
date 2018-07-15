@@ -1,0 +1,94 @@
+[colors]
+background = ${xrdb:background:#222}
+foreground = ${xrdb:foreground:#222}
+foreground-alt = #555;
+primary = #ffb52a
+secondary = #e60053
+alert = #bd2c40
+
+
+# Main bar configuration
+
+[bar/x]
+width = 100%
+height = 32
+offset-x = 0
+offset-y = 0
+radius = 0.0
+fixed-center = true
+background = ${xrdb:background}
+foreground = ${xrdb:foreground:#ff000000}
+padding-left = 1
+padding-right = 1
+module-margin-left = 1
+module-margin-right = 1
+
+font-0 = Envy Code R:pixelsize=10;1
+font-1 = MaterialIcons:pixelsize=16;antialias=false;2
+
+modules-left = volume
+modules-center = bspwm
+modules-right = date
+#wlan cpu date
+
+tray-position = right
+tray-padding = 2
+
+wm-restack = bspwm
+
+
+# BSPWM module configuration
+
+[module/bspwm]
+type = internal/bspwm
+label-focused = %name%
+label-focused-background = ${xrdb:color1:#ff0000}
+label-focused-underline = ${xrdb:color9:#ff0000}
+label-focused-padding = 1
+label-occupied = %name%
+label-occupied-foreground = ${xrdb:color1:#ff000000}
+label-occupied-padding = 1
+label-urgent = %name%
+label-urgent-background = ${xrdb:color1:#ff0000}
+label-urgent-padding = 1
+label-empty = %name%
+label-empty-foreground = ${xrdb:foreground:#ff0000}
+label-empty-padding = 1
+
+
+[module/volume]
+type = internal/volume
+form-volume = <label-volume> <bar-volume>
+label-volume = " "
+label-volume-foreground = ${colors.foreground-alt}
+format-muted-prefix = " "
+format-muted-foreground = ${colors.foreground-alt}
+label-muted = sound muted
+bar-volume-width = 10
+bar-volume-foreground-0 = ${xrdb:color2}
+bar-volume-foreground-1 = ${xrdb:color2}
+bar-volume-foreground-2 = ${xrdb:color2}
+bar-volume-foreground-3 = ${xrdb:color2}
+bar-volume-foreground-4 = ${xrdb:color2}
+bar-volume-foreground-5 = ${xrdb:color3}
+bar-volume-foreground-6 = ${xrdb:color1}
+bar-volume-gradient = false
+bar-volume-indicator = -
+bar-volume-indicator-font = 0
+bar-volume-fill = -
+bar-volume-fill-font = 0
+bar-volume-empty = -
+bar-volume-empty-font = 0
+bar-volume-empty-foreground = ${xrdb:color0}
+
+
+[module/date]
+type =internal/date
+interval = 5.0
+date =
+date-alt = " %Y-%m-%d"
+time = %H:%M
+time-alt = %H:%M:%S
+format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
+label = %date% %time%
