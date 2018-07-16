@@ -40,13 +40,14 @@ fi
 
 if [[ $(hostname) == 'arch-yoga' ]]; then
     xrandr --output eDP-1 --mode 2880x1620
+    bar="x"
 fi
 
 exec compton --config ~/.config/compton/compton.conf&
 exec nitrogen --restore &
 exec sxhkd &
-exec bspwm &
-exec polybar x &
-exec st
+exec polybar $bar -r &
+exec st &
+exec bspwm
 
 

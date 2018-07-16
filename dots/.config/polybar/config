@@ -110,8 +110,8 @@ type = internal/xwindow
 [module/menu-actions]
 type = custom/menu
 
-label-open = Apps
-label-xlose = x
+label-open = abry
+label-close = x
 label-separator = | 
 
 menu-0-0 = Power
