@@ -38,6 +38,7 @@ fi
 #xterm -geometry 80x20+494-0 &
 #exec xterm -geometry 80x66+0+0 -name login
 
+bar="x"
 if [[ $(hostname) == 'arch-yoga' ]]; then
     xrandr --output eDP-1 --mode 2880x1620
     bar="x"

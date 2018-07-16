@@ -35,10 +35,10 @@ padding-right = 1
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = Envy Code R:pixelsize=10;1
-font-1 = MaterialIcons:pixelsize=16;antialias=false;4
+font-0 = Envy Code R:pixelsize=10;3
+font-1 = MaterialIcons:pixelsize=16;antialias=false;6
 
-modules-left = volume menu-actions bspwm
+modules-left = menu-actions volume bspwm
 modules-center = xwindow
 modules-right = wireless-network battery date
 
@@ -47,48 +47,71 @@ tray-padding = 2
 
 wm-restack = bspwm
 
+line-size = 4
+line-color = ${colors.cyan}
+border-color = ${colors.black}
+border-size = 4
+separator = >
 
 # BSPWM module configuration
 [module/bspwm]
 type = internal/bspwm
-format = " <label-state> <label-mode>"
+format-prefix = bspwm
+format-prefix-foreground = ${colors.cyan}
+format-prefix-padding = 2
+
+format = <label-state> <label-mode>
+
+label-monocle = [mon]
+label-tiled = [tiled]
+label-fullscreen = [fs]
+label-floating = [floating]
+label-locked = [locked]
+label-sticky = [sticky]
+label-private = [priv]
+
 label-focused = %name%
-label-focused-background = ${colors.blue}
-label-focused-underline = ${colors.red-alt}
+#label-focused-background = ${colors.black}
+#label-focused-underline = ${colors.red-alt}
 label-focused-padding = 1
+label-focused-foreground = ${colors.green}
 label-occupied = %name%
-label-occupied-foreground = ${colors.blue}
+label-occupied-foreground = ${colors.foreground}
+#blue}
 label-occupied-padding = 1
 label-urgent = %name%
 label-urgent-background = ${colors.red}
 label-urgent-padding = 1
 label-empty = %name%
-label-empty-foreground = ${colors.foreground}
+label-empty-foreground = ${colors.black-alt}
+#foreground}
 label-empty-padding = 1
 
 
 [module/volume]
 type = internal/volume
-form-volume = <label-volume> <bar-volume>
+format-volume = <label-volume> <bar-volume>
 label-volume = " "
-label-volume-foreground = ${colors.foreground}
+label-volume-foreground = ${colors.black-alt}
+#${colors.foreground}
 format-muted-prefix = " "
 format-muted-foreground = ${colors.foreground}
-label-muted = sound muted
+label-muted = [muted]
+label-muted-width = 15
 bar-volume-width = 10
-bar-volume-foreground-0 = ${xrdb:color2}
-bar-volume-foreground-1 = ${xrdb:color2}
-bar-volume-foreground-2 = ${xrdb:color2}
-bar-volume-foreground-3 = ${xrdb:color2}
-bar-volume-foreground-4 = ${xrdb:color2}
-bar-volume-foreground-5 = ${xrdb:color3}
-bar-volume-foreground-6 = ${xrdb:color1}
+bar-volume-foreground-0 = ${colors.green}
+bar-volume-foreground-1 = ${colors.green}
+bar-volume-foreground-2 = ${colors.green}
+bar-volume-foreground-3 = ${colors.green}
+bar-volume-foreground-4 = ${colors.green}
+bar-volume-foreground-5 = ${colors.yellow}
+bar-volume-foreground-6 = ${colors.red}
 bar-volume-gradient = false
-bar-volume-indicator = x
+bar-volume-indicator = /
 bar-volume-indicator-font = 0
-bar-volume-fill = x
+bar-volume-fill = /
 bar-volume-fill-font = 0
-bar-volume-empty = x
+bar-volume-empty = " "
 bar-volume-empty-font = 0
 bar-volume-empty-foreground = ${xrdb:color0}
 
@@ -101,7 +124,8 @@ date-alt = " %Y-%m-%d"
 time = %H:%M
 time-alt = %H:%M:%S
 format-prefix = " "
-format-prefix-foreground = ${colors.foreground}
+format-prefix-foreground = ${colors.black-alt}
+#${colors.foreground}
 label = %date% %time%
 
 [module/xwindow]
@@ -110,24 +134,50 @@ type = internal/xwindow
 [module/menu-actions]
 type = custom/menu
 
-label-open = abry
-label-close = x
-label-separator = | 
+expand-right = true
 
-menu-0-0 = Power
+border-size = 2
+border-color = ${colors.white}
+border-left = ${colors.white}
+
+format-padding = 2
+format-prefix = Arch Linux
+format-prefix-foreground = ${colors.cyan}
+
+label-open = "abry"
+label-open-margin = 2
+label-open-padding = 2
+label-open-underline = ${colors.blue}
+
+label-close = close
+label-close-margin-left = 2
+label-close-padding = 2
+label-close-underline = ${colors.blue}
+
+label-separator = " | "
+label-separator-padding = 0
+label-separator-margin = 0
+
+menu-0-0 = power
+menu-0-0-underline = ${colors.red}
 menu-0-0-exec = menu-open-1
-menu-0-1 = Actions
+menu-0-1 = actions
+menu-0-1-underline = ${colors.green}
 menu-0-1-exec = menu-open-2
 
-menu-1-0 = Logout
+menu-1-0 = logout
 menu-1-0-exec = pkill X > /dev/null 2>&1
-menu-1-1 = Shutdown
+menu-1-0-underline = ${colors.red}
+menu-1-1 = shutdown
 menu-1-1-exec = sudo systemctl poweroff
-menu-1-2 = Reboot
-menu-1-2-exex = sudo systemctl reboot
+menu-1-1-underline = ${colors.red}
+menu-1-2 = reboot
+menu-1-2-exec = sudo systemctl reboot
+menu-1-2-underline = ${colors.red}
 
-menu-2-0 = Scrot
+menu-2-0 = scrot
 menu-2-0-exec = scrot &
+menu-2-0-underline = ${colors.green}
 
 [module/wired-network]
 type = internal/network
@@ -157,3 +207,10 @@ label-discharging = Discharging %percentage%%
 
 ramp-capacity-0 = 
 animation-charging-0 = 
+
+[settings]
+format-foreground = ${colors.foreground}
+#format-underline = ${colors.background}
+#format-overline = ${colors.black}
+format-padding = 2
+format-margin = 2
