@@ -23,7 +23,7 @@ white-alt = ${xrdb:color15}
 # Main bar configuration
 [bar/x]
 width = 100%
-height = 32
+height = 28
 offset-x = 0
 offset-y = 0
 radius = 0.0
@@ -35,12 +35,17 @@ padding-right = 1
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = Envy Code R:pixelsize=10;3
-font-1 = MaterialIcons:pixelsize=16;antialias=false;6
+font-0 = EnvyCodeR:size=10;1
+font-1 = Font\ Awesome\ 5\ Free:size=15;0
+font-2 = Wuncon\ Siji:size=15;0
+font-3 = Hack\ Nerd\ Font:size=16;2
+
+#font-1 = "Hack Nerd Font;size=22;antialias=true;4"
+#font-1 = MaterialIcons:pixelsize=16;antialias=false;6
 
 modules-left = menu-actions volume bspwm
 modules-center = xwindow
-modules-right = wireless-network battery date
+modules-right = wireless-network battery cpu mem date
 
 tray-position = right
 tray-padding = 2
@@ -50,8 +55,8 @@ wm-restack = bspwm
 line-size = 4
 line-color = ${colors.cyan}
 border-color = ${colors.black}
-border-size = 4
-separator = >
+border-size = 0
+separator = |
 
 # BSPWM module configuration
 [module/bspwm]
@@ -65,37 +70,52 @@ format = <label-state> <label-mode>
 label-monocle = [mon]
 label-tiled = [tiled]
 label-fullscreen = [fs]
-label-floating = [floating]
+label-floating = [float]
 label-locked = [locked]
 label-sticky = [sticky]
 label-private = [priv]
 
-label-focused = %name%
+ws-icon-0 = term;
+ws-icon-1 = emacs;
+ws-icon-2 = chrome;
+ws-icon-3 = spotify;
+ws-icon-4 = web;hi
+ws-icon-default = hi
+
+label-focused = %icon%
+label-focused-font = 2
 #label-focused-background = ${colors.black}
 #label-focused-underline = ${colors.red-alt}
 label-focused-padding = 1
 label-focused-foreground = ${colors.green}
-label-occupied = %name%
+
+label-occupied = %icon%
+#%name%
 label-occupied-foreground = ${colors.foreground}
 #blue}
 label-occupied-padding = 1
-label-urgent = %name%
+
+label-urgent = %icon%
 label-urgent-background = ${colors.red}
 label-urgent-padding = 1
-label-empty = %name%
+
+label-empty = %icon%
 label-empty-foreground = ${colors.black-alt}
 #foreground}
 label-empty-padding = 1
-
+# 
 
 [module/volume]
 type = internal/volume
 format-volume = <label-volume> <bar-volume>
-label-volume = " "
+format-volume-prefix = 
+label-volume = 
 label-volume-foreground = ${colors.black-alt}
 #${colors.foreground}
-format-muted-prefix = " "
-format-muted-foreground = ${colors.foreground}
+format-muted = <label-muted>
+format-muted-prefix = 
+format-muted-prefix-foreground = ${colors.black-alt}
+format-muted-foreground = ${colors.black-alt}
 label-muted = [muted]
 label-muted-width = 15
 bar-volume-width = 10
@@ -123,7 +143,7 @@ date =
 date-alt = " %Y-%m-%d"
 time = %H:%M
 time-alt = %H:%M:%S
-format-prefix = " "
+format-prefix = time
 format-prefix-foreground = ${colors.black-alt}
 #${colors.foreground}
 label = %date% %time%
@@ -141,7 +161,7 @@ border-color = ${colors.white}
 border-left = ${colors.white}
 
 format-padding = 2
-format-prefix = Arch Linux
+format-prefix =  Arch Linux
 format-prefix-foreground = ${colors.cyan}
 
 label-open = "abry"
@@ -190,8 +210,31 @@ ping-interval = 5
 
 format-connected = <ramp-signal> <label-connected>
 label-connected = %essid% %downspeed:9%
-ramp-signal-0 = 
+ramp-signal-0 = 
 
+[module/cpu]
+type = internal/cpu
+interval = 1
+format = <label> <ramp-load>
+format-prefix = "cpu "
+format-prefix-foreground = ${colors.black-alt}
+label = %percentage%%
+ramp-load-0 = ▁
+ramp-load-1 = ▂
+ramp-load-2 = ▃
+ramp-load-3 = ▄
+ramp-load-4 = ▅
+ramp-load-5 = ▆
+ramp-load-6 = ▇
+ramp-load-7 = █
+
+[module/mem]
+type = internal/memory
+interval = 5
+format = <label>
+format-prefix = "mem "
+format-prefix-foreground = ${colors.black-alt}
+label = %percentage_used%%
 
 [module/battery]
 type = internal/battery
@@ -202,15 +245,20 @@ time-format = %H:%M
 format-charging = <animation-charging> <label-charging>
 format-discharging = <ramp-capacity> <label-discharging>
 
-label-charging = Charging %percentage%%
-label-discharging = Discharging %percentage%%
+label-charging = charging %percentage%%
+label-discharging = discharging %percentage%%
 
-ramp-capacity-0 = 
-animation-charging-0 = 
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+
+animation-charging-0 = 
 
 [settings]
 format-foreground = ${colors.foreground}
 #format-underline = ${colors.background}
 #format-overline = ${colors.black}
-format-padding = 2
+format-padding = 0 #2
 format-margin = 2
