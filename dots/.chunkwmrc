@@ -42,7 +42,7 @@ chunkc core::hotload 0
 #
 
 chunkc set global_desktop_mode           bsp
-chunkc set global_desktop_offset_top     30
+chunkc set global_desktop_offset_top     32
 chunkc set global_desktop_offset_bottom  2
 chunkc set global_desktop_offset_left    2
 chunkc set global_desktop_offset_right   2
@@ -124,5 +124,5 @@ chunkc core::load blur.so
 chunkc tiling::rule --owner Finder --name Copy --state float &
 chunkc tiling::rule --owner \"App Store\" --state float &
 chunkc tiling::rule --owner Emacs --except "^$" --state tile &
-chunkc tiling::rule --owner Outlook --name \"1 Reminder\" --state float &
+chunkc tiling::rule --owner Outlook --name "^[0-9]+ Reminders?$" --state float --alpha 0.65 &
 chunkc tiling::rule --owner \"Cisco AnyConnect Secure Mobility Client\" --state float &
