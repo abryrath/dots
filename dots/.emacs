@@ -81,8 +81,10 @@
     (if (file-exists-p "/bin/bash") (setq multi-term-program "/bin/bash"))))
 
 (add-to-list 'custom-theme-load-path ".emacs.d/")
-(require 'material-theme)
-(load-theme 'material)
+;; (require 'material-theme)
+;; (load-theme 'material)
+(require 'dracula-theme)
+(load-them 'dracula)
 (require 'airline-themes)
 (load-theme 'airline-simple)
 
