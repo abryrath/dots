@@ -84,7 +84,7 @@
 ;; (require 'material-theme)
 ;; (load-theme 'material)
 (require 'dracula-theme)
-(load-them 'dracula)
+(load-theme 'dracula)
 (require 'airline-themes)
 (load-theme 'airline-simple)
 

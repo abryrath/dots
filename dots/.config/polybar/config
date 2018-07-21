@@ -80,6 +80,7 @@ ws-icon-1 = emacs;
 ws-icon-2 = chrome;
 ws-icon-3 = spotify;
 ws-icon-4 = web;hi
+ws-icon-5 = chat;
 ws-icon-default = hi
 
 label-focused = %icon%
@@ -108,7 +109,7 @@ label-empty-padding = 1
 [module/volume]
 type = internal/volume
 format-volume = <label-volume> <bar-volume>
-format-volume-prefix = 
+format-volume-prefix = 
 label-volume = 
 label-volume-foreground = ${colors.black-alt}
 #${colors.foreground}
@@ -195,9 +196,12 @@ menu-1-2 = reboot
 menu-1-2-exec = sudo systemctl reboot
 menu-1-2-underline = ${colors.red}
 
-menu-2-0 = scrot
-menu-2-0-exec = scrot &
+menu-2-0 = rofi
+menu-2-0-exec = rofi -show run
 menu-2-0-underline = ${colors.green}
+menu-2-1 = scrot
+menu-2-1-exec = scrot &
+menu-2-1-underline = ${colors.green}
 
 [module/wired-network]
 type = internal/network
@@ -210,7 +214,7 @@ ping-interval = 5
 
 format-connected = <ramp-signal> <label-connected>
 label-connected = %essid% %downspeed:9%
-ramp-signal-0 = 
+ramp-signal-0 = 
 
 [module/cpu]
 type = internal/cpu
@@ -248,11 +252,11 @@ format-discharging = <ramp-capacity> <label-discharging>
 label-charging = charging %percentage%%
 label-discharging = discharging %percentage%%
 
-ramp-capacity-0 = 
-ramp-capacity-1 = 
+ramp-capacity-0 = 
+ramp-capacity-1 = 
 ramp-capacity-2 = 
-ramp-capacity-3 = 
-ramp-capacity-4 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
 
 animation-charging-0 = 
 
