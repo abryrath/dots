@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+
+packages=()
+
+echo "Loading fonts..."
+packages+="ttf-fira-sans"
+packages+="ttf-envy-code-r"
+packages+="otf-font-awesome-5-free"
+packages+="nerd-fonts-complete"
+
+echo "Loading Xorg..."
+packages+="xorg-xinit"
+packages+="xorg-xrandr"
+packages+="bspwm-git"
+packages+="sxhkd-git"
+packages+="polybar-git"
+packages+="nitrogen"
+packages+="xautolock"
+packages+="i3lock-fancy-git"
+packages+="dunst-git"
+
+echo "Loading editors..."
+packages+="emacs-git"
+
+echo "Loading utilities..."
+packages+="scrot"
+packages+="rofi-git"
+
+yay -Syu && yay -S "${packages[@]}"
+
+custom=()
+custom+="st-abryrath"
+
+echo "Loading custom PKGBUILDs..."
+for p in "${custom[@]}"
+do
+    echo "  $p"
+    [[ -d "/tmp/${p}" ]] && rm -rf "/tmp/${p}"
+    cd /tmp \
+        && git clone "https://gitlab.abryrath.com/abryrath/${p}.git" \
+        && cd "${p}" \
+        && makepkg -si \
+        && rm -rf "/tmp/${p}"
+done
+

@@ -65,5 +65,10 @@ alias grep="grep -i --color=auto"
 alias egrep="egrep --color=auto"
 
 
+alias dcr="docker-compose run --rm"
+alias dcdn="docker-compose down"
+alias dcup="docker-compose up"
+alias dcb="docker-compose build"
+
 # vim:ft=sh
 alias launch.polybar="$XDG_CONFIG_HOME/polybar/launch -k $XDG_CONFIG_HOME/polybar/config $(hostname)"
