@@ -6,7 +6,6 @@
 super + Return
       st
 
-
 # program launcher
 super + @space
       rofi -show run -theme abryrath
@@ -20,6 +19,22 @@ super + Escape
 super + @BackSpace
       i3lock-fancy -f Fira-Sans
 
+# Brightness
+XF86MonBrightnessDown
+        $HOME/.local/bin/brightness-change down
+        
+XF86MonBrightnessUp
+        $HOME/.local/bin/brightness-change up
+
+# Volume
+XF86AudioRaiseVolume
+        $HOME/.local/bin/volume-change up
+
+XF86AudioLowerVolume
+        $HOME/.local/bin/volume-change down
+
+XF86AudioMute
+        $HOME/.local/bin/volume-change mute
 #
 # bspwm hotkeys
 #

@@ -15,6 +15,7 @@
 !dots/.config/sxhkd/*
 !dots/.config/rofi/*
 !dots/.config/compton/*
+!dots/.config/dunst/*
 !dots/.Xresources
 !dots/.xinitrc
 !dots/.local/bin/*

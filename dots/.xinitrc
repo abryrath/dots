@@ -49,6 +49,9 @@ exec nitrogen --restore &
 exec sxhkd &
 exec polybar $bar -r &
 exec st &
+exec nm-applet &
+exec dunst &
+exec xautolock -time 5 -locker 'i3lock-fancy -f Fira Sans' &
 exec bspwm
 
 

@@ -43,9 +43,9 @@ font-3 = Hack\ Nerd\ Font:size=16;2
 #font-1 = "Hack Nerd Font;size=22;antialias=true;4"
 #font-1 = MaterialIcons:pixelsize=16;antialias=false;6
 
-modules-left = menu-actions volume bspwm
-modules-center = xwindow
-modules-right = wireless-network battery cpu mem date
+modules-left = menu-actions volume backlight
+modules-center = bspwm
+modules-right = wireless-network  battery cpu mem date
 
 tray-position = right
 tray-padding = 2
@@ -83,24 +83,24 @@ ws-icon-4 = web;hi
 ws-icon-5 = chat;
 ws-icon-default = hi
 
-label-focused = %icon%
-label-focused-font = 2
+label-focused = %name%
+#label-focused-font = 2
 #label-focused-background = ${colors.black}
 #label-focused-underline = ${colors.red-alt}
 label-focused-padding = 1
 label-focused-foreground = ${colors.green}
 
-label-occupied = %icon%
+label-occupied = %name%
 #%name%
 label-occupied-foreground = ${colors.foreground}
 #blue}
 label-occupied-padding = 1
 
-label-urgent = %icon%
+label-urgent = %name%
 label-urgent-background = ${colors.red}
 label-urgent-padding = 1
 
-label-empty = %icon%
+label-empty = %name%
 label-empty-foreground = ${colors.black-alt}
 #foreground}
 label-empty-padding = 1
@@ -114,7 +114,7 @@ label-volume =
 label-volume-foreground = ${colors.black-alt}
 #${colors.foreground}
 format-muted = <label-muted>
-format-muted-prefix = 
+format-muted-prefix = 
 format-muted-prefix-foreground = ${colors.black-alt}
 format-muted-foreground = ${colors.black-alt}
 label-muted = [muted]
@@ -128,13 +128,14 @@ bar-volume-foreground-4 = ${colors.green}
 bar-volume-foreground-5 = ${colors.yellow}
 bar-volume-foreground-6 = ${colors.red}
 bar-volume-gradient = false
-bar-volume-indicator = /
+bar-volume-indicator = 
 bar-volume-indicator-font = 0
-bar-volume-fill = /
+bar-volume-fill = 
+#/
 bar-volume-fill-font = 0
-bar-volume-empty = " "
+bar-volume-empty = 
 bar-volume-empty-font = 0
-bar-volume-empty-foreground = ${xrdb:color0}
+bar-volume-empty-foreground = ${colors.black-alt}
 
 
 [module/date]
@@ -142,7 +143,7 @@ type = internal/date
 interval = 5.0
 date = 
 date-alt = " %Y-%m-%d"
-time = %H:%M
+time = %l:%M%P
 time-alt = %H:%M:%S
 format-prefix = time
 format-prefix-foreground = ${colors.black-alt}
@@ -219,18 +220,10 @@ ramp-signal-0 = 
 [module/cpu]
 type = internal/cpu
 interval = 1
-format = <label> <ramp-load>
+format = <label>
 format-prefix = "cpu "
 format-prefix-foreground = ${colors.black-alt}
 label = %percentage%%
-ramp-load-0 = ▁
-ramp-load-1 = ▂
-ramp-load-2 = ▃
-ramp-load-3 = ▄
-ramp-load-4 = ▅
-ramp-load-5 = ▆
-ramp-load-6 = ▇
-ramp-load-7 = █
 
 [module/mem]
 type = internal/memory
@@ -249,8 +242,8 @@ time-format = %H:%M
 format-charging = <animation-charging> <label-charging>
 format-discharging = <ramp-capacity> <label-discharging>
 
-label-charging = charging %percentage%%
-label-discharging = discharging %percentage%%
+label-charging =  %percentage%%
+label-discharging = %percentage%%
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
@@ -259,6 +252,23 @@ ramp-capacity-3 = 
 ramp-capacity-4 = 
 
 animation-charging-0 = 
+
+
+[module/backlight]
+type = internal/backlight
+interval = 1
+card = intel_backlight
+format-prefix = 
+format = <label> <bar>
+label = 
+
+bar-width = 10
+bar-indicator = 
+bar-indicator-foreground = ${colors.foreground}
+bar-fill = 
+bar-fill-foreground = ${colors.yellow}
+bar-empty = 
+bar-empty-foreground = ${colors.black-alt}
 
 [settings]
 format-foreground = ${colors.foreground}
