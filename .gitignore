@@ -18,7 +18,9 @@
 !dots/.config/dunst/*
 !dots/.Xresources
 !dots/.xinitrc
-!dots/.local/bin/*
+!dots/.local/bin/arch-packages
+!dots/.local/bin/volume-change
+!dots/.local/bin/brightness-change
 
 # macOS
 !dots/.chunkwmrc
