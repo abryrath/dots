@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+function usage() {
+    printf "Usage: volume-change [up|down|mute]\n\n"
+}
+
+sink=0
+
+if [[ "$1" == "up" ]]; then
+    cmd="pactl set-sink-volume ${sink} +10%"
+elif [[ "$1" == "down" ]]; then
+    cmd="pactl set-sink-volume ${sink} -10%"
+elif [[ "$1" == "mute" ]]; then
+    cmd="pactl set-sink-mute ${sink} toggle"
+else
+    usage
+fi
+
+echo "${cmd}"
+bash -c "$cmd"
