@@ -99,5 +99,11 @@ type rustc >/dev/null 2>&1 && {
   export PATH="$PATH:$HOME/.yarn/bin"
 }
 
+# Composer/PHP
+export COMPOSER_HOME="$HOME/.composer"
+[ -d "$COMPOSER_HOME/vendor/bin" ] && {
+    export PATH="$PATH:$COMPOSER_HOME/vendor/bin"
+}
+
 export PATH="$HOME/bin:$PATH:/usr/local/sbin"
 export MANPATH="$MANPATH:/usr/local/share/man:/usr/share/man"

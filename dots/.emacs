@@ -7,6 +7,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ansi-color-faces-vector
+   [default bold shadow italic underline bold bold-italic bold])
+ '(ansi-color-names-vector
+   (vector "#ffffff" "#f36c60" "#8bc34a" "#fff59d" "#4dd0e1" "#b39ddb" "#81d4fa" "#263238"))
  '(column-number-mode t)
  '(custom-enabled-themes (quote (dracula)))
  '(custom-safe-themes
@@ -16,10 +20,34 @@
  '(ecb-options-version "2.50")
  '(ecb-source-path (quote (("/" "/"))))
  '(ede-project-directories (quote ("/Users/abrrath/Code/c-socket-server")))
+ '(fci-rule-color "#37474f")
  '(global-linum-mode t)
+ '(hl-sexp-background-color "#1c1f26")
  '(package-selected-packages
    (quote
-    (coffee-mode pkgbuild-mode diffview ecb vue-mode material-theme markdown-mode+ flymd apache-mode zenburn-theme buffer-move matlab-mode sublime-themes systemd csv-mode w3m fish-mode ini-mode smart-mode-line-powerline-theme smart-mode-line dracula-theme auctex rjsx-mode flymake-jshint treemacs gulp-task-runner multi-term vcl-mode json-mode docker-compose-mode dockerfile-mode flymake-php editorconfig ample-zen-theme python-pylint web-mode s rust-mode robe python-mode python-django projectile php+-mode paredit magit lua-mode helm flycheck elixir-mode company cider ample-theme airline-themes))))
+    (php-mode flymake-phpcs coffee-mode pkgbuild-mode diffview ecb vue-mode material-theme markdown-mode+ flymd apache-mode zenburn-theme buffer-move matlab-mode sublime-themes systemd csv-mode w3m fish-mode ini-mode smart-mode-line-powerline-theme smart-mode-line dracula-theme auctex rjsx-mode flymake-jshint treemacs gulp-task-runner multi-term vcl-mode json-mode docker-compose-mode dockerfile-mode flymake-php editorconfig ample-zen-theme python-pylint web-mode s rust-mode robe python-mode python-django projectile php+-mode paredit magit lua-mode helm elixir-mode company cider ample-theme airline-themes)))
+ '(vc-annotate-background nil)
+ '(vc-annotate-color-map
+   (quote
+    ((20 . "#f36c60")
+     (40 . "#ff9800")
+     (60 . "#fff59d")
+     (80 . "#8bc34a")
+     (100 . "#81d4fa")
+     (120 . "#4dd0e1")
+     (140 . "#b39ddb")
+     (160 . "#f36c60")
+     (180 . "#ff9800")
+     (200 . "#fff59d")
+     (220 . "#8bc34a")
+     (240 . "#81d4fa")
+     (260 . "#4dd0e1")
+     (280 . "#b39ddb")
+     (300 . "#f36c60")
+     (320 . "#ff9800")
+     (340 . "#fff59d")
+     (360 . "#8bc34a"))))
+ '(vc-annotate-very-old-color nil))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
