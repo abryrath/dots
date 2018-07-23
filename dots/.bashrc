@@ -27,7 +27,8 @@ export TODO="t"
 export SCM_CHECK=false
 
 # Import aliases
-[[ -f $HOME/.aliases ]] && . ~/.aliases
+[[ -f $HOME/.aliases ]] && . $HOME/.aliases
+[[ -f $HOME/.profile ]] && . $HOME/.profile
 
 # Set Xterm/screen/Tmux title with only a short hostname.
 # Uncomment this (or set SHORT_HOSTNAME to something else),

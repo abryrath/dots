@@ -3,43 +3,59 @@
 packages=()
 
 echo "Loading fonts..."
-packages+="ttf-fira-sans"
-packages+="ttf-envy-code-r"
-packages+="otf-font-awesome-5-free"
-packages+="nerd-fonts-complete"
+packages+=('ttf-fira-sans')
+packages+=('ttf-envy-code-r')
+packages+=('otf-font-awesome-5-free')
+packages+=('nerd-fonts-complete')
 
 echo "Loading Xorg..."
-packages+="xorg-xinit"
-packages+="xorg-xrandr"
-packages+="bspwm-git"
-packages+="sxhkd-git"
-packages+="polybar-git"
-packages+="nitrogen"
-packages+="xautolock"
-packages+="i3lock-fancy-git"
-packages+="dunst-git"
+packages+=('xorg-xinit')
+packages+=('xorg-xrandr')
+packages+=('xorg-xrdb')
+packages+=('compton-git')
+packages+=('bspwm-git')
+packages+=('sxhkd-git')
+packages+=('polybar-git')
+packages+=('dunst-git')
+packages+=('nitrogen-git')
+packages+=('xautolock')
+packages+=('i3lock-fancy-git')
+packages+=('dunst-git')
 
 echo "Loading editors..."
-packages+="emacs-git"
+packages+=('emacs-git')
 
 echo "Loading utilities..."
-packages+="scrot"
-packages+="rofi-git"
+packages+=('scrot')
+packages+=('rofi-git')
+packages+=('networkmanager-git')
+packages+=('openvpn')
+packages+=('networkmanager-openvpn-git')
+packages+=('nordvpn')
+packages+=('stow')
+
+echo "Packages to install:"
+echo "${packages[@]}"
 
 yay -Syu && yay -S "${packages[@]}"
 
 custom=()
-custom+="st-abryrath"
+custom+=('st')
 
 echo "Loading custom PKGBUILDs..."
 for p in "${custom[@]}"
 do
     echo "  $p"
-    [[ -d "/tmp/${p}" ]] && rm -rf "/tmp/${p}"
-    cd /tmp \
-        && git clone "https://gitlab.abryrath.com/abryrath/${p}.git" \
-        && cd "${p}" \
-        && makepkg -si \
-        && rm -rf "/tmp/${p}"
+    yay -Qi "${p}" > /dev/null
+    if [[ "$?" -eq 1 ]]; then
+        [[ -d "/tmp/${p}" ]] && rm -rf "/tmp/${p}"
+        cd /tmp \
+            && git clone "https://gitlab.abryrath.com/abryrath/${p}.git" \
+            && cd "${p}" \
+            && makepkg -si \
+            && rm -rf "/tmp/${p}"
+    else
+        echo "${p} is already installed. Skipping..."
+    fi
 done
 
