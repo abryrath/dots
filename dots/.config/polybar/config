@@ -35,7 +35,7 @@ bottom = false
 height = 340
 offset-y = -400
 fixed-center = true
-radius-bottom = 30
+#radius-bottom = 30
 
 background = ${colors.background}
 foreground = ${colors.foreground}
