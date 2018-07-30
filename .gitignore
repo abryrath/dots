@@ -1,6 +1,9 @@
 # Ignore everything by default
 *
 
+!dots/.zshrc
+!dots/.zsh/get-plugins.sh
+!dots/.oh-my-zsh
 !dots/.bashrc
 !dots/.bash_profile
 !dots/.profile
