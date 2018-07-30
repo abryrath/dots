@@ -1,34 +1,8 @@
 #!/usr/bin/env sh
 
-alias quit="exit"
-
-alias externalip="curl -s checkip.dyndns.org | sed 's/[^0-9.]//g'"
-alias hardwareinfo="inxi -F"
-alias pacaur="pacaur --color=auto"
 
 # New systemd management
 alias scu='systemctl --user'
-
-# herbstblufwm
-alias hc='herbstclient'
-
-# cli-visualizer
-alias vis='/usr/local/bin/vis'
-
-alias reload.compton='$LOCAL_ETC/compton/reload'
-alias reload.sxhkd='$LOCAL_ETC/sxhkd/reload'
-alias reload.dunst='$LOCAL_ETC/dunst/reload'
-alias reload.bspwm='$LOCAL_ETC/bspwm/reload'
-alias reload.polybar='$LOCAL_ETC/polybar/reload'
-
-alias errbspwm='vim $XDG_CACHE_HOME/bspwm/stderr'
-alias errcompton='vim $XDG_CACHE_HOME/compton/stderr'
-alias erri3='vim $XDG_CACHE_HOME/i3/stderr'
-alias errsxhkd='vim $XDG_CACHE_HOME/sxhkd/stderr'
-
-alias lpass-login='lpass login $(sudo cat /root/lpass_username)'
-
-alias xorglog="vim /var/log/Xorg.0.log"
 
 alias ga="git add"
 alias gd="git diff"
@@ -39,15 +13,6 @@ alias ggpur="git pull --rebase"
 alias grm="git rebase master"
 
 alias hdmi-reload='xrandr --output HDMI-1 --auto --above eDP-1; $XDG_CONFIG_HOME/bspwm/reload'
-
-# TODO: Create a symlink to vim/nvim instead to make
-# sure that the same version is used everywhere
-alias vim="nvim"
-alias vi="nvim"
-alias ncmpcpp='ncmpcpp -b $XDG_CONFIG_HOME/ncmpcpp/bindings'
-
-alias grepr="grep -r"
-alias egrepr="egrep -r"
 
 # Default command flags
 alias mv="mv -v"
@@ -64,11 +29,14 @@ alias pgrep="pgrep -l"
 alias grep="grep -i --color=auto"
 alias egrep="egrep --color=auto"
 
-
 alias dcr="docker-compose run --rm"
 alias dcdn="docker-compose down"
 alias dcup="docker-compose up"
 alias dcb="docker-compose build"
 
+# Projects
+alias dr.cd="cd $HOME/BitBucket/docker-disneyrewards"
+alias dr.up="cd $HOME/BitBucket/docker-disneyrewards/ && docker-compose up"
+alias pld.up="cd $HOME/Docker/docker-promisedland/ && docker-compose up"
+
 # vim:ft=sh
-alias launch.polybar="$XDG_CONFIG_HOME/polybar/launch -k $XDG_CONFIG_HOME/polybar/config $(hostname)"

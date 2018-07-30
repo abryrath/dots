@@ -1,16 +1,9 @@
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-[ -f $HOME/.profile ] && {
-    source $HOME/.profile
-}
-[ -f $HOME/.aliases ] && {
-    source $HOME/.aliases
-}
-
-[ -f $HOME/.zsh/get-plugins.sh ] && {
-    source $HOME/.zsh/get-plugins.sh
-}
+[ -f $HOME/.profile ] && { source $HOME/.profile }
+[ -f $HOME/.aliases ] && { source $HOME/.aliases }
+[ -f $HOME/.zsh/get-plugins.sh ] && { source $HOME/.zsh/get-plugins.sh }
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -86,3 +79,4 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
