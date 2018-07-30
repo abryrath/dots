@@ -42,11 +42,11 @@ chunkc core::hotload 0
 #
 
 chunkc set global_desktop_mode           bsp
-chunkc set global_desktop_offset_top     32
-chunkc set global_desktop_offset_bottom  2
-chunkc set global_desktop_offset_left    2
-chunkc set global_desktop_offset_right   2
-chunkc set global_desktop_offset_gap     10
+chunkc set global_desktop_offset_top     5
+chunkc set global_desktop_offset_bottom  5
+chunkc set global_desktop_offset_left    5
+chunkc set global_desktop_offset_right   5
+chunkc set global_desktop_offset_gap     2.5
 
 #
 # NOTE: syntax for desktop-specific settings
@@ -97,7 +97,8 @@ chunkc set window_use_cgs_move           0
 # NOTE: the following are config variables for the chunkwm-border plugin.
 #
 
-chunkc set focused_border_color          0xff50FA7B
+chunkc set focused_border_color 0xff4d4d4d
+#0xff50FA7B
 chunkc set focused_border_width          5
 chunkc set focused_border_radius         0
 chunkc set focused_border_skip_floating  0

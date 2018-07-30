@@ -44,6 +44,9 @@
     material-theme
     smart-mode-line
     smart-mode-line-powerline-theme
+
+    ;; php
+    php-mode
     
     ;; elixir
     elixir-mode

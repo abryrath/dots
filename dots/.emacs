@@ -71,6 +71,7 @@
 (setq-default indent-tabs-mode nil)
 (setq css-indent-offset 2)
 
+
 ;; store all autosave files in the tmp dir
 ;; http://www.gnu.org/software/emacs/manual/html_node/emacs/Auto-Save-Files.html
 (setq auto-save-file-name-transforms
@@ -100,11 +101,19 @@
 (load "~/.emacs.d/my-packages.el")
 (load "~/.emacs.d/my-load-packages.el")
 
+;; File associations
+(autoload 'php-mode "php-mode" "Major mode for editing PHP code." t)
+(if (assoc "\\.php\\'" auto-mode-alist)
+    (setq auto-mode-alist (delete "\\.php\\'" auto-mode-alist)))
+
+(add-to-list 'auto-mode-alist '("\\.php$'" . php-mode))
+(add-to-list 'auto-mode-alist '("\\.inc$'" . php-mode))
+
 ;; terminal settings
 (require 'multi-term)
-(if (file-exists-p "/usr/bin/zsh")
+(if 0 ; (file-exists-p "/usr/bin/zsh")
     (setq multi-term-program "/usr/bin/zsh")
-  (if (file-exists-p "/bin/zsh")
+  (if 0;(file-exists-p "/bin/zsh")
       (setq multi-term-program "/bin/zsh")
     (if (file-exists-p "/bin/bash") (setq multi-term-program "/bin/bash"))))
 
@@ -172,9 +181,10 @@
 (when (string-equal system-type "darwin")
   (setq browse-url-firefox-program "/Applications/Firefox.app/Contents/MacOS/firefox"))
 
-(when (eq system-type 'darwin)
-  (set-face-attribute 'default nil :family "Envy Code R")
-  )
+;;(when (eq system-type 'darwin)
+(set-face-attribute 'default nil :family "Envy Code R")
+(set-frame-font "Envy Code R 10" nil t)
+;;  )
 
 (provide '.emacs)
 ;;; .emacs ends here

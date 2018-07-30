@@ -4,3 +4,20 @@
 					; for SQL, need `gem install sqlint`
 (require 'flycheck)
 (add-hook 'after-init-hook #'global-flycheck-mode)
+
+(if (file-exists-p "/home/abry/.composer/vendor/bin/phpcs")
+    (setq flycheck-php-phpcs-executable "/home/abry/.composer/vendor/bin/phpcs"))
+
+(if (file-exists-p "/Users/abrrath/.composer/vendor/bin/phpcs")
+    (setq flycheck-php-phpcs-executable "/Users/abrrath/.composer/vendor/bin/phpcs"))
+
+
+(if (file-exists-p "/home/abry/.composer/vendor/bin/phpmd")
+    (setq flycheck-php-phpmd-executable "/home/abry/.composer/vendor/bin/phpmd"))
+
+(if (file-exists-p "/Users/abrrath/.composer/vendor/bin/phpmd")
+    (setq flycheck-php-phpmd-executable "/Users/abrrath/.composer/vendor/bin/phpmd"))
+
+
+(provide 'my-flycheck)
+;;; my-flycheck.el ends here
