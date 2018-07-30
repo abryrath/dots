@@ -9,6 +9,7 @@ packages+=('otf-font-awesome-5-free')
 packages+=('nerd-fonts-complete')
 
 echo "Loading Xorg..."
+packages+=('xorg-server')
 packages+=('xorg-xinit')
 packages+=('xorg-xrandr')
 packages+=('xorg-xrdb')
@@ -30,14 +31,14 @@ packages+=('scrot')
 packages+=('rofi-git')
 packages+=('networkmanager-git')
 packages+=('openvpn')
-packages+=('networkmanager-openvpn-git')
-packages+=('nordvpn')
+#packages+=('networkmanager-openvpn-git')
+# packages+=('nordvpn')
 packages+=('stow')
 
 echo "Packages to install:"
 echo "${packages[@]}"
 
-yay -Syu && yay -S "${packages[@]}"
+yay -S --needed "${packages[@]}"
 
 custom=()
 custom+=('st')

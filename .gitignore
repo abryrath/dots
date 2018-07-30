@@ -1,6 +1,7 @@
 # Ignore everything by default
 *
 
+# Linux + macOS
 !dots/.zshrc
 !dots/.zsh/get-plugins.sh
 !dots/.oh-my-zsh
@@ -19,6 +20,7 @@
 !dots/.config/rofi/*
 !dots/.config/compton/*
 !dots/.config/dunst/*
+!dots/.config/conky/conky.conf
 !dots/.Xresources
 !dots/.xinitrc
 !dots/.local/bin/arch-packages

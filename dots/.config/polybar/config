@@ -19,46 +19,147 @@ cyan-alt = ${xrdb:color14}
 white = ${xrdb:color7}
 white-alt = ${xrdb:color15}
 
+border = ${xrdb:color15}
+#--------------------------------- Geometry ----------------------------------#
+[global/wm]
+margin-top = 0
+margin-bottom = 0
 
-# Main bar configuration
-[bar/x]
-width = 100%
-height = 28
-offset-x = 0
-offset-y = 0
-radius = 0.0
+
+[section/base]
+#monitor = ${env:MONITOR:eDP1}
+enable-ipc = true
+override-redirect = true
+bottom = false
+
+height = 340
+offset-y = -400
 fixed-center = true
+radius-bottom = 30
+
 background = ${colors.background}
 foreground = ${colors.foreground}
-padding-left = 1
-padding-right = 1
-module-margin-left = 1
-module-margin-right = 1
+
+border-bottom-color = ${colors.border}
+border-left-color   = ${colors.border}
+border-right-color  = ${colors.border}
+border-bottom-size = 0
+border-left-size = 0
+border-right-size = 0
+
+overline-size = 300
+overline-color = ${colors.background}
+
+spacing = 1
+padding-left = 0
+padding-right = 0
+module-margin-left = 2
+module-margin-right = 2
+
+# Fonts
+# Very large offset to move the text to the bottom of the bar
+font-0 = EnvyCodeR:size=10;153
+font-1 = "DejaVu Sans:pixelsize=13;153"
+font-2 = "Font Awesome 5 Free:style=Solid:pixelsize=18;153"
+font-3 = "Font Awesome 5 Free:style=Regular:pixelsize=18;153"
+font-4 = "Font Awesome 5 Brands:pixelsize=18;153"
+
+
+[bar/full]
+#monitor = ${env:MONITOR:eDP1}
+enable-ipc = true
+override-redirect = false
+bottom = false
+
+height = 28
+width = 100%
+offset-y = 0
+fixed-center = true
+spacing = 1
+module-margin-left = 2
+module-margin-right = 2
+
+background = ${colors.background}
+foreground = ${colors.foreground}
 
 font-0 = EnvyCodeR:size=10;1
 font-1 = Font\ Awesome\ 5\ Free:size=15;0
 font-2 = Wuncon\ Siji:size=15;0
 font-3 = Hack\ Nerd\ Font:size=16;2
 
-#font-1 = "Hack Nerd Font;size=22;antialias=true;4"
-#font-1 = MaterialIcons:pixelsize=16;antialias=false;6
+# font-1 = "Envy Code R:pixelsize=13;3"
+# font-2 = "Font Awesome 5 Free:style=Solid:pixelsize=18;3"
+# font-3 = "Font Awesome 5 Free:style=Regular:pixelsize=18;3"
+# font-4 = "Font Awesome 5 Brands:pixelsize=18;3"
 
-modules-left = menu-actions volume backlight
-modules-center = bspwm
-modules-right = wireless-network  battery cpu mem date
+modules-left = bspwm
+modules-center = xwindow
+modules-right = backlight volume date options_open
+padding-right = 2
 
-tray-position = right
-tray-padding = 2
 
-wm-restack = bspwm
+#-----------------------------------------------------------------------------#
+#--------------------------------- Left bar ----------------------------------#
+#-----------------------------------------------------------------------------#
 
-line-size = 4
-line-color = ${colors.cyan}
-border-color = ${colors.black}
-border-size = 0
-separator = |
+[bar/left]
+inherit = section/base
+width = 30%
+offset-x = -30
+padding-left = 5
+modules-left = bspwm
 
-# BSPWM module configuration
+#------------------------------- Left modules --------------------------------#
+
+
+#-----------------------------------------------------------------------------#
+#-------------------------------- Center bar ---------------------------------#
+#-----------------------------------------------------------------------------#
+
+[bar/center]
+inherit = section/base
+width = 20%
+offset-x = 40%
+modules-center = xwindow
+
+#------------------------------ Center modules -------------------------------#
+
+# [module/xwindow]
+# type = internal/xwindow
+# label = %{T2}%title:0:30:...%%{T-}
+
+#-----------------------------------------------------------------------------#
+#-------------------------------- Right bar ----------------------------------#
+#-----------------------------------------------------------------------------#
+
+[bar/right]
+inherit = section/base
+padding-right = 7
+width = 30%
+offset-x = 1374
+modules-right = backlight volume date options_close
+
+#-----------------------------=- Right modules -------------------------------#
+
+[module/song]
+type = custom/script
+exec = ~/bin/music get_title
+format = "%{T2}<label>%{T-}"
+interval = 3
+
+[module/options_open]
+type = custom/text
+content-foreground = ${colors.foreground}
+content = ""
+click-left = ~/.local/bin/polybar_wrapper options
+
+[module/options_close]
+type = custom/text
+content-foreground = ${colors.blue}
+content = ""
+click-left = ~/.local/bin/polybar_wrapper options
+
+# abry
 [module/bspwm]
 type = internal/bspwm
 format-prefix = bspwm
@@ -153,56 +254,6 @@ label = %date% %time%
 [module/xwindow]
 type = internal/xwindow
 
-[module/menu-actions]
-type = custom/menu
-
-expand-right = true
-
-border-size = 2
-border-color = ${colors.white}
-border-left = ${colors.white}
-
-format-padding = 2
-format-prefix =  Arch Linux
-format-prefix-foreground = ${colors.cyan}
-
-label-open = "abry"
-label-open-margin = 2
-label-open-padding = 2
-label-open-underline = ${colors.blue}
-
-label-close = close
-label-close-margin-left = 2
-label-close-padding = 2
-label-close-underline = ${colors.blue}
-
-label-separator = " | "
-label-separator-padding = 0
-label-separator-margin = 0
-
-menu-0-0 = power
-menu-0-0-underline = ${colors.red}
-menu-0-0-exec = menu-open-1
-menu-0-1 = actions
-menu-0-1-underline = ${colors.green}
-menu-0-1-exec = menu-open-2
-
-menu-1-0 = logout
-menu-1-0-exec = pkill X > /dev/null 2>&1
-menu-1-0-underline = ${colors.red}
-menu-1-1 = shutdown
-menu-1-1-exec = sudo systemctl poweroff
-menu-1-1-underline = ${colors.red}
-menu-1-2 = reboot
-menu-1-2-exec = sudo systemctl reboot
-menu-1-2-underline = ${colors.red}
-
-menu-2-0 = rofi
-menu-2-0-exec = rofi -show run
-menu-2-0-underline = ${colors.green}
-menu-2-1 = scrot
-menu-2-1-exec = scrot &
-menu-2-1-underline = ${colors.green}
 
 [module/wired-network]
 type = internal/network
@@ -269,10 +320,3 @@ bar-fill = 
 bar-fill-foreground = ${colors.yellow}
 bar-empty = 
 bar-empty-foreground = ${colors.black-alt}
-
-[settings]
-format-foreground = ${colors.foreground}
-#format-underline = ${colors.background}
-#format-overline = ${colors.black}
-format-padding = 0 #2
-format-margin = 2
