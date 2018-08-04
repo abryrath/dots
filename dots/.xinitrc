@@ -47,7 +47,7 @@ fi
 exec compton --config ~/.config/compton/compton.conf&
 exec nitrogen --restore &
 exec sxhkd &
-exec polybar $bar -r &
+exec polybar_wrapper launch &
 exec st &
 exec nm-applet &
 exec dunst &
