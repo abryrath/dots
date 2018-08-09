@@ -21,8 +21,12 @@ export LOCAL_LIB="${HOME}/.local/lib"
 export LOCAL_SRC="${HOME}/.local/src"
 export LOCAL_VAR="${HOME}/.local/var"
 
+export UNION_REPOS="${HOME}/Code"
+
 export XDG_DATA_HOME="${HOME}/.local/share"
-export XDG_RUNTIME_DIR=/run/user/1000
+if [[ $(uname -s) == "Linux" ]]; then
+    export XDG_RUNTIME_DIR=/run/user/1000
+fi
 #export XDG_RUNTIME_DIR="${HOME}/.local/run"
 export XDG_CACHE_HOME="${HOME}/.cache"
 export XDG_CONFIG_HOME="${HOME}/.config"

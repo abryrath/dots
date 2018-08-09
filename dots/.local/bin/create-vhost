@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+
+repo_loc="$1"
+site_name="$2"
+
+usage() {
+    echo "Usage: create-vhost <repo_location> <site_name>"
+}
+
+if [[ -z "$1" ]]; then usage; exit; fi
+if [[ -z "$2" ]]; then usage; exit; fi
+
+vhost() {
+    printf "
+<VirtualHost *:80>
+    DocumentRoot \"%s\"
+    ServerName %s
+    ErrorLog \"/usr/local/var/log/httpd/%s-error_log\"
+    CustomLog \"/usr/local/var/log/httpd/%s-access_log\" common
+    <Directory \"%s\">
+        AllowOverride all
+        Require all granted
+    </Directory>
+</VirtualHost>
+" "$1" "$2" "$2" "$2" "$1"
+}
+
+echo "Writing default config to /usr/local/etc/httpd/extra/vhosts/${site_name}.conf ..."
+vhost "$repo_loc" "$site_name" > "/usr/local/etc/httpd/extra/vhosts/${site_name}.conf"
+
+echo "Updating /etc/hosts..."
+echo "127.0.0.1 ${site_name}" | sudo tee -a /etc/hosts >/dev/null
+
+echo "Restarting Apache..."
+sudo apachectl restart
+
+echo "Complete"

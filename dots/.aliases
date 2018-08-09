@@ -35,8 +35,10 @@ alias dcup="docker-compose up"
 alias dcb="docker-compose build"
 
 # Projects
-alias dr.cd="cd $HOME/BitBucket/docker-disneyrewards"
-alias dr.up="cd $HOME/BitBucket/docker-disneyrewards/ && docker-compose up"
-alias pld.up="cd $HOME/Docker/docker-promisedland/ && docker-compose up"
+files=('union.sh' 'ph.sh')
+for f in $HOME/.aliases.d/*; do
+    . "$f"
+done
+   
 
 # vim:ft=sh
