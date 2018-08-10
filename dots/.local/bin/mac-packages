@@ -19,11 +19,13 @@ function addPackage() {
 addPackage "emacs" "--with-cocoa"
 addPackage "chunkwm" ""
 addPackage "httpd" ""
-addPackage "node" ""
-addPackage "yarn" ""
+#addPackage "node" ""
+#addPackage "yarn" ""
+addPackage "nvm" ""
 addPackage "htop" ""
 addPackage "neofetch" ""
 addPackage "zsh" ""
+addPackage "stow" ""
 addPackage "php" ""
 addPackage "php@7.0" ""
 addPackage "php@7.1" ""
@@ -32,6 +34,8 @@ addPackage "composer" ""
 
 
 # Casks
+addPackage "iterm2" "" 1
+addPackage "google-chrome" "" 1
 addPackage "font-envy-code-r" "" 1
 addPackage "sequel-pro" "" 1
 addPackage "spotify" "" 1
