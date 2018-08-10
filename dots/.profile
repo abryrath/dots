@@ -98,6 +98,11 @@ type rustc >/dev/null 2>&1 && {
   export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 }
 
+export NVM_DIR="$HOME/.nvm"
+[ -f "/usr/local/opt/nvm/nvm.sh" ] && {
+    . /usr/local/opt/nvm/nvm.sh
+}
+
 # Yarn/NPM
 [ -d "$HOME/.yarn/bin" ] && {
   export PATH="$PATH:$HOME/.yarn/bin"

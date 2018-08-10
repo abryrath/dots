@@ -14,6 +14,7 @@
 !dots/.emacs
 !dots/.emacs.d/*.el
 !dots/.tmux.conf
+!dots/.local/bin/mac-packages
 
 # Linux
 !dots/.config/polybar/*
