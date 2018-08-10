@@ -182,6 +182,9 @@
 ;; Add firefox binary for macOS
 (when (string-equal system-type "darwin")
   (setq browse-url-firefox-program "/Applications/Firefox.app/Contents/MacOS/firefox"))
+;; Add chrome binary for macOS
+(when (string-equal system-type "darwin")
+  (setq browse-url-chrome-program "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"))
 
 ;;(when (eq system-type 'darwin)
 ;;  )

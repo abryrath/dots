@@ -35,7 +35,7 @@ alias dcup="docker-compose up"
 alias dcb="docker-compose build"
 
 # Projects
-files=('union.sh' 'ph.sh')
+files=('union.sh' 'ph.sh' 'mac.sh')
 for f in $HOME/.aliases.d/*; do
     . "$f"
 done

@@ -47,7 +47,7 @@ ext_plugins=(
 )
 
 for p in "${ext_plugins[@]}"; do
-  . $(find "${HOME}/.oh-my-zsh/plugins/${p}/" -iname "*.plugin.zsh")
+  . $(find "${HOME}/.oh-my-zsh/plugins/${p}/" -iname "*.plugin.zsh" ) 2>/dev/null
 done
 source $ZSH/oh-my-zsh.sh
 
