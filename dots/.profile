@@ -21,7 +21,8 @@ export LOCAL_LIB="${HOME}/.local/lib"
 export LOCAL_SRC="${HOME}/.local/src"
 export LOCAL_VAR="${HOME}/.local/var"
 
-export UNION_REPOS="${HOME}/Code"
+# Union-specific setup
+export UNION_REPOS="${HOME}/Union/Sites"
 
 export XDG_DATA_HOME="${HOME}/.local/share"
 if [[ $(uname -s) == "Linux" ]]; then

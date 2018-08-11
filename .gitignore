@@ -33,3 +33,8 @@
 # macOS
 !dots/.chunkwmrc
 !dots/.skhdrc
+
+
+!other-files/httpd.conf.union
+!other-files/vhosts/*.conf
+!other-files/link-union-httpd-files.sh

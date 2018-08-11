@@ -1,35 +1,43 @@
 #!/usr/bin/env bash
 
-# Apache + PHP configs
-php56_root=$(brew info php@5.6 | grep -e '/usr/local/Cellar' | awk '{ print $1 }')
+if [[ $(uname -s) == "Darwin" ]]; then
+    
+    # Apache + PHP configs
+    php56_root=$(brew info php@5.6 | grep -e '/usr/local/Cellar' | awk '{ print $1 }')
 
-if [[ -f "${php56_root}/bin/php" ]]; then
-    alias php56="${php56_root}/bin/php"
+    if [[ -f "${php56_root}/bin/php" ]]; then
+        alias php56="${php56_root}/bin/php"
+    fi
+
+    php70_root=$(brew info php@7.0 | grep -e '/usr/local/Cellar' | awk '{ print $1 }')
+    
+    if [[ -f "${php70_root}/bin/php" ]]; then
+        alias php70="${php70_root}/bin/php"
+    fi
+    
+    php71_root=$(brew info php@7.1 | grep -e '/usr/local/Cellar' | awk '{ print $1 }')
+    
+    if [[ -f "${php71_root}/bin/php" ]]; then
+        alias php71="${php71_root}/bin/php"
+    fi
+    
+    php72_root=$(brew info php@7.2 | grep -e '/usr/local/Cellar' | awk '{ print $1 }')
+    
+    if [[ -f "${php72_root}/bin/php" ]]; then
+        alias php72="${php72_root}/bin/php"
+    fi
+    export VHOSTS_DIR="/usr/local/etc/httpd/extra/vhosts"
+    export APACHE_DIR="/usr/local/etc/httpd"
 fi
 
-php70_root=$(brew info php@7.0 | grep -e '/usr/local/Cellar' | awk '{ print $1 }')
-
-if [[ -f "${php70_root}/bin/php" ]]; then
-    alias php70="${php70_root}/bin/php"
-fi
-
-php71_root=$(brew info php@7.1 | grep -e '/usr/local/Cellar' | awk '{ print $1 }')
-
-if [[ -f "${php71_root}/bin/php" ]]; then
-    alias php71="${php71_root}/bin/php"
-fi
-
-php72_root=$(brew info php@7.2 | grep -e '/usr/local/Cellar' | awk '{ print $1 }')
-
-if [[ -f "${php72_root}/bin/php" ]]; then
-    alias php72="${php72_root}/bin/php"
-fi
-
-
-export VHOSTS_DIR="/usr/local/etc/httpd/extra/vhosts"
-export APACHE_DIR="/usr/local/etc/httpd"
 alias em.vhosts="emacsclient -c ${VHOSTS_DIR}"
 alias em.apache="emacsclient -c ${APACHE_DIR}/httpd.conf"
+
+# Check apache error logs + access logs
+alias tail.apache.error="tail -f /usr/local/var/log/httpd/error_log"
+alias tail.apache.access="tail -f /usr/local/var/log/httpd/access_log"
+
+
 alias em.ssh="emacsclient -c $HOME/.ssh/config"
 alias sd="npm run syncdb"
 alias cd.ur="cd $UNION_REPOS"
