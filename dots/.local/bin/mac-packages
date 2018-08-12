@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+brew tap crisidev/homebrew-chunkwm
+
 function addPackage() {
     package="$1"
     opts="$2"
@@ -17,25 +19,37 @@ function addPackage() {
 }
 
 addPackage "emacs" "--with-cocoa"
-addPackage "chunkwm" ""
-addPackage "httpd" ""
-#addPackage "node" ""
-#addPackage "yarn" ""
-addPackage "nvm" ""
-addPackage "htop" ""
-addPackage "neofetch" ""
-addPackage "zsh" ""
-addPackage "stow" ""
-addPackage "php" ""
-addPackage "php@7.0" ""
-addPackage "php@7.1" ""
-addPackage "php@5.6" ""
-addPackage "composer" ""
+addPackage "chunkwm" 
+addPackage "koekeishiya/formulae/skhd"
+addPackage "httpd" 
+addPackage "nvm"
+addPackage "htop"
+addPackage "neofetch"
+addPackage "zsh"
+addPackage "w3m"
+addPackage "stow"
+addPackage "php"
+addPackage "php@7.0"
+addPackage "php@7.1"
+addPackage "php@5.6"
+addPackage "composer"
+addPackage "percona-server"
 
+pecl install xdebug
+pecl install imagick
 
-# Casks
+# casks
 addPackage "iterm2" "" 1
 addPackage "google-chrome" "" 1
-addPackage "font-envy-code-r" "" 1
+addPackage "homebrew/cask-fonts/font-envy-code-r" "" 1
 addPackage "sequel-pro" "" 1
 addPackage "spotify" "" 1
+addPackage "1password" "" 1
+addPackage "slack" "" 1
+
+brew services start chunkwm
+brew services start skhd
+brew services start emacs
+brew services start httpd
+brew services start percona-server
+
