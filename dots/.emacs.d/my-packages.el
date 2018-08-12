@@ -20,8 +20,11 @@
     flymd
     projectile ;needs config
     paredit    ;needs config
+    smartparens
     flycheck   ;needs config
     tramp
+    treemacs
+    treemacs-projectile
     apache-mode
     nginx-mode
     exec-path-from-shell
@@ -30,6 +33,7 @@
     ini-mode
     dockerfile-mode
     docker-compose-mode
+    helm
     
     ;; terminal
     multi-term
@@ -51,8 +55,10 @@
     ;; elixir
     elixir-mode
     alchemist
+
     ;; ruby
-    robe
+    ;robe
+
     ;; rust
     rust-mode
     cargo
@@ -60,10 +66,10 @@
     racer
     
     ;; clojure
-    clojure-mode
-    cider
+    ;clojure-mode
+    ;cider
     ;; helm
-    helm
+    
     ) "A list of packages to ensure are installed at launch.")
 
 

@@ -1,1 +1,1 @@
-; Nothing here yet
+; Global keybind to enbale projectile-mode : C-c p
