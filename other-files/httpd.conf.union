@@ -532,10 +532,10 @@ SSLRandomSeed connect builtin
 </IfModule>
 
 # PHP 7.2
-# LoadModule php7_module /usr/local/opt/php/lib/httpd/modules/libphp7.so
+LoadModule php7_module /usr/local/opt/php/lib/httpd/modules/libphp7.so
 
 # PHP 7.0
-LoadModule php7_module /usr/local/opt/php@7.0/lib/httpd/modules/libphp7.so
+# LoadModule php7_module /usr/local/opt/php@7.0/lib/httpd/modules/libphp7.so
 
 <FilesMatch \.php$>
     SetHandler application/x-httpd-php

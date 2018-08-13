@@ -23,6 +23,7 @@ export LOCAL_VAR="${HOME}/.local/var"
 
 # Union-specific setup
 export UNION_REPOS="${HOME}/Union/Sites"
+export APACHE_LOG_DIR="/usr/local/var/log/httpd"
 
 export XDG_DATA_HOME="${HOME}/.local/share"
 if [[ $(uname -s) == "Linux" ]]; then
