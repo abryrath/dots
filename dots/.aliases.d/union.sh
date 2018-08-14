@@ -42,19 +42,37 @@ alias em.ssh="emacsclient -c $HOME/.ssh/config"
 alias sd="npm run syncdb"
 alias cd.ur="cd $UNION_REPOS"
 
+# Aceyus
 alias cd.aceyus="cd ${UNION_REPOS}/aceyus-com"
 alias ssh.aceyus="ssh aceyus@aceyus.com"
 
+# Cooke & Bieler
 alias cd.cooke="cd $UNION_REPOS/cooke-bieler-com"
 alias ssh.cooke="ssh cookebieler@vps2.union.co"
 
+# Discovery Place
 alias cd.disc="cd ${UNION_REPOS}/discoveryplace-v3"
 alias ssh.disc="ssh discoveryplace@vps1.discoveryplace.union.co"
+alias ssh.root.disc="ssh root@vps1.discoveryplace.union.co"
 
+# Entec
 alias cd.entec="cd ${UNION_REPOS}/entecpolymers-com"
+alias ssh.entec="ssh entec-prod"
+alias ssh.entec.staging="ssh entec-staging"
 
+# VPS2 Root Access
 alias ssh.root.vps2="ssh root@vps2.union.co"
 
+# American Forest Management
 alias ssh.afm="ssh americanforestma@americanforestmanagement.com"
 alias ssh.afm.root="ssh root@americanforestmanagement.com"
 alias cd.afm="cd ${UNION_REPOS}/american-forest-management"
+
+# SATO America
+alias ssh.sato="ssh satoamerica@satoamerica.com"
+alias cd.sato="cd ${UNION_REPOS}/satoamerica-com"
+
+# Hendrick Motorsports
+alias cd.hendrick="cd ${UNION_REPOS}/hendrick-motorsports-2015"
+alias ssh.hendrick="ssh hendrick2017@hendrickmotorsports.com"
+alias ssh.hendrick.root="ssh root@hendrickmotorsports.com"
