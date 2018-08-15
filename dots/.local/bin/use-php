@@ -1,0 +1,93 @@
+#!/usr/bin/env bash
+
+if [[ $(uname -s) == "Linux" ]]; then
+    echo "Error: script only works on macOS/Darwin"
+    exit;
+fi
+
+install_sed() {
+    eval "/usr/local/bin/brew info gnu-sed" | grep -e 'Not installed' &>/dev/null
+    if [[ $? -eq 0 ]]; then brew install gnu-sed; fi
+}
+
+usage() {
+    echo "Usage: use-php [5.6|7.0|7.1|7.2]"
+}
+
+disable_all() {
+    APACHE_CONF="$1"
+    # Disable all Apache php modules
+    gsed -e '/^LoadModule php/ s/^/#/' -i "${APACHE_CONF}"
+
+}
+
+enable_version() {
+    APACHE_CONF="$1"
+    TARGET="$2"
+    echo "Enabling php version: ${TARGET}"
+    # Uncomment desired version
+    gsed -e "/php@${TARGET}/ s/^#//" -i "${APACHE_CONF}"
+}
+
+php_ini_replace() {
+    key="$1"
+    old="$2"
+    new="$3"
+    php_ini="$4"
+    echo "Replacing ${key} = ${old} -> ${new}"
+    gsed -e "/^${key}/s/${old}/${new}/" -i "${php_ini}"
+    grep -e "${key}" "${php_ini}"
+}
+
+php_options() {
+    PHP_INI="/usr/local/etc/php/${1}/php.ini"
+    if [[ ! -f "${PHP_INI}" ]]; then
+        echo "Can't find php.ini: ${PHP_INI}"
+        exit
+    fi
+    echo "php.ini: ${PHP_INI}"
+
+    php_ini_replace "memory_limit" "128" "256" "${PHP_INI}"
+    php_ini_replace "upload_max_filesize" "2" "96" "${PHP_INI}"
+    php_ini_replace "post_max_size" "8" "96" "${PHP_INI}"
+    php_ini_replace "allow_url_fopen" "Off" "On" "${PHP_INI}"
+
+    # Uncomment max_input_vars = 1000
+    echo "Uncommenting max_input_vars = 1000"
+    gsed -e '/^; max_input_vars/s/^; //' -i "${PHP_INI}"
+}
+
+main() {
+
+    if [[ -z "$1" ]]; then usage; exit; fi
+    
+    if [[ "$1" == "7.0" || "$1" == "7.1" || "$1" == "7.2" ]]; then
+        MAJOR=7
+        TARGET="$1"
+    elif [[ "$1" == "5.6" ]]; then
+        MAJOR=5
+        TARGET="5.6"
+    else
+        usage
+        exit
+    fi
+
+    install_sed
+    
+    if [[ ! -f "${APACHE_DIR}/httpd.conf" ]]; then
+        echo "${APACHE_DIR}/httpd.conf is not a file";
+    fi
+    
+    APACHE_CONF="${APACHE_DIR}/httpd.conf"
+    echo "Found Apache config: ${APACHE_CONF}"
+    
+    disable_all "${APACHE_CONF}"
+    enable_version "${APACHE_CONF}" "${TARGET}"
+    
+    php_options "${TARGET}"
+
+    echo "Restarting Apache"
+    sudo apachectl restart &>/dev/null
+}
+
+main "$1"

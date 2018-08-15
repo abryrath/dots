@@ -33,7 +33,8 @@
 # macOS
 !dots/.chunkwmrc
 !dots/.skhdrc
-
+!dots/.local/bin/use-php
+!dots/.local/bin/create-vhost
 
 !other-files/httpd.conf.union
 !other-files/vhosts/*.conf

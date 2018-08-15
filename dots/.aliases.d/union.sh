@@ -76,3 +76,8 @@ alias cd.sato="cd ${UNION_REPOS}/satoamerica-com"
 alias cd.hendrick="cd ${UNION_REPOS}/hendrick-motorsports-2015"
 alias ssh.hendrick="ssh hendrick2017@hendrickmotorsports.com"
 alias ssh.hendrick.root="ssh root@hendrickmotorsports.com"
+
+# Highwoods
+alias cd.highwoods="cd ${UNION_REPOS}/highwoods-com"
+alias ssh.highwoods="ssh highwoods@highwoods.union.agency"
+alias ssh.highwoods.vps1.root="ssh root@vps1.highwoods.union.co"
