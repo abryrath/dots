@@ -12,3 +12,6 @@
 
 ; Open .js files in js2-mode
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+
+                                        ; disable smartparens for web mode
+(add-hook 'web-mode-hook (lambda() (smartparens-mode -1)))
