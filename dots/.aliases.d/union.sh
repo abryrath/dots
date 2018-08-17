@@ -7,24 +7,28 @@ if [[ $(uname -s) == "Darwin" ]]; then
 
     if [[ -f "${php56_root}/bin/php" ]]; then
         alias php56="${php56_root}/bin/php"
+        alias pecl56="${php56_root}/bin/pecl"
     fi
 
     php70_root=$(brew info php@7.0 | grep -e '/usr/local/Cellar' | awk '{ print $1 }')
     
     if [[ -f "${php70_root}/bin/php" ]]; then
         alias php70="${php70_root}/bin/php"
+        alias pecl70="${php70_root}/bin/pecl"
     fi
     
     php71_root=$(brew info php@7.1 | grep -e '/usr/local/Cellar' | awk '{ print $1 }')
     
     if [[ -f "${php71_root}/bin/php" ]]; then
         alias php71="${php71_root}/bin/php"
+        alias pecl71="${php71_root}/bin/pecl"
     fi
     
     php72_root=$(brew info php@7.2 | grep -e '/usr/local/Cellar' | awk '{ print $1 }')
     
     if [[ -f "${php72_root}/bin/php" ]]; then
         alias php72="${php72_root}/bin/php"
+        alias pecl72="${php72_root}/bin/pecl"
     fi
     export VHOSTS_DIR="/usr/local/etc/httpd/extra/vhosts"
     export APACHE_DIR="/usr/local/etc/httpd"
@@ -81,3 +85,5 @@ alias ssh.hendrick.root="ssh root@hendrickmotorsports.com"
 alias cd.highwoods="cd ${UNION_REPOS}/highwoods-com"
 alias ssh.highwoods="ssh highwoods@highwoods.union.agency"
 alias ssh.highwoods.vps1.root="ssh root@vps1.highwoods.union.co"
+alias ssh.highwoods.vps2.root="ssh root@vps2.highwoods.union.co"
+alias ssh.highwoods.vps3.root="ssh root@vps3.highwoods.union.co"

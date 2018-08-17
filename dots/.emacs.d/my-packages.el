@@ -13,6 +13,7 @@
   '(
     ;; general
     web-mode
+    buffer-move
     company
     org
     magit

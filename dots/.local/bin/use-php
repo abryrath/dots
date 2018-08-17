@@ -86,6 +86,8 @@ main() {
     
     php_options "${TARGET}"
 
+    export PHP_INI="${PHP_INI}"
+    
     echo "Restarting Apache"
     sudo apachectl restart &>/dev/null
 }
