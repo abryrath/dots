@@ -5,6 +5,14 @@
 (require 'flycheck)
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
+;; disable jshint since we prefer eslint checking
+(setq-default flycheck-disabled-checkers
+  (append flycheck-disabled-checkers
+    '(javascript-jshint)))
+
+;; use eslint with web-mode for jsx files
+(flycheck-add-mode 'javascript-eslint 'js2-mode)
+
 (if (file-exists-p "/home/abry/.composer/vendor/bin/phpcs")
     (setq flycheck-php-phpcs-executable "/home/abry/.composer/vendor/bin/phpcs"))
 
