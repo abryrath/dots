@@ -67,7 +67,6 @@
 ; Load some options like font, window style, themes, etc.
 (load "~/.emacs.d/my-packages.el")
 (load "~/.emacs.d/my-load-packages.el")
-(load "~/.emacs.d/my-treemacs.el")
 (load "~/.emacs.d/my-file-assoc.el")
 (load "~/.emacs.d/my-options.el")
 (load "~/.emacs.d/my-keybindings.el")
@@ -102,6 +101,8 @@
 ;; macOS Path correction
 ;(when (memq window-system '(mac ns x))
 ;  (exec-path-from-shell-initialize))
+
+(load "~/.emacs.d/my-treemacs.el")
 
 (setq exec-path
       '(

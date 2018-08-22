@@ -41,7 +41,7 @@
     (`(t . _)
      (treemacs-git-mode 'simple))))
 
-(treemacs-mode t)
+;;(treemacs-mode t)
 
 (provide 'my-treemacs)
 ;;; my-treemacs.el ends here
