@@ -4,7 +4,16 @@ repo_loc="$1"
 site_name="$2"
 
 usage() {
-    echo "Usage: create-vhost <repo_location> <site_name>"
+    printf "Usage:
+\tcreate-vhost <web_root> <local_url>
+
+Options:
+\tweb_root:\tweb root of the application, usually {repo}/public or {repo}/web
+\tlocal_url:\tURL to use, usually dev.{real-url.com}
+
+Example for Craft 3:
+\tcd <repo>
+\tcreate-vhost \${PWD}/web dev.sitename.com\n"
 }
 
 if [[ -z "$1" ]]; then usage; exit; fi

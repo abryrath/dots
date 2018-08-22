@@ -87,3 +87,7 @@ alias ssh.highwoods="ssh highwoods@highwoods.union.agency"
 alias ssh.highwoods.vps1.root="ssh root@vps1.highwoods.union.co"
 alias ssh.highwoods.vps2.root="ssh root@vps2.highwoods.union.co"
 alias ssh.highwoods.vps3.root="ssh root@vps3.highwoods.union.co"
+
+# Pamlico
+alias cd.pamlico="cd ${UNION_REPOS}/craft-pamlicocapital-com"
+alias ssh.pamlico="ssh pamlicocapital@vps2.union.co"

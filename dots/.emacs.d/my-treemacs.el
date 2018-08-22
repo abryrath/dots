@@ -1,3 +1,6 @@
+;;; package --- Summary
+;;; Commentary:
+;;; Code:
 (require 'treemacs)
 (progn
   (setq treemacs-collapse-dirs              (if (executable-find "python") 3 0)
@@ -31,10 +34,14 @@
   
   (treemacs-follow-mode t)
   (treemacs-filewatch-mode t)
-  (treemacs-fringe-indicator-mode t)
   (pcase (cons (not (null (executable-find "git")))
                (not (null (executable-find "python3"))))
     (`(t . t)
      (treemacs-git-mode 'extended))
     (`(t . _)
      (treemacs-git-mode 'simple))))
+
+(treemacs-mode t)
+
+(provide 'my-treemacs)
+;;; my-treemacs.el ends here

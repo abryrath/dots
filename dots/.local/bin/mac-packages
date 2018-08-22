@@ -48,6 +48,7 @@ addPackage "sequel-pro" "" 1
 addPackage "spotify" "" 1
 addPackage "1password" "" 1
 addPackage "slack" "" 1
+addPackage "cacher" "" 1
 
 brew services start chunkwm
 brew services start skhd

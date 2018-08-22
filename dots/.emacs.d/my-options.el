@@ -1,3 +1,6 @@
+;;; package --- Summary
+;;; Commentary:
+;;; Code:
 (tool-bar-mode -1)
 ;;(set-face-attribute 'default t :font "Inconsolata for Powerline-10")
 (set-face-attribute 'default nil :family "Envy Code R")
@@ -14,8 +17,11 @@
 
 ;; No tabs
 (setq-default indent-tabs-mode nil)
+;; Indentation rules for CSS + JS
+(require 'css-mode)
 (setq css-indent-offset 2)
-
+(require 'js2-mode)
+(setq js-indent-level 2)
 
 ;; store all autosave files in the tmp dir
 ;; http://www.gnu.org/software/emacs/manual/html_node/emacs/Auto-Save-Files.html
@@ -66,3 +72,5 @@
 (when (string-equal system-type "darwin")
   (setq browse-url-chrome-program "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"))
 
+(provide 'my-options)
+;;; my-options.el ends here

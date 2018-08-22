@@ -25,7 +25,7 @@
  '(hl-sexp-background-color "#1c1f26")
  '(package-selected-packages
    (quote
-    (js2-mode geben treemacs-projectile smartparens php-mode flymake-phpcs coffee-mode pkgbuild-mode diffview ecb vue-mode material-theme markdown-mode+ flymd apache-mode zenburn-theme buffer-move matlab-mode sublime-themes systemd csv-mode w3m fish-mode ini-mode smart-mode-line-powerline-theme smart-mode-line dracula-theme auctex rjsx-mode flymake-jshint treemacs gulp-task-runner multi-term vcl-mode json-mode docker-compose-mode dockerfile-mode flymake-php editorconfig ample-zen-theme python-pylint web-mode s rust-mode robe python-mode python-django projectile php+-mode paredit magit lua-mode helm elixir-mode company cider ample-theme airline-themes)))
+    (cmake-mode company-php js2-mode geben treemacs-projectile smartparens php-mode flymake-phpcs coffee-mode pkgbuild-mode diffview ecb vue-mode material-theme markdown-mode+ flymd apache-mode zenburn-theme buffer-move matlab-mode sublime-themes systemd csv-mode w3m fish-mode ini-mode smart-mode-line-powerline-theme smart-mode-line dracula-theme auctex rjsx-mode flymake-jshint treemacs gulp-task-runner multi-term vcl-mode json-mode docker-compose-mode dockerfile-mode flymake-php editorconfig ample-zen-theme python-pylint web-mode s rust-mode robe python-mode python-django projectile php+-mode paredit magit lua-mode helm elixir-mode company cider ample-theme airline-themes)))
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
    (quote
@@ -111,6 +111,7 @@
         "/usr/local/sbin"
         "/bin"
         "/sbin"
+        "~/.composer/vendor/bin"
         ))
 (setenv "PATH"
         (concat
@@ -118,7 +119,8 @@
          "/bin" ":"
          "/sbin" ":"
          "/usr/local/sbin" ":"
-         (getenv "HOME") "/.cargo/bin" ":"
+         "~/.cargo/bin" ":"
+         "~/.composer/vendor/bin" ":"
          (getenv "PATH")))
 
 (provide '.emacs)

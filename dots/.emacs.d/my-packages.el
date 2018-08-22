@@ -19,10 +19,10 @@
     magit
     gitignore-mode
     flymd
-    projectile ;needs config
-    paredit    ;needs config
+    projectile
+    paredit
     smartparens
-    flycheck   ;needs config
+    flycheck
     tramp
     treemacs
     treemacs-projectile
@@ -30,7 +30,7 @@
     nginx-mode
     exec-path-from-shell
     windmove
-    w3m
+    ;w3m
     ini-mode
     dockerfile-mode
     docker-compose-mode
@@ -54,8 +54,8 @@
     php-mode
     
     ;; elixir
-    elixir-mode
-    alchemist
+    ;elixir-mode
+    ;alchemist
 
     ;; ruby
     ;robe
