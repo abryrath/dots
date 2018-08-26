@@ -42,13 +42,10 @@
     ;; interface/custom
     powerline
     airline-themes
-    sublime-themes
-    ample-theme
-    ample-zen-theme
     dracula-theme
-    material-theme
     smart-mode-line
     smart-mode-line-powerline-theme
+    base16-theme
 
     ;; php
     php-mode

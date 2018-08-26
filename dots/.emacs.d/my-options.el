@@ -53,8 +53,10 @@
 (add-to-list 'custom-theme-load-path ".emacs.d/")
 ;; (require 'material-theme)
 ;; (load-theme 'material)
-(require 'dracula-theme)
-(load-theme 'dracula)
+;(require 'dracula-theme)
+                                        ;(load-theme 'dracula)
+(require 'base16-theme)
+(load-theme 'base16-dracula)
 (require 'airline-themes)
 (load-theme 'airline-simple)
 
