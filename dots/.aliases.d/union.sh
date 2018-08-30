@@ -91,3 +91,7 @@ alias ssh.highwoods.vps3.root="ssh root@vps3.highwoods.union.co"
 # Pamlico
 alias cd.pamlico="cd ${UNION_REPOS}/craft-pamlicocapital-com"
 alias ssh.pamlico="ssh pamlicocapital@vps2.union.co"
+
+# Vanguard Cleaning
+alias cd.vanguard="cd ${UNION_REPOS}/vanguard-cleaning"
+alias ssh.vanguard.staging="ssh web@vanguardcleaning.union.agency"

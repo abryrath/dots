@@ -3,8 +3,10 @@
 ;;; Code:
 (tool-bar-mode -1)
 ;;(set-face-attribute 'default t :font "Inconsolata for Powerline-10")
-(set-face-attribute 'default nil :family "Envy Code R")
-(set-frame-font "Envy Code R 10" nil t)
+;;(set-face-attribute 'default nil :family "Envy Code R")
+(set-face-attribute 'default t :family "Iosevka")
+;;(set-frame-font "Envy Code R 10" nil t)
+(set-frame-font "Iosevka 12" nil t)
 
 ;; disable lockfiles
 ;; see http://www.gnu.org/software/emacs/manual/html_node/emacs/Interlocking.html
