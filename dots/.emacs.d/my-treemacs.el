@@ -34,13 +34,13 @@
   
   (treemacs-follow-mode t)
   (treemacs-filewatch-mode t)
-  (pcase (cons (not (null (executable-find "git")))
-               (not (null (executable-find "python3"))))
-    (`(t . t)
-     (treemacs-git-mode 'extended))
-    (`(t . _)
-     (treemacs-git-mode 'simple))))
-
+  ;; (pcase (cons (not (null (executable-find "git")))
+  ;;              (not (null (executable-find "python3"))))
+  ;;   (`(t . t)
+  ;;    (treemacs-git-mode 'extended))
+  ;;   (`(t . _)
+  ;;    (treemacs-git-mode 'simple))))
+)
 ;;(treemacs-mode t)
 
 (provide 'my-treemacs)

@@ -58,7 +58,8 @@
 (require 'base16-theme)
 (load-theme 'base16-dracula)
 (require 'airline-themes)
-(load-theme 'airline-simple)
+;;(load-theme 'airline-simple)
+(load-theme 'airline-base16-gui-dark)
 
 
 ;;(when (string-equal system-type "darwin")
