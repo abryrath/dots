@@ -1,12 +1,13 @@
 ;;; package --- Summary
 ;;; Commentary:
 ;;; Code:
+
 (tool-bar-mode -1)
 ;;(set-face-attribute 'default t :font "Inconsolata for Powerline-10")
 ;;(set-face-attribute 'default nil :family "Envy Code R")
-(set-face-attribute 'default t :family "Iosevka")
+(set-face-attribute 'default t :font "Iosevka-10")
 ;;(set-frame-font "Envy Code R 10" nil t)
-(set-frame-font "Iosevka 12" nil t)
+(set-frame-font "Iosevka 10" nil t)
 
 ;; disable lockfiles
 ;; see http://www.gnu.org/software/emacs/manual/html_node/emacs/Interlocking.html
@@ -23,7 +24,7 @@
 (require 'css-mode)
 (setq css-indent-offset 2)
 (require 'js2-mode)
-(setq js-indent-level 2)
+(setq js-indent-level 4)
 
 ;; store all autosave files in the tmp dir
 ;; http://www.gnu.org/software/emacs/manual/html_node/emacs/Auto-Save-Files.html
@@ -58,10 +59,11 @@
 ;(require 'dracula-theme)
                                         ;(load-theme 'dracula)
 (require 'base16-theme)
-(load-theme 'base16-dracula)
+;;(load-theme 'base16-dracula)
+(load-theme 'base16-railscasts)
 (require 'airline-themes)
-;;(load-theme 'airline-simple)
-(load-theme 'airline-base16-gui-dark)
+(load-theme 'airline-simple)
+;(load-theme 'airline-base16-gui-dark)
 
 
 ;;(when (string-equal system-type "darwin")

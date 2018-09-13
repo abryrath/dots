@@ -95,3 +95,11 @@ alias ssh.pamlico="ssh pamlicocapital@vps2.union.co"
 # Vanguard Cleaning
 alias cd.vanguard="cd ${UNION_REPOS}/vanguard-cleaning"
 alias ssh.vanguard.staging="ssh web@vanguardcleaning.union.agency"
+
+# Team App
+alias cd.team="cd ${UNION_REPOS}/team-app"
+alias ssh.team="ssh webuser@159.203.118.181"
+
+# Huseby
+alias cd.huseby="cd ${UNION_REPOS}/huseby-craft"
+#alias ssh

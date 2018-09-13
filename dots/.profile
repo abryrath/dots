@@ -118,3 +118,11 @@ export COMPOSER_HOME="$HOME/.composer"
 
 export PATH="$HOME/bin:$PATH:/usr/local/sbin"
 export MANPATH="$MANPATH:/usr/local/share/man:/usr/share/man"
+
+[ -d "/usr/local/opt/coreutils/libexec/gnubin" ] && {
+    export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+}
+
+[ -d "/usr/local/opt/coreutils/libexec/gnuman" ] && {
+    export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+}

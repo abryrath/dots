@@ -70,8 +70,8 @@
 # default, test < cmd - return : open -na /Applications/Terminal.app
 
 # open terminal, blazingly fast compared to iTerm/Hyper
-#cmd - return : /Applications/Kitty.app/Contents/MacOS/kitty --single-instance
-cmd - return : /Applications/iTerm.app/Contents/MacOS/iTerm2 
+cmd - return : /Applications/Kitty.app/Contents/MacOS/kitty --single-instance
+#cmd - return : /Applications/iTerm.app/Contents/MacOS/iTerm2 
 # open qutebrowser
 cmd + shift - return : ~/Scripts/qtb.sh
 
