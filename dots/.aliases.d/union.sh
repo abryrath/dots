@@ -103,3 +103,11 @@ alias ssh.team="ssh webuser@159.203.118.181"
 # Huseby
 alias cd.huseby="cd ${UNION_REPOS}/huseby-craft"
 #alias ssh
+
+# Hickory Tavern
+alias cd.hickory="cd ${UNION_REPOS}/thehickorytavern"
+alias ssh.hickory="ssh thehickorytavern@thehickorytavern.com"
+
+# CRVA
+alias cd.crva="cd ${UNION_REPOS}/crva-cluster"
+alias ssh.crva="ssh cgal@charlottesgotalot.com"
