@@ -111,3 +111,7 @@ alias ssh.hickory="ssh thehickorytavern@thehickorytavern.com"
 # CRVA
 alias cd.crva="cd ${UNION_REPOS}/crva-cluster"
 alias ssh.crva="ssh cgal@charlottesgotalot.com"
+
+# Internetwork Engineering
+alias cd.inet="cd ${UNION_REPOS}/ineteng-com"
+alias ssh.inet="ssh union@ineteng.com"

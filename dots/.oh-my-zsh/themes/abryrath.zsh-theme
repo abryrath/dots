@@ -17,7 +17,7 @@ git_custom_status() {
 
 PROMPT="%{$reset_color%} %{$fg[blue]%}%~ %{$reset_color%} %{$fg[white]%}%"
 #unset RPROMPT
-echo $TERM | grep -ie 'xterm'
+echo $TERM | grep -ie 'xterm' > /dev/null
 if [ $? -eq 0 ]; then
   RPROMPT='%{$reset_color%}$(git_custom_status)'
 else

@@ -13,6 +13,7 @@
 (add-to-list 'auto-mode-alist '("\\.twig$" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.blade\.php$" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.vue$" . web-mode))
 
 ; Open .js files in js2-mode
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
