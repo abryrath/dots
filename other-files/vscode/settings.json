@@ -1,0 +1,26 @@
+{
+    "php.validate.enable": true,
+    "php.validate.executablePath": "/usr/local/bin/php",
+    "php.executablePath": "/usr/local/bin/php",
+    "php.validate.run": "onType",
+    "php.suggest.basic": false,   
+    "editor.fontFamily": "Iosevka, monospace",
+    "editor.fontLigatures": true,
+    "telemetry.enableTelemetry": false,
+    "window.zoomLevel": 0,
+    "git.confirmSync": false,
+    // "phpcbf.executablePath": "~/.composer/vendor/bin/phpcbf",
+    // "phpcbf.enable": true,
+    // "phpcbf.standard": "PSR2",
+    // "phpcbf.onsave": true,
+    // "phpcbf.debug": true,
+    "phpcs.enable": true,
+    "phpcs.executablePath": "/Users/abryrath/.composer/vendor/bin/phpcs",
+    "phpcs.standard": "PSR2",
+    "explorer.confirmDelete": false,
+    "files.associations": {
+        "*.twig": "twig"
+    },
+    "explorer.confirmDragAndDrop": false,
+    "workbench.colorTheme": "An Old Hope"
+}

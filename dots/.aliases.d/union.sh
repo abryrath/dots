@@ -63,6 +63,8 @@ alias ssh.root.disc="ssh root@vps1.discoveryplace.union.co"
 alias cd.entec="cd ${UNION_REPOS}/entecpolymers-com"
 alias ssh.entec="ssh entec-prod"
 alias ssh.entec.staging="ssh entec-staging"
+alias cd.v3.entec="cd ${UNION_REPOS}/v3-entecpolymers-com"
+alias ssh.v3.entec="ssh entecpolymers@vps1.entecpolymers.union.co"
 
 # VPS2 Root Access
 alias ssh.root.vps2="ssh root@vps2.union.co"
@@ -105,7 +107,7 @@ alias cd.huseby="cd ${UNION_REPOS}/huseby-craft"
 #alias ssh
 
 # Hickory Tavern
-alias cd.hickory="cd ${UNION_REPOS}/thehickorytavern"
+alias cd.hickory="cd ${UNION_REPOS}/thehickorytavern-com"
 alias ssh.hickory="ssh thehickorytavern@thehickorytavern.com"
 
 # CRVA
@@ -115,3 +117,7 @@ alias ssh.crva="ssh cgal@charlottesgotalot.com"
 # Internetwork Engineering
 alias cd.inet="cd ${UNION_REPOS}/ineteng-com"
 alias ssh.inet="ssh union@ineteng.com"
+
+# Wedge Capital
+alias cd.wedge="cd ${UNION_REPOS}/wedgecapital-com/"
+alias ssh.wedge="ssh wedgecapital@wedgecapital.com"
