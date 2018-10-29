@@ -63,8 +63,8 @@ Listen 80
 # Example:
 # LoadModule foo_module modules/mod_foo.so
 #
-#LoadModule mpm_event_module lib/httpd/modules/mod_mpm_event.so
-LoadModule mpm_prefork_module lib/httpd/modules/mod_mpm_prefork.so
+LoadModule mpm_event_module lib/httpd/modules/mod_mpm_event.so
+#LoadModule mpm_prefork_module lib/httpd/modules/mod_mpm_prefork.so
 #LoadModule mpm_worker_module lib/httpd/modules/mod_mpm_worker.so
 LoadModule authn_file_module lib/httpd/modules/mod_authn_file.so
 #LoadModule authn_dbm_module lib/httpd/modules/mod_authn_dbm.so
@@ -111,7 +111,7 @@ LoadModule filter_module lib/httpd/modules/mod_filter.so
 #LoadModule charset_lite_module lib/httpd/modules/mod_charset_lite.so
 #LoadModule deflate_module lib/httpd/modules/mod_deflate.so
 #LoadModule xml2enc_module lib/httpd/modules/mod_xml2enc.so
-#LoadModule proxy_html_module lib/httpd/modules/mod_proxy_html.so
+LoadModule proxy_html_module lib/httpd/modules/mod_proxy_html.so
 #LoadModule brotli_module lib/httpd/modules/mod_brotli.so
 LoadModule mime_module lib/httpd/modules/mod_mime.so
 LoadModule log_config_module lib/httpd/modules/mod_log_config.so
@@ -127,11 +127,11 @@ LoadModule headers_module lib/httpd/modules/mod_headers.so
 LoadModule setenvif_module lib/httpd/modules/mod_setenvif.so
 LoadModule version_module lib/httpd/modules/mod_version.so
 #LoadModule remoteip_module lib/httpd/modules/mod_remoteip.so
-#LoadModule proxy_module lib/httpd/modules/mod_proxy.so
-#LoadModule proxy_connect_module lib/httpd/modules/mod_proxy_connect.so
+LoadModule proxy_module lib/httpd/modules/mod_proxy.so
+LoadModule proxy_connect_module lib/httpd/modules/mod_proxy_connect.so
 #LoadModule proxy_ftp_module lib/httpd/modules/mod_proxy_ftp.so
-#LoadModule proxy_http_module lib/httpd/modules/mod_proxy_http.so
-#LoadModule proxy_fcgi_module lib/httpd/modules/mod_proxy_fcgi.so
+LoadModule proxy_http_module lib/httpd/modules/mod_proxy_http.so
+LoadModule proxy_fcgi_module lib/httpd/modules/mod_proxy_fcgi.so
 #LoadModule proxy_scgi_module lib/httpd/modules/mod_proxy_scgi.so
 #LoadModule proxy_uwsgi_module lib/httpd/modules/mod_proxy_uwsgi.so
 #LoadModule proxy_fdpass_module lib/httpd/modules/mod_proxy_fdpass.so
@@ -171,7 +171,7 @@ LoadModule autoindex_module lib/httpd/modules/mod_autoindex.so
 </IfModule>
 #LoadModule dav_fs_module lib/httpd/modules/mod_dav_fs.so
 #LoadModule dav_lock_module lib/httpd/modules/mod_dav_lock.so
-#LoadModule vhost_alias_module lib/httpd/modules/mod_vhost_alias.so
+LoadModule vhost_alias_module lib/httpd/modules/mod_vhost_alias.so
 #LoadModule negotiation_module lib/httpd/modules/mod_negotiation.so
 LoadModule dir_module lib/httpd/modules/mod_dir.so
 #LoadModule actions_module lib/httpd/modules/mod_actions.so
@@ -546,5 +546,6 @@ SSLRandomSeed connect builtin
 #LoadModule php5_module /usr/local/opt/php@5.6/lib/httpd/modules/libphp5.so
 
 <FilesMatch \.php$>
-    SetHandler application/x-httpd-php
+    # SetHandler application/x-httpd-php
+    SetHandler proxy:fcgi://localhost:9072
 </FilesMatch>

@@ -7,7 +7,7 @@
     "editor.fontFamily": "Iosevka, monospace",
     "editor.fontLigatures": true,
     "telemetry.enableTelemetry": false,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "git.confirmSync": false,
     // "phpcbf.executablePath": "~/.composer/vendor/bin/phpcbf",
     // "phpcbf.enable": true,
@@ -22,5 +22,8 @@
         "*.twig": "twig"
     },
     "explorer.confirmDragAndDrop": false,
-    "workbench.colorTheme": "An Old Hope"
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.editor.showTabs": true,
+    "workbench.colorTheme": "Dracula Soft",
+    "breadcrumbs.enabled": true
 }
