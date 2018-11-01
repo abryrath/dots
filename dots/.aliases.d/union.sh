@@ -121,3 +121,7 @@ alias ssh.inet="ssh union@ineteng.com"
 # Wedge Capital
 alias cd.wedge="cd ${UNION_REPOS}/wedgecapital-com/"
 alias ssh.wedge="ssh wedgecapital@wedgecapital.com"
+
+# Leading On Opportunity
+alias cd.leadingon="cd ${UNION_REPOS}/leadingonopportunity-org/"
+alias ssh.leadingon="ssh leadingon@vps1.union.co"
