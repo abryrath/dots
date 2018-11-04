@@ -25,9 +25,10 @@
     "blade.format.enable": true,
     "terminal.integrated.fontFamily": "Fira Code",
     "workbench.statusBar.feedback.visible": false,
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
     "emmet.includeLanguages": {
         "blade": "html"
      },
-     "emmet.triggerExpansionOnTab": true
+    "emmet.triggerExpansionOnTab": true,
+    "git.enableSmartCommit": true
 }

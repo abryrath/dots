@@ -124,4 +124,8 @@ alias ssh.wedge="ssh wedgecapital@wedgecapital.com"
 
 # Leading On Opportunity
 alias cd.leadingon="cd ${UNION_REPOS}/leadingonopportunity-org/"
-alias ssh.leadingon="ssh leadingon@vps1.union.co"
+alias ssh.leadingon="ssh leadingon@vps1.union.co"alias ssh.petsky.staging="ssh petskyprunier@vps2.union.co"
+
+# Petsky Prunier
+alias cd.petsky="cd ${UNION_REPOS}/petskyprunier-com/"
+alias ssh.petsky="ssh petskyprunier@vps2.union.co"
