@@ -3,29 +3,30 @@
 if [[ $(uname -s) == "Darwin" ]]; then
     
     # Apache + PHP configs
-    php56_root=$(brew info php@5.6 | grep -e '/usr/local/Cellar' | awk '{ print $1 }')
-
+    #php56_root=$(brew info php@5.6 | grep -e '/usr/local/Cellar' | awk '{ print $1 }')
+    php56_root="/usr/local/opt/php@5.6"
     if [[ -f "${php56_root}/bin/php" ]]; then
         alias php56="${php56_root}/bin/php"
         alias pecl56="${php56_root}/bin/pecl"
     fi
 
-    php70_root=$(brew info php@7.0 | grep -e '/usr/local/Cellar' | awk '{ print $1 }')
+    #php70_root=$(brew info php@7.0 | grep -e '/usr/local/Cellar' | awk '{ print $1 }')
+    php70_root="/usr/local/opt/php@7.0"
     
     if [[ -f "${php70_root}/bin/php" ]]; then
         alias php70="${php70_root}/bin/php"
         alias pecl70="${php70_root}/bin/pecl"
     fi
     
-    php71_root=$(brew info php@7.1 | grep -e '/usr/local/Cellar' | awk '{ print $1 }')
-    
+    #php71_root=$(brew info php@7.1 | grep -e '/usr/local/Cellar' | awk '{ print $1 }')
+    php71_root="/usr/local/opt/php@7.1"
     if [[ -f "${php71_root}/bin/php" ]]; then
         alias php71="${php71_root}/bin/php"
         alias pecl71="${php71_root}/bin/pecl"
     fi
     
-    php72_root=$(brew info php@7.2 | grep -e '/usr/local/Cellar' | awk '{ print $1 }')
-    
+    #php72_root=$(brew info php@7.2 | grep -e '/usr/local/Cellar' | awk '{ print $1 }')
+    php72_root="/usr/local/opt/php@7.2"
     if [[ -f "${php72_root}/bin/php" ]]; then
         alias php72="${php72_root}/bin/php"
         alias pecl72="${php72_root}/bin/pecl"
@@ -129,3 +130,7 @@ alias ssh.leadingon="ssh leadingon@vps1.union.co"alias ssh.petsky.staging="ssh p
 # Petsky Prunier
 alias cd.petsky="cd ${UNION_REPOS}/petskyprunier-com/"
 alias ssh.petsky="ssh petskyprunier@vps2.union.co"
+
+# Trinity Partners
+alias cd.trinity="cd ${UNION_REPOS}/trinity-partners-com"
+alias ssh.trinity="ssh trinity-partners.com@trinity-partners.com"

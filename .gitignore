@@ -17,6 +17,7 @@
 !dots/.local/bin/mac-packages
 !dots/.config/kitty/kitty.conf
 !other-files/vscode/settings.json
+!other-files/vscode/keybindings.json
 
 # Linux
 !dots/.config/polybar/*

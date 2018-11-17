@@ -16,7 +16,6 @@
         "*.twig": "twig"
     },
     "explorer.confirmDragAndDrop": false,
-    "workbench.iconTheme": "vs-minimal",
     "workbench.editor.showTabs": true,
     "workbench.colorTheme": "Horizon",
     "breadcrumbs.enabled": true,
