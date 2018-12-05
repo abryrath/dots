@@ -59,6 +59,9 @@ alias ssh.cooke="ssh cookebieler@vps2.union.co"
 alias cd.disc="cd ${UNION_REPOS}/discoveryplace-v3"
 alias ssh.disc="ssh discoveryplace@vps1.discoveryplace.union.co"
 alias ssh.root.disc="ssh root@vps1.discoveryplace.union.co"
+function scp.root.disc() {
+    scp root@vps1.discoveryplace.union.co:${1} ${2}
+}
 
 # Entec
 alias cd.entec="cd ${UNION_REPOS}/entecpolymers-com"
@@ -125,7 +128,8 @@ alias ssh.wedge="ssh wedgecapital@wedgecapital.com"
 
 # Leading On Opportunity
 alias cd.leadingon="cd ${UNION_REPOS}/leadingonopportunity-org/"
-alias ssh.leadingon="ssh leadingon@vps1.union.co"alias ssh.petsky.staging="ssh petskyprunier@vps2.union.co"
+alias ssh.leadingon="ssh leadingon@vps1.union.co"
+alias ssh.petsky.staging="ssh petskyprunier@vps2.union.co"
 
 # Petsky Prunier
 alias cd.petsky="cd ${UNION_REPOS}/petskyprunier-com/"
@@ -134,3 +138,10 @@ alias ssh.petsky="ssh petskyprunier@vps2.union.co"
 # Trinity Partners
 alias cd.trinity="cd ${UNION_REPOS}/trinity-partners-com"
 alias ssh.trinity="ssh trinity-partners.com@trinity-partners.com"
+
+# Reston Town Center / Boston Properties
+alias cd.rtc="cd ${UNION_REPOS}/restontowncenter-com"
+alias ssh.rtc="ssh reston_user@restontowncenter.com"
+
+# Neighbborhood Lender
+alias ssh.neighborhood="ssh neighborhoodlend@neighborhoodlender.com"
