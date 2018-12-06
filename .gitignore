@@ -38,6 +38,7 @@
 !dots/.skhdrc
 !dots/.local/bin/use-php
 !dots/.local/bin/create-vhost
+!dots/.local/bin/backups.sh
 
 !other-files/httpd.conf.union
 !other-files/vhosts/*.conf
