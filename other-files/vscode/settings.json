@@ -17,7 +17,7 @@
     },
     "explorer.confirmDragAndDrop": false,
     "workbench.editor.showTabs": true,
-    "workbench.colorTheme": "Horizon (default token colors)",
+    "workbench.colorTheme": "Horizon",
     "breadcrumbs.enabled": true,
     "terminal.external.osxExec": "Kitty.app",
     "workbench.settings.editor": "json",
@@ -29,5 +29,6 @@
         "blade": "html"
      },
     "emmet.triggerExpansionOnTab": true,
-    "git.enableSmartCommit": true
+    "git.enableSmartCommit": true,
+    "javascript.updateImportsOnFileMove.enabled": "always"
 }
