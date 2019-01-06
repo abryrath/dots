@@ -8,7 +8,8 @@ ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%}*%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 
 hostname() {
-  echo $(/usr/bin/hostname)
+  if [ -f /bin/hostname ]; then echo $(/bin/hostname);
+  else; echo $(/usr/bin/hostname);fi
 }	
 # Customized git status, oh-my-zsh currently does not allow render dirty status before branch
 git_custom_status() {
