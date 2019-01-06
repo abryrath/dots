@@ -7,6 +7,9 @@
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%}*%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 
+hostname() {
+  echo $(/usr/bin/hostname)
+}	
 # Customized git status, oh-my-zsh currently does not allow render dirty status before branch
 git_custom_status() {
   local cb=$(git_current_branch)
@@ -15,7 +18,7 @@ git_custom_status() {
   fi
 }
 
-PROMPT="%{$reset_color%} %{$fg[blue]%}%~ %{$reset_color%} %{$fg[white]%}%"
+PROMPT="%{$reset_color%} %{$fg[green]%}% [$(hostname)] %{$reset_color%} %{$fg[blue]%}%~ %{$reset_color%} %{$fg[white]%}%"
 #unset RPROMPT
 echo $TERM | grep -ie 'xterm' > /dev/null
 if [ $? -eq 0 ]; then
