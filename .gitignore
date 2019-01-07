@@ -15,6 +15,7 @@
 !dots/.emacs.d/*.el
 !dots/.tmux.conf
 !dots/.local/bin/mac-packages
+!dots/.local/bin/vivaldi
 !dots/.config/kitty/kitty.conf
 !other-files/vscode/settings.json
 !other-files/vscode/keybindings.json

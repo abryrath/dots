@@ -24,7 +24,7 @@
     "blade.format.enable": true,
     "terminal.integrated.fontFamily": "Fira Code",
     "workbench.statusBar.feedback.visible": false,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": -1,
     "emmet.includeLanguages": {
         "blade": "html"
      },
