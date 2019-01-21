@@ -1,34 +1,37 @@
 {
     "php.validate.enable": true,
     "php.validate.executablePath": "/usr/local/bin/php",
-    "php.executablePath": "/usr/local/bin/php",
     "php.validate.run": "onType",
-    "php.suggest.basic": false,
-    "editor.fontFamily": "Fira Code, monospace",
+    "editor.fontFamily": "EnvyCode-r, AnkaCoder-r, Fira Code, monospace",
     "editor.fontLigatures": true,
     "telemetry.enableTelemetry": false,
     "git.confirmSync": false,
     "phpcs.enable": true,
     "phpcs.executablePath": "/Users/abryrath/.composer/vendor/bin/phpcs",
     "phpcs.standard": "PSR2",
+    "php.suggest.basic": false,
     "explorer.confirmDelete": false,
     "files.associations": {
         "*.twig": "twig"
     },
     "explorer.confirmDragAndDrop": false,
     "workbench.editor.showTabs": true,
-    "workbench.colorTheme": "Horizon",
+    "workbench.colorTheme": "Dracula Soft",
     "breadcrumbs.enabled": true,
-    "terminal.external.osxExec": "Kitty.app",
     "workbench.settings.editor": "json",
-    "blade.format.enable": true,
-    "terminal.integrated.fontFamily": "Fira Code",
     "workbench.statusBar.feedback.visible": false,
-    "window.zoomLevel": -1,
+    "window.zoomLevel": 0,
     "emmet.includeLanguages": {
         "blade": "html"
      },
     "emmet.triggerExpansionOnTab": true,
     "git.enableSmartCommit": true,
-    "javascript.updateImportsOnFileMove.enabled": "always"
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "gitlens.views.repositories.files.layout": "tree",
+    "shellformat.path": "/Users/abryrath/go/bin/shfmt",
+    "editor.tabSize": 4,
+    "editor.trimAutoWhitespace": true,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "blade.format.enable": true
 }

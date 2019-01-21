@@ -19,6 +19,9 @@
 !dots/.config/kitty/kitty.conf
 !other-files/vscode/settings.json
 !other-files/vscode/keybindings.json
+!other-files/sublime/User/*.sublime-keymap
+!other-files/sublime/User/*.sublime-settings
+!other-files/sublime/Themes/*
 
 # Linux
 !dots/.config/polybar/*

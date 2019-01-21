@@ -145,3 +145,7 @@ alias ssh.rtc="ssh reston_user@restontowncenter.com"
 
 # Neighbborhood Lender
 alias ssh.neighborhood="ssh neighborhoodlend@neighborhoodlender.com"
+
+# Autobell
+alias ssh.autobell="ssh autobell@autobell.union.agency"
+alias cd.autobell="cd ${UNION_REPOS}/autobell-com/"

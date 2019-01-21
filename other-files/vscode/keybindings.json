@@ -483,5 +483,10 @@
         "key": "shift+alt+f",
         "command": "-editor.action.formatDocument",
         "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+v",
+        "command": "editor.action.clipboardPasteAction",
+        "when": "terminalFocus"
     }
 ]

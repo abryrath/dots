@@ -1,0 +1,13 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Craft-Twig",
+		"Git",
+		"PHP Companion",
+		"Xdebug Client"
+	]
+}
