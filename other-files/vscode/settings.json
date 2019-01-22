@@ -2,7 +2,8 @@
     "php.validate.enable": true,
     "php.validate.executablePath": "/usr/local/bin/php",
     "php.validate.run": "onType",
-    "editor.fontFamily": "EnvyCode-r, AnkaCoder-r, Fira Code, monospace",
+    "editor.fontFamily": "DejaVuSansMonoNerdFontComplete-Book, EnvyCode-r, AnkaCoder-r, Fira Code, monospace",
+    "editor.fontSize": 10,
     "editor.fontLigatures": true,
     "telemetry.enableTelemetry": false,
     "git.confirmSync": false,
@@ -20,7 +21,7 @@
     "breadcrumbs.enabled": true,
     "workbench.settings.editor": "json",
     "workbench.statusBar.feedback.visible": false,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "emmet.includeLanguages": {
         "blade": "html"
      },
@@ -33,5 +34,6 @@
     "editor.trimAutoWhitespace": true,
     "editor.insertSpaces": true,
     "editor.detectIndentation": false,
-    "blade.format.enable": true
+    //"blade.format.enable": true
+    "editor.renderWhitespace": "boundary"
 }

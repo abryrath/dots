@@ -1,4 +1,5 @@
 [
 	{"keys": ["ctrl+s"], "command": "save"},
-	{"keys": ["ctrl+x", "f"], "command": "open"}
+	{"keys": ["ctrl+x", "f"], "command": "open"},
+	{"keys": ["super+shift+b"], "command": "xdebug_breakpoint"}
 ]

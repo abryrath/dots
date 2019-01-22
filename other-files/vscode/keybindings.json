@@ -1,6 +1,5 @@
 // Place your key bindings in this file to overwrite the defaults
-[
-    {
+[{
         "key": "ctrl+x s",
         "command": "workbench.action.files.saveAs"
     },
@@ -23,10 +22,6 @@
     {
         "key": "ctrl+x 3",
         "command": "workbench.action.splitEditor"
-    },
-    {
-        "key": "ctrl+x o",
-        "command": "workbench.action.cycleEditor"
     },
     {
         "key": "ctrl+x b",
@@ -74,16 +69,6 @@
     {
         "key": "alt+v",
         "command": "cursorPageUp",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+space",
-        "command": "extension.setMark",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+shift+2",
-        "command": "extension.setMark",
         "when": "editorTextFocus"
     },
     {
@@ -162,43 +147,13 @@
         "when": "globalMessageVisible"
     },
     {
-        "key": "ctrl+/",
-        "command": "undo",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+alt+/",
-        "command": "redo",
-        "when": "editorTextFocus"
-    },
-    {
         "key": "ctrl+x u",
         "command": "undo",
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+_",
-        "command": "undo",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+alt+_",
-        "command": "redo",
-        "when": "editorTextFocus"
-    },
-    {
         "key": "right",
         "command": "cursorRight",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+b",
-        "command": "cursorLeft",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+n",
-        "command": "cursorDown",
         "when": "editorTextFocus"
     },
     {
@@ -249,11 +204,6 @@
     {
         "key": "ctrl+y",
         "command": "editor.action.clipboardPasteAction",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+p",
-        "command": "cursorUp",
         "when": "editorTextFocus"
     },
     {
@@ -342,11 +292,6 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+_",
-        "command": "undo",
-        "when": "editorTextFocus"
-    },
-    {
         "key": "ctrl+alt+/",
         "command": "redo",
         "when": "editorTextFocus"
@@ -354,11 +299,6 @@
     {
         "key": "ctrl+x u",
         "command": "undo",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+alt+_",
-        "command": "redo",
         "when": "editorTextFocus"
     },
     {
@@ -378,7 +318,7 @@
     },
     {
         "key": "alt+right",
-        "command": "-cursorWordEndRight",
+        "command": "cursorWordEndRight",
         "when": "textInputFocus"
     },
     {
@@ -397,11 +337,6 @@
         "when": "textInputFocus"
     },
     {
-        "key": "shift+alt+left",
-        "command": "-cursorWordStartLeftSelect",
-        "when": "textInputFocus"
-    },
-    {
         "key": "ctrl+shift+right",
         "command": "cursorWordEndRightSelect",
         "when": "textInputFocus"
@@ -411,47 +346,24 @@
         "command": "actions.find"
     },
     {
-        "key": "cmd+f",
-        "command": "-actions.find"
-    },
-    {
         "key": "ctrl+f",
         "command": "editor.action.extensioneditor.showfind",
         "when": "activeEditor == 'workbench.editor.extension'"
     },
     {
-        "key": "cmd+f",
-        "command": "-editor.action.extensioneditor.showfind",
-        "when": "activeEditor == 'workbench.editor.extension'"
-    },
-    {
         "key": "ctrl+f",
         "command": "editor.action.webvieweditor.showFind",
         "when": "!editorFocus && activeEditor == 'workbench.editor.htmlPreviewPart'"
     },
-    {
-        "key": "cmd+f",
-        "command": "-editor.action.webvieweditor.showFind",
-        "when": "!editorFocus && activeEditor == 'workbench.editor.htmlPreviewPart'"
-    },
+
     {
         "key": "ctrl+f",
         "command": "editor.action.webvieweditor.showFind",
-        "when": "!editorFocus && activeEditor == 'WebviewEditor'"
-    },
-    {
-        "key": "cmd+f",
-        "command": "-editor.action.webvieweditor.showFind",
         "when": "!editorFocus && activeEditor == 'WebviewEditor'"
     },
     {
         "key": "ctrl+f",
         "command": "keybindings.editor.searchKeybindings",
-        "when": "inKeybindings && !inKeybindingsSearch"
-    },
-    {
-        "key": "cmd+f",
-        "command": "-keybindings.editor.searchKeybindings",
         "when": "inKeybindings && !inKeybindingsSearch"
     },
     {
@@ -470,23 +382,28 @@
         "when": "textInputFocus"
     },
     {
-        "key": "ctrl+f",
-        "command": "-cursorRight",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "cmd+f",
+        "key": "shift+cmd+f",
         "command": "editor.action.formatDocument",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "shift+alt+f",
-        "command": "-editor.action.formatDocument",
         "when": "editorTextFocus && !editorReadonly"
     },
     {
         "key": "cmd+v",
         "command": "editor.action.clipboardPasteAction",
         "when": "terminalFocus"
+    },
+    {
+        "key": "shift+cmd+l",
+        "command": "-editor.action.selectHighlights",
+        "when": "editorFocus"
+    },
+    {
+        "key": "shift+cmd+l",
+        "command": "editor.action.insertCursorAtEndOfEachLineSelected",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+i",
+        "command": "-editor.action.insertCursorAtEndOfEachLineSelected",
+        "when": "editorTextFocus"
     }
 ]
