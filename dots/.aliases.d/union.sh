@@ -3,29 +3,30 @@
 if [[ $(uname -s) == "Darwin" ]]; then
     
     # Apache + PHP configs
-    php56_root=$(brew info php@5.6 | grep -e '/usr/local/Cellar' | awk '{ print $1 }')
-
+    #php56_root=$(brew info php@5.6 | grep -e '/usr/local/Cellar' | awk '{ print $1 }')
+    php56_root="/usr/local/opt/php@5.6"
     if [[ -f "${php56_root}/bin/php" ]]; then
         alias php56="${php56_root}/bin/php"
         alias pecl56="${php56_root}/bin/pecl"
     fi
 
-    php70_root=$(brew info php@7.0 | grep -e '/usr/local/Cellar' | awk '{ print $1 }')
+    #php70_root=$(brew info php@7.0 | grep -e '/usr/local/Cellar' | awk '{ print $1 }')
+    php70_root="/usr/local/opt/php@7.0"
     
     if [[ -f "${php70_root}/bin/php" ]]; then
         alias php70="${php70_root}/bin/php"
         alias pecl70="${php70_root}/bin/pecl"
     fi
     
-    php71_root=$(brew info php@7.1 | grep -e '/usr/local/Cellar' | awk '{ print $1 }')
-    
+    #php71_root=$(brew info php@7.1 | grep -e '/usr/local/Cellar' | awk '{ print $1 }')
+    php71_root="/usr/local/opt/php@7.1"
     if [[ -f "${php71_root}/bin/php" ]]; then
         alias php71="${php71_root}/bin/php"
         alias pecl71="${php71_root}/bin/pecl"
     fi
     
-    php72_root=$(brew info php@7.2 | grep -e '/usr/local/Cellar' | awk '{ print $1 }')
-    
+    #php72_root=$(brew info php@7.2 | grep -e '/usr/local/Cellar' | awk '{ print $1 }')
+    php72_root="/usr/local/opt/php@7.2"
     if [[ -f "${php72_root}/bin/php" ]]; then
         alias php72="${php72_root}/bin/php"
         alias pecl72="${php72_root}/bin/pecl"
@@ -58,11 +59,16 @@ alias ssh.cooke="ssh cookebieler@vps2.union.co"
 alias cd.disc="cd ${UNION_REPOS}/discoveryplace-v3"
 alias ssh.disc="ssh discoveryplace@vps1.discoveryplace.union.co"
 alias ssh.root.disc="ssh root@vps1.discoveryplace.union.co"
+function scp.root.disc() {
+    scp root@vps1.discoveryplace.union.co:${1} ${2}
+}
 
 # Entec
 alias cd.entec="cd ${UNION_REPOS}/entecpolymers-com"
 alias ssh.entec="ssh entec-prod"
 alias ssh.entec.staging="ssh entec-staging"
+alias cd.v3.entec="cd ${UNION_REPOS}/v3-entecpolymers-com"
+alias ssh.v3.entec="ssh entecpolymers@vps1.entecpolymers.union.co"
 
 # VPS2 Root Access
 alias ssh.root.vps2="ssh root@vps2.union.co"
@@ -94,7 +100,7 @@ alias ssh.pamlico="ssh pamlicocapital@vps2.union.co"
 
 # Vanguard Cleaning
 alias cd.vanguard="cd ${UNION_REPOS}/vanguard-cleaning"
-alias ssh.vanguard.staging="ssh web@vanguardcleaning.union.agency"
+alias ssh.vanguard.staging="ssh vanguardcleaning@vanguardcleaning.union.agency"
 
 # Team App
 alias cd.team="cd ${UNION_REPOS}/team-app"
@@ -105,7 +111,7 @@ alias cd.huseby="cd ${UNION_REPOS}/huseby-craft"
 #alias ssh
 
 # Hickory Tavern
-alias cd.hickory="cd ${UNION_REPOS}/thehickorytavern"
+alias cd.hickory="cd ${UNION_REPOS}/thehickorytavern-com"
 alias ssh.hickory="ssh thehickorytavern@thehickorytavern.com"
 
 # CRVA
@@ -115,3 +121,31 @@ alias ssh.crva="ssh cgal@charlottesgotalot.com"
 # Internetwork Engineering
 alias cd.inet="cd ${UNION_REPOS}/ineteng-com"
 alias ssh.inet="ssh union@ineteng.com"
+
+# Wedge Capital
+alias cd.wedge="cd ${UNION_REPOS}/wedgecapital-com/"
+alias ssh.wedge="ssh wedgecapital@wedgecapital.com"
+
+# Leading On Opportunity
+alias cd.leadingon="cd ${UNION_REPOS}/leadingonopportunity-org/"
+alias ssh.leadingon="ssh leadingon@vps1.union.co"
+alias ssh.petsky.staging="ssh petskyprunier@vps2.union.co"
+
+# Petsky Prunier
+alias cd.petsky="cd ${UNION_REPOS}/petskyprunier-com/"
+alias ssh.petsky="ssh petskyprunier@vps2.union.co"
+
+# Trinity Partners
+alias cd.trinity="cd ${UNION_REPOS}/trinity-partners-com"
+alias ssh.trinity="ssh trinity-partners.com@trinity-partners.com"
+
+# Reston Town Center / Boston Properties
+alias cd.rtc="cd ${UNION_REPOS}/restontowncenter-com"
+alias ssh.rtc="ssh reston_user@restontowncenter.com"
+
+# Neighbborhood Lender
+alias ssh.neighborhood="ssh neighborhoodlend@neighborhoodlender.com"
+
+# Autobell
+alias ssh.autobell="ssh autobell@autobell.union.agency"
+alias cd.autobell="cd ${UNION_REPOS}/autobell-com/"

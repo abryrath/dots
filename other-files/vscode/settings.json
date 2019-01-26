@@ -1,0 +1,37 @@
+{
+    "php.validate.enable": true,
+    "php.validate.executablePath": "/usr/local/bin/php",
+    "php.validate.run": "onType",
+    "editor.fontFamily": "EnvyCode-r, AnkaCoder-r, Fira Code, monospace",
+    "editor.fontLigatures": true,
+    "telemetry.enableTelemetry": false,
+    "git.confirmSync": false,
+    "phpcs.enable": true,
+    "phpcs.executablePath": "/Users/abryrath/.composer/vendor/bin/phpcs",
+    "phpcs.standard": "PSR2",
+    "php.suggest.basic": false,
+    "explorer.confirmDelete": false,
+    "files.associations": {
+        "*.twig": "twig"
+    },
+    "explorer.confirmDragAndDrop": false,
+    "workbench.editor.showTabs": true,
+    "workbench.colorTheme": "Dracula Soft",
+    "breadcrumbs.enabled": true,
+    "workbench.settings.editor": "json",
+    "workbench.statusBar.feedback.visible": false,
+    "window.zoomLevel": 0,
+    "emmet.includeLanguages": {
+        "blade": "html"
+     },
+    "emmet.triggerExpansionOnTab": true,
+    "git.enableSmartCommit": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "gitlens.views.repositories.files.layout": "tree",
+    "shellformat.path": "/Users/abryrath/go/bin/shfmt",
+    "editor.tabSize": 4,
+    "editor.trimAutoWhitespace": true,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "blade.format.enable": true
+}

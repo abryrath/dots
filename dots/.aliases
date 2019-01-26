@@ -1,6 +1,5 @@
 #!/usr/bin/env sh
 
-
 # New systemd management
 alias scu='systemctl --user'
 
@@ -12,14 +11,12 @@ alias gst="git status"
 alias ggpur="git pull --rebase"
 alias grm="git rebase master"
 
-alias hdmi-reload='xrandr --output HDMI-1 --auto --above eDP-1; $XDG_CONFIG_HOME/bspwm/reload'
-
 # Default command flags
 alias mv="mv -v"
 alias ln="ln -v"
 alias cp="cp -v"
 alias rm="rm -v"
-#alias ls="ls --group-directories-first --dereference-command-line-symlink-to-dir --color=auto"
+alias ls="ls --group-directories-first --dereference-command-line-symlink-to-dir --color=auto"
 #alias ll="ls --dereference-command-line-symlink-to-dir -lh"
 alias ll="exa --color=auto -l --group-directories-first"
 alias t="exa -T"

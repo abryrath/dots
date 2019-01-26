@@ -1,5 +1,6 @@
 [global]
-font = Inconsolata-g for Powerline 11
+
+font = Fira Sans 11
 
 # Allow a small subset of html markup:
 #   <b>bold</b>
@@ -157,6 +158,7 @@ icon_path = /usr/share/icons/Adwaita/16x16/status/:/usr/share/icons/Adwaita/16x1
 # /usr/share/icons/Paper/16x16/mimetypes/:/usr/share/icons/Paper/48x48/status/:/usr/share/icons/Paper/16x16/devices/:/usr/share/icons/Paper/48x48/notifications/:/usr/share/icons/Paper/48x48/emblems/
 
 frame_width = 3
+
 frame_color = "#8EC07C"
 
 [shortcuts]
@@ -233,6 +235,7 @@ context = ctrl+shift+period
 #    urgency = normal
 #
 # vim: ft=cfg
+
 [urgency_low]
 # IMPORTANT: colors have to be defined in quotation marks.
 # Otherwise the "#" and following would be interpreted as a comment.
