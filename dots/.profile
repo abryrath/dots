@@ -48,12 +48,9 @@ export ARCHFLAGS="-arch x86_64"
 export LANG="en_US.UTF-8"
 export BROWSER="firefox"
 
-if [ -x "$(command -v emacsclient)" ]; then
-    export EDITOR="emacsclient -nw"
-    export VISUAL="emacsclient -c"
-elif [ -x "(command -v nvim)" ]; then
-    export EDITOR="nvim"
-    export VISUAL="nvim"
+if [ -x "$(command -v code)" ]; then
+    export EDITOR="code"
+    export VISUAL="code"
 else
     export EDITOR="nano"
     export VISUAL="nano"

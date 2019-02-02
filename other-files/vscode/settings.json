@@ -25,7 +25,7 @@
     "window.zoomLevel": 0,
     "emmet.includeLanguages": {
         "blade": "html"
-     },
+    },
     "emmet.triggerExpansionOnTab": true,
     "git.enableSmartCommit": true,
     "javascript.updateImportsOnFileMove.enabled": "always",
@@ -38,5 +38,6 @@
     //"blade.format.enable": true
     "editor.renderWhitespace": "boundary",
     "workbench.iconTheme": "Monokai Classic Icons",
-    "phan.phpExecutablePath": "/usr/local/bin/php"
+    "phan.phpExecutablePath": "/usr/local/bin/php",
+    "window.titleBarStyle": "native"    
 }

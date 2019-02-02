@@ -15,3 +15,14 @@
 # If you want to use XFCE config tools...
 #
 #xfce-mcs-manager &
+pkill nm-applet
+pkill volumeicon
+pkill feh
+pkill tint2
+
+nm-applet &
+volumeicon &
+feh --bg-fill $HOME/Pictures/4k-fog-mist-water-wallpaper.jpg 
+
+tint2 $HOME/.config/tint2/unleashed-workspace.tint2rc &
+tint2 $HOME/.config/tint2/unleashed-clock.tint2rc &

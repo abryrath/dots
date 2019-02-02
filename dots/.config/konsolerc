@@ -9,11 +9,13 @@ Width 2048=700
 Favorites=
 
 [MainWindow]
+Height 1440=1081
 Height 2160=1081
 MenuBar=Enabled
 State=AAAA/wAAAAD9AAAAAAAAB7YAAAQlAAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
+Width 2560=1974
 Width 3840=1974
 Window-Maximized 1152x2048=true
-Window-Maximized 1440x2560=true
+Window-Maximized 1440x2560=false
 Window-Maximized 1620x2880=true
