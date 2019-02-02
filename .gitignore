@@ -25,6 +25,7 @@
 
 # Linux
 !dots/.config/polybar/*
+!dots/.config/openbox/*
 !dots/.config/bspwm/*
 !dots/.config/sxhkd/*
 !dots/.config/rofi/*

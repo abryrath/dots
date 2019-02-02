@@ -30,6 +30,7 @@ if [[ $(uname -s) == "Darwin" ]]; then
     if [[ -f "${php72_root}/bin/php" ]]; then
         alias php72="${php72_root}/bin/php"
         alias pecl72="${php72_root}/bin/pecl"
+        alias composer72="${php72_root}/bin/php $(which composer)"
     fi
     export VHOSTS_DIR="/usr/local/etc/httpd/extra/vhosts"
     export APACHE_DIR="/usr/local/etc/httpd"
@@ -128,7 +129,8 @@ alias ssh.wedge="ssh wedgecapital@wedgecapital.com"
 
 # Leading On Opportunity
 alias cd.leadingon="cd ${UNION_REPOS}/leadingonopportunity-org/"
-alias ssh.leadingon="ssh leadingon@vps1.union.co"
+alias ssh.leadingon="ssh leadingo@leadingonopportunity.org"
+
 alias ssh.petsky.staging="ssh petskyprunier@vps2.union.co"
 
 # Petsky Prunier
@@ -149,3 +151,7 @@ alias ssh.neighborhood="ssh neighborhoodlend@neighborhoodlender.com"
 # Autobell
 alias ssh.autobell="ssh autobell@autobell.union.agency"
 alias cd.autobell="cd ${UNION_REPOS}/autobell-com/"
+
+# Union 7.0
+alias cd.u7="cd ${UNION_REPOS}/craft-union-co"
+alias ssh.u7="ssh union@union.co"

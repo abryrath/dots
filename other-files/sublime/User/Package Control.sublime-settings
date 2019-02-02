@@ -5,6 +5,7 @@
 	],
 	"installed_packages":
 	[
+		"ApacheConf",
 		"Craft-Twig",
 		"Git",
 		"PHP Companion",

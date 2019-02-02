@@ -2,7 +2,9 @@
     "php.validate.enable": true,
     "php.validate.executablePath": "/usr/local/bin/php",
     "php.validate.run": "onType",
-    "editor.fontFamily": "Ubuntu Mono derivative Powerline",
+    "editor.fontFamily": "Ubuntu Mono derivative Powerline, UbuntuMonoNerdFontComplete-Regular, OfficeCodePro, DejaVuSansMonoNerdFontComplete-Book, EnvyCode-r, AnkaCoder-r, Fira Code, monospace",
+    "editor.fontSize": 14,
+    "terminal.integrated.fontSize": 12,
     "editor.fontLigatures": true,
     "telemetry.enableTelemetry": false,
     "git.confirmSync": false,
@@ -16,7 +18,7 @@
     },
     "explorer.confirmDragAndDrop": false,
     "workbench.editor.showTabs": true,
-    "workbench.colorTheme": "Dracula Soft",
+    "workbench.colorTheme": "Palenight Theme",
     "breadcrumbs.enabled": true,
     "workbench.settings.editor": "json",
     "workbench.statusBar.feedback.visible": false,
@@ -33,5 +35,8 @@
     "editor.trimAutoWhitespace": true,
     "editor.insertSpaces": true,
     "editor.detectIndentation": false,
-    "blade.format.enable": true
+    //"blade.format.enable": true
+    "editor.renderWhitespace": "boundary",
+    "workbench.iconTheme": "Monokai Classic Icons",
+    "phan.phpExecutablePath": "/usr/local/bin/php"
 }
