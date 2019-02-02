@@ -2,7 +2,7 @@
     "php.validate.enable": true,
     "php.validate.executablePath": "/usr/local/bin/php",
     "php.validate.run": "onType",
-    "editor.fontFamily": "EnvyCode-r, AnkaCoder-r, Fira Code, monospace",
+    "editor.fontFamily": "Ubuntu Mono derivative Powerline",
     "editor.fontLigatures": true,
     "telemetry.enableTelemetry": false,
     "git.confirmSync": false,
