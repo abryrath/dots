@@ -21,7 +21,7 @@ alias ls="ls --group-directories-first --dereference-command-line-symlink-to-dir
 alias ll="exa --color=auto -l --group-directories-first"
 alias t="exa -T"
 alias l="ls -la --dereference-command-line-symlink-to-dir"
-alias info='info --vi-keys --init-file=${XDG_CONFIG_HOME}/infokey'
+alias info='info --vi-keys --init-file=$XDG_CONFIG_HOME/infokey'
 alias pgrep="pgrep -l"
 alias grep="grep -i --color=auto"
 alias egrep="egrep --color=auto"
