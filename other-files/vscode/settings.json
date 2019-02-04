@@ -2,7 +2,7 @@
     "php.validate.enable": true,
     "php.validate.executablePath": "/usr/local/bin/php",
     "php.validate.run": "onType",
-    "editor.fontFamily": "UbuntuMonoNerdFontComplete-Regular, OfficeCodePro, DejaVuSansMonoNerdFontComplete-Book, EnvyCode-r, AnkaCoder-r, Fira Code, monospace",
+    "editor.fontFamily": "Ubuntu Mono derivative Powerline, UbuntuMonoNerdFontComplete-Regular, OfficeCodePro, DejaVuSansMonoNerdFontComplete-Book, EnvyCode-r, AnkaCoder-r, Fira Code, monospace",
     "editor.fontSize": 14,
     "terminal.integrated.fontSize": 12,
     "editor.fontLigatures": true,
@@ -25,7 +25,7 @@
     "window.zoomLevel": 0,
     "emmet.includeLanguages": {
         "blade": "html"
-     },
+    },
     "emmet.triggerExpansionOnTab": true,
     "git.enableSmartCommit": true,
     "javascript.updateImportsOnFileMove.enabled": "always",
@@ -38,5 +38,6 @@
     //"blade.format.enable": true
     "editor.renderWhitespace": "boundary",
     "workbench.iconTheme": "Monokai Classic Icons",
-    "phan.phpExecutablePath": "/usr/local/bin/php"
+    "phan.phpExecutablePath": "/usr/local/bin/php",
+    "window.titleBarStyle": "native"    
 }
