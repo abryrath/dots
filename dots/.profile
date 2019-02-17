@@ -123,3 +123,7 @@ export MANPATH="$MANPATH:/usr/local/share/man:/usr/share/man"
 [ -d "/usr/local/opt/coreutils/libexec/gnuman" ] && {
     export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 }
+
+[ -x $(command -v op) ] && {
+    [ -z "${OP_SESSION_my}" ] || eval $(op signin my)
+}

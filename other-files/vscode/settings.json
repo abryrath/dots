@@ -9,7 +9,7 @@
     "telemetry.enableTelemetry": false,
     "git.confirmSync": false,
     "phpcs.enable": true,
-    "phpcs.executablePath": "/Users/abryrath/.composer/vendor/bin/phpcs",
+    "phpcs.executablePath": "/home/abry/.composer/vendor/bin/phpcs",
     "phpcs.standard": "PSR2",
     "php.suggest.basic": false,
     "explorer.confirmDelete": false,
@@ -37,7 +37,5 @@
     "editor.detectIndentation": false,
     //"blade.format.enable": true
     "editor.renderWhitespace": "boundary",
-    "workbench.iconTheme": "Monokai Classic Icons",
-    "phan.phpExecutablePath": "/usr/local/bin/php",
-    "window.titleBarStyle": "native"    
+    "window.titleBarStyle": "native"
 }

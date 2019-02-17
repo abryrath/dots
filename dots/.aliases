@@ -30,6 +30,7 @@ alias dcr="docker-compose run --rm"
 alias dcdn="docker-compose down"
 alias dcup="docker-compose up"
 alias dcb="docker-compose build"
+alias yay="yay --color=auto"
 
 # Projects
 files=('union.sh' 'ph.sh' 'mac.sh')
