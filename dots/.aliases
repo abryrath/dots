@@ -16,21 +16,20 @@ alias mv="mv -v"
 alias ln="ln -v"
 alias cp="cp -v"
 alias rm="rm -v"
-alias ls="ls --group-directories-first --dereference-command-line-symlink-to-dir --color=auto"
+#alias ls="ls --group-directories-first --dereference-command-line-symlink-to-dir --color=auto"
 #alias ll="ls --dereference-command-line-symlink-to-dir -lh"
-alias ll="exa --color=auto -l --group-directories-first"
-alias t="exa -T"
-alias l="ls -la --dereference-command-line-symlink-to-dir"
-alias info='info --vi-keys --init-file=${XDG_CONFIG_HOME}/infokey'
-alias pgrep="pgrep -l"
-alias grep="grep -i --color=auto"
-alias egrep="egrep --color=auto"
+#alias ll="exa --color=auto -l --group-directories-first"
+#alias t="exa -T"
+#alias l="ls -la --dereference-command-line-symlink-to-dir"
+#alias info='info --vi-keys --init-file=$XDG_CONFIG_HOME/infokey'
+#alias pgrep="pgrep -l"
+#alias grep="grep -i --color=auto"
+#alias egrep="egrep --color=auto"
 
-alias dcr="docker-compose run --rm"
-alias dcdn="docker-compose down"
-alias dcup="docker-compose up"
-alias dcb="docker-compose build"
-alias yay="yay --color=auto"
+#alias dcr="docker-compose run --rm"
+#alias dcdn="docker-compose down"
+#alias dcup="docker-compose up"
+#alias dcb="docker-compose build"
 
 # Projects
 files=('union.sh' 'ph.sh' 'mac.sh')

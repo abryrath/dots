@@ -14,18 +14,16 @@
     "php.suggest.basic": false,
     "explorer.confirmDelete": false,
     "files.associations": {
-        "*.twig": "twig"
+        "*.twig": "twig",
+        "*.html": "twig"
     },
     "explorer.confirmDragAndDrop": false,
     "workbench.editor.showTabs": true,
-    "workbench.colorTheme": "Palenight Theme",
+    "workbench.colorTheme": "United Ubuntu",
     "breadcrumbs.enabled": true,
     "workbench.settings.editor": "json",
     "workbench.statusBar.feedback.visible": false,
-    "window.zoomLevel": 0,
-    "emmet.includeLanguages": {
-        "blade": "html"
-    },
+    "window.zoomLevel": -1,
     "emmet.triggerExpansionOnTab": true,
     "git.enableSmartCommit": true,
     "javascript.updateImportsOnFileMove.enabled": "always",
@@ -35,7 +33,10 @@
     "editor.trimAutoWhitespace": true,
     "editor.insertSpaces": true,
     "editor.detectIndentation": false,
-    //"blade.format.enable": true
     "editor.renderWhitespace": "boundary",
-    "window.titleBarStyle": "native"
+    "window.titleBarStyle": "native",
+    "psalm.phpExecutablePath": "/usr/local/bin/php",
+    "psalm.enableDebugLog": true,
+    "psalm.psalmScriptPath": "/Users/abryrath/.composer/vendor/bin/psalm-language-server",
+    "git.autofetch": true,
 }
