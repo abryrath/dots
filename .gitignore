@@ -3,6 +3,8 @@
 !*/
 
 # Linux + macOS
+!dots/.config/fish/fishfile
+!dots/.config/config.fish
 !dots/.zshrc
 !dots/.zsh/get-plugins.sh
 !dots/.oh-my-zsh
@@ -18,6 +20,7 @@
 !dots/.local/bin/vivaldi
 !dots/.config/fish/config.fish
 !dots/.config/kitty/kitty.conf
+!dots/.config/termite/*
 !other-files/vscode/settings.json
 !other-files/vscode/keybindings.json
 !other-files/sublime/User/*.sublime-keymap
