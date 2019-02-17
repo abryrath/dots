@@ -23,7 +23,7 @@
     "breadcrumbs.enabled": true,
     "workbench.settings.editor": "json",
     "workbench.statusBar.feedback.visible": false,
-    "window.zoomLevel": -1,
+    "window.zoomLevel": 0,
     "emmet.triggerExpansionOnTab": true,
     "git.enableSmartCommit": true,
     "javascript.updateImportsOnFileMove.enabled": "always",
