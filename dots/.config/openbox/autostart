@@ -15,11 +15,15 @@
 # If you want to use XFCE config tools...
 #
 #xfce-mcs-manager &
+xrandr --output eDP-1 --mode 2560x1440
+
 pkill nm-applet
 pkill volumeicon
 pkill feh
 pkill tint2
+pkill clipit
 
+clipit &
 nm-applet &
 volumeicon &
 feh --bg-fill $HOME/Pictures/4k-fog-mist-water-wallpaper.jpg 

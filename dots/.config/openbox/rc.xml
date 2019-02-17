@@ -54,16 +54,16 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>Ubuntu Mono derivative Powerline</name>
+      <name>Ubuntu</name>
       <size>8</size>
       <!-- font size in points -->
-      <weight>Bold</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
-      <name>Ubuntu Mono derivative Powerline</name>
+      <name>Ubuntu Light</name>
       <size>8</size>
       <!-- font size in points -->
       <weight>Normal</weight>
@@ -72,16 +72,16 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
-      <name>Ubuntu Mono derivative Powerline</name>
+      <name>Ubuntu Light</name>
       <size>9</size>
       <!-- font size in points -->
-      <weight>Bold</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuItem">
-      <name>Ubuntu Mono derivative Powerline</name>
+      <name>Ubuntu Light</name>
       <size>9</size>
       <!-- font size in points -->
       <weight>Normal</weight>
@@ -90,16 +90,16 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="ActiveOnScreenDisplay">
-      <name>Ubuntu Mono derivative Powerline</name>
+      <name>Ubuntu Light</name>
       <size>9</size>
       <!-- font size in points -->
-      <weight>Bold</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>Ubuntu Mono derivative Powerline</name>
+      <name>Ubuntu Light</name>
       <size>9</size>
       <!-- font size in points -->
       <weight>Normal</weight>
@@ -130,7 +130,7 @@
        desktops.  Set this to 0 to disable the popup. -->
   </desktops>
   <resize>
-    <drawContents>yes</drawContents>
+    <drawContents>no</drawContents>
     <popupShow>Nonpixel</popupShow>
     <!-- 'Always', 'Never', or 'Nonpixel' (xterms and such) -->
     <popupPosition>Center</popupPosition>
@@ -151,7 +151,7 @@
      cases. -->
   <margins>
     <top>20</top>
-    <bottom>20</bottom>
+    <bottom>0</bottom>
     <left>0</left>
     <right>0</right>
   </margins>
@@ -175,18 +175,6 @@
   </dock>
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
-    <keybind key="C-A-Left">
-      <action name="GoToDesktop"/>
-    </keybind>
-    <keybind key="C-A-Right">
-      <action name="GoToDesktop"/>
-    </keybind>
-    <keybind key="C-A-Up">
-      <action name="GoToDesktop"/>
-    </keybind>
-    <keybind key="C-A-Down">
-      <action name="GoToDesktop"/>
-    </keybind>
     <keybind key="S-A-Left">
       <action name="SendToDesktop"/>
     </keybind>
@@ -199,23 +187,8 @@
     <keybind key="S-A-Down">
       <action name="SendToDesktop"/>
     </keybind>
-    <keybind key="W-F1">
-      <action name="GoToDesktop"/>
-    </keybind>
-    <keybind key="W-F2">
-      <action name="GoToDesktop"/>
-    </keybind>
-    <keybind key="W-F3">
-      <action name="GoToDesktop"/>
-    </keybind>
-    <keybind key="W-F4">
-      <action name="GoToDesktop"/>
-    </keybind>
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
-    </keybind>
-    <keybind key="A-F4">
-      <action name="Close"/>
     </keybind>
     <keybind key="A-Escape">
       <action name="Lower"/>
@@ -225,18 +198,6 @@
     <keybind key="A-space">
       <action name="ShowMenu">
         <menu>client-menu</menu>
-      </action>
-    </keybind>
-    <keybind key="A-Tab">
-      <action name="NextWindow"/>
-    </keybind>
-    <keybind key="A-S-Tab">
-      <action name="PreviousWindow"/>
-    </keybind>
-    <keybind key="C-A-Tab">
-      <action name="NextWindow">
-        <panels>yes</panels>
-        <desktop>yes</desktop>
       </action>
     </keybind>
     <keybind key="W-S-Right">
@@ -251,15 +212,6 @@
     <keybind key="W-S-Down">
       <action name="DirectionalCycleWindows"/>
     </keybind>
-    <keybind key="W-e">
-      <action name="Execute">
-        <command>kfmclient openProfile filemanagement</command>
-        <startupnotify>
-          <enabled>yes</enabled>
-          <name>Konqueror</name>
-        </startupnotify>
-      </action>
-    </keybind>
     <keybind key="W-space">
       <action name="Execute">
         <command>/home/abry/.local/bin/dmenu</command>
@@ -267,6 +219,14 @@
     </keybind>
     <keybind key="W-1">
       <action name="Desktop"/>
+    </keybind>
+    <keybind key="W-Return">
+      <action name="Execute">
+        <command>/usr/bin/urxvt</command>
+      </action>
+    </keybind>
+    <keybind key="W-m">
+      <action name="ToggleMaximizeFull"/>
     </keybind>
     <keybind key="W-2">
       <action name="Desktop">
@@ -281,6 +241,54 @@
     <keybind key="W-4">
       <action name="Desktop">
         <desktop>4</desktop>
+      </action>
+    </keybind>
+    <keybind key="A-W-Right">
+      <action name="ResizeRelative">
+        <right>20</right>
+      </action>
+    </keybind>
+    <keybind key="C-A-Left">
+      <action name="ResizeRelative">
+        <left>-20</left>
+      </action>
+    </keybind>
+    <keybind key="A-W-Up">
+      <action name="ResizeRelative">
+        <top>20</top>
+      </action>
+    </keybind>
+    <keybind key="A-W-Down">
+      <action name="ResizeRelative">
+        <bottom>20</bottom>
+      </action>
+    </keybind>
+    <keybind key="A-W-Left">
+      <action name="ResizeRelative">
+        <left>20</left>
+      </action>
+    </keybind>
+    <keybind key="C-A-Up">
+      <action name="ResizeRelative">
+        <top>-20</top>
+      </action>
+    </keybind>
+    <keybind key="C-A-Down">
+      <action name="ResizeRelative">
+        <bottom>-20</bottom>
+      </action>
+    </keybind>
+    <keybind key="C-A-Right">
+      <action name="ResizeRelative">
+        <right>-20</right>
+      </action>
+    </keybind>
+    <keybind key="W-Tab">
+      <action name="PreviousWindow"/>
+    </keybind>
+    <keybind key="S-W-r">
+      <action name="Execute">
+        <command>openbox --restart</command>
       </action>
     </keybind>
   </keyboard>
