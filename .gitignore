@@ -21,6 +21,7 @@
 !dots/.config/fish/config.fish
 !dots/.config/kitty/kitty.conf
 !dots/.config/termite/*
+!dots/.hyper.js
 !other-files/vscode/settings.json
 !other-files/vscode/keybindings.json
 !other-files/sublime/User/*.sublime-keymap
