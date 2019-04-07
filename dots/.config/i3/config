@@ -218,18 +218,18 @@ gaps outer 5
 exec --no-startup-id compton --config $HOME/.config/compton/compton.conf &
 exec --no-startup-id emacs --daemon &
 
-exec xfce4-session
+# exec xfce4-session
 exec --no-startup-id dunst &
-exec --no-startup-id $HOME/.local/bin/xrandr.sh &
+# exec --no-startup-id $HOME/.local/bin/xrandr.sh &
 exec --no-startup-id compton &
 exec --no-startup-id { nitrogen --restore || xsetroot -solid '#b0b0b0' } &
-exec xfconfd &
-exec xfsettingsd &
-exec xfce4-volumed-pulse &
-exec xfce4-power-manager &
+# exec xfconfd &
+# exec xfsettingsd &
+# exec xfce4-volumed-pulse &
+# exec xfce4-power-manager &
 # exec xfce4-panel &
 # }}}
 
-bar {
-    status_command i3blocks
-}
+# bar {
+#     status_command i3blocks
+# }
