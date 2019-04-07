@@ -9,10 +9,10 @@ module.exports = {
     updateChannel: 'stable',
 
     // default font size in pixels for all tabs
-    fontSize: 12,
+    fontSize: 11,
 
     // font family with optional fallbacks
-      fontFamily: 'undefined, "Iosveka Term", "M+ 1mn", "Ubuntu mono derivative Powerline", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+      fontFamily: '"Fira Code", "Iosveka Term", "M+ 1mn", "Ubuntu mono derivative Powerline", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: 'normal',

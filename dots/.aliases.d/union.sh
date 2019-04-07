@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [[ $(uname -s) == "Darwin" ]]; then
-    
+
     # Apache + PHP configs
     #php56_root=$(brew info php@5.6 | grep -e '/usr/local/Cellar' | awk '{ print $1 }')
     php56_root="/usr/local/opt/php@5.6"
@@ -12,25 +12,33 @@ if [[ $(uname -s) == "Darwin" ]]; then
 
     #php70_root=$(brew info php@7.0 | grep -e '/usr/local/Cellar' | awk '{ print $1 }')
     php70_root="/usr/local/opt/php@7.0"
-    
+
     if [[ -f "${php70_root}/bin/php" ]]; then
         alias php70="${php70_root}/bin/php"
         alias pecl70="${php70_root}/bin/pecl"
     fi
-    
+
     #php71_root=$(brew info php@7.1 | grep -e '/usr/local/Cellar' | awk '{ print $1 }')
     php71_root="/usr/local/opt/php@7.1"
     if [[ -f "${php71_root}/bin/php" ]]; then
         alias php71="${php71_root}/bin/php"
         alias pecl71="${php71_root}/bin/pecl"
     fi
-    
+
     #php72_root=$(brew info php@7.2 | grep -e '/usr/local/Cellar' | awk '{ print $1 }')
+
     php72_root="/usr/local/opt/php@7.2"
     if [[ -f "${php72_root}/bin/php" ]]; then
         alias php72="${php72_root}/bin/php"
         alias pecl72="${php72_root}/bin/pecl"
         alias composer72="${php72_root}/bin/php $(which composer)"
+    fi
+
+    php73_root="/usr/local/opt/php@7.3"
+    if [[ -f "${php73_root}/bin/php" ]]; then
+        alias php73="${php73_root}/bin/php"
+        alias pecl73="${php73_root}/bin/pecl"
+        alias composer73="${php73_root}/bin/php $(which composer)"
     fi
     export VHOSTS_DIR="/usr/local/etc/httpd/extra/vhosts"
     export APACHE_DIR="/usr/local/etc/httpd"
@@ -42,7 +50,6 @@ alias em.apache="emacsclient -c ${APACHE_DIR}/httpd.conf"
 # Check apache error logs + access logs
 alias tail.apache.error="tail -f /usr/local/var/log/httpd/error_log"
 alias tail.apache.access="tail -f /usr/local/var/log/httpd/access_log"
-
 
 alias em.ssh="emacsclient -c $HOME/.ssh/config"
 alias sd="npm run syncdb"
