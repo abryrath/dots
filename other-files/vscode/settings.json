@@ -1,8 +1,8 @@
 {
     "php.validate.enable": true,
-    "php.validate.executablePath": "/usr/local/bin/php",
+    "php.validate.executablePath": "/usr/local/opt/php@7.2/bin/php",
     "php.validate.run": "onType",
-    "editor.fontFamily": "undefined, Iosevka Term, Ubuntu Mono derivative Powerline, UbuntuMonoNerdFontComplete-Regular, OfficeCodePro, DejaVuSansMonoNerdFontComplete-Book, EnvyCode-r, AnkaCoder-r, Fira Code, monospace",
+    "editor.fontFamily": "Iosevka Term, Fira Code, UbuntuMonoNerdFontComplete-Regular, OfficeCodePro, DejaVuSansMonoNerdFontComplete-Book, AnkaCoder-r, Hack, AnkaCoder, undefined, Ubuntu Mono derivative Powerline, EnvyCode-r, AnkaCoder-r, monospace",
     "editor.fontSize": 14,
     "terminal.integrated.fontSize": 12,
     "editor.fontLigatures": true,
@@ -15,11 +15,12 @@
     "explorer.confirmDelete": false,
     "files.associations": {
         "*.twig": "twig",
-        "*.html": "twig"
+        "*.html": "twig",
+        "*.stub": "php",
     },
     "explorer.confirmDragAndDrop": false,
     "workbench.editor.showTabs": true, 
-    "workbench.colorTheme": "United Ubuntu",
+    "workbench.colorTheme": "Default Light+",
     "breadcrumbs.enabled": true,
     "workbench.settings.editor": "json",
     "workbench.statusBar.feedback.visible": false,
@@ -35,9 +36,10 @@
     "editor.detectIndentation": false,
     "editor.renderWhitespace": "boundary",
     "window.titleBarStyle": "native",
-    "psalm.phpExecutablePath": "/usr/local/bin/php",
+    "psalm.phpExecutablePath": "/usr/local/opt/php@7.2/bin/php",
     "psalm.enableDebugLog": true,
     "psalm.psalmScriptPath": "/Users/abryrath/.composer/vendor/bin/psalm-language-server",
+    "psalm.connectToServerWithTcp": false,
     "git.autofetch": true,
     "terminal.integrated.shell.osx": "/usr/local/bin/fish",
     "auto-close-tag.excludedTags": [
@@ -66,5 +68,29 @@
         "User",
         "GiftCardCode"
     ],
-    "auto-close-tag.SublimeText3Mode": true
+    "auto-close-tag.SublimeText3Mode": true,
+    "circleci.apiKey": "69ef7a3a6e0b15123f6485c0451ed176f84151a8",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "eslint.enable": true,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+    "javascript.preferences.quoteStyle": "single",
+    "prettier.eslintIntegration": true,
+    "prettier.singleQuote": true,
+    "prettier.bracketSpacing": false,
+    "prettier.tslintIntegration": false,
+    "typescript.format.enable": true,
+    "prettier.tabWidth": 4,
+    "prettier.disableLanguages": [
+        "typescript-react",
+        "typescript",
+        "TypeScript React",
+        "tsx",
+        "ts"
+    ],
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[php]": {
+        "editor.defaultFormatter": "kokororin.vscode-phpfmt"
+    }
 }
