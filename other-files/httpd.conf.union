@@ -110,7 +110,7 @@ LoadModule filter_module lib/httpd/modules/mod_filter.so
 #LoadModule sed_module lib/httpd/modules/mod_sed.so
 #LoadModule charset_lite_module lib/httpd/modules/mod_charset_lite.so
 #LoadModule deflate_module lib/httpd/modules/mod_deflate.so
-#LoadModule xml2enc_module lib/httpd/modules/mod_xml2enc.so
+LoadModule xml2enc_module lib/httpd/modules/mod_xml2enc.so
 LoadModule proxy_html_module lib/httpd/modules/mod_proxy_html.so
 #LoadModule brotli_module lib/httpd/modules/mod_brotli.so
 LoadModule mime_module lib/httpd/modules/mod_mime.so
@@ -220,7 +220,8 @@ ServerAdmin you@example.com
 #
 # If your host doesn't have a registered DNS name, enter its IP address here.
 #
-#ServerName www.example.com:8080
+ServerName localhost
+# www.example.com:8080
 
 #
 # Deny access to the entirety of your server's filesystem. You must
