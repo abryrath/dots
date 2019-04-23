@@ -103,5 +103,8 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "dayNightThemeSwitcher.dayTheme": "Atom One Light",
-    "dayNightThemeSwitcher.nightTheme": "Snazzy Plus Darker"
+    "dayNightThemeSwitcher.nightTheme": "Snazzy Plus Darker",
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    }
 }

@@ -18,6 +18,7 @@
 !dots/.tmux.conf
 !dots/.local/bin/mac-packages
 !dots/.local/bin/vivaldi
+!dots/.local/bin/alacritty-colorscheme
 !dots/.config/fish/config.fish
 !dots/.config/kitty/kitty.conf
 !dots/.config/termite/*
