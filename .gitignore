@@ -22,6 +22,7 @@
 !dots/.config/kitty/kitty.conf
 !dots/.config/termite/*
 !dots/.hyper.js
+!dots/.config/alacritty/alacritty.yml
 !other-files/vscode/settings.json
 !other-files/vscode/keybindings.json
 !other-files/sublime/User/*.sublime-keymap
