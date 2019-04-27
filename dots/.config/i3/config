@@ -1,5 +1,5 @@
 # Fonts/Variables {{{
-font pango:DejaVu Sans Mono 8
+font pango:Fira Code 8
 
 set $mod Mod1
 
@@ -39,7 +39,7 @@ set_from_resource $color15 i3wm.color15    #e6e6e6
 # Keybinds {{{
 # start a terminal
 # bindsym $mod+Return exec xfce4-terminal --hide-menubar
-bindsym $mod+Return exec hyper
+bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+Return exec xterm
 
 # kill focused window
@@ -207,7 +207,7 @@ client.focused           $focused     $bg       $fg     $focused        $focused
 # Gaps {{{
 gaps inner 5
 gaps outer 5
-# smart_gaps on
+smart_gaps on
 #}}}
 
 # Bar {{{
