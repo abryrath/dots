@@ -103,8 +103,20 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "dayNightThemeSwitcher.dayTheme": "Atom One Light",
-    "dayNightThemeSwitcher.nightTheme": "Snazzy Plus Darker",
+    "dayNightThemeSwitcher.nightTheme": "Snazzy Plus w/ Italics",
     "[yaml]": {
         "editor.defaultFormatter": "redhat.vscode-yaml"
-    }
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.gotoLocation.multiple": "goto",
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "org.todoKeywords": [
+        "TODO",
+        "DONE"
+    ],
+    "editor.wordWrap": "on"
 }
