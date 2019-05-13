@@ -18,3 +18,6 @@ end
 if type -q bass
     bass source ~/.aliases
 end
+
+set -U EDITOR vim
+set -U VISUAL code

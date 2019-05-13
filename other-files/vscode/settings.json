@@ -118,5 +118,5 @@
         "TODO",
         "DONE"
     ],
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "off"
 }
