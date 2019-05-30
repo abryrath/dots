@@ -5,6 +5,7 @@
 # Linux + macOS
 !dots/.config/fish/fishfile
 !dots/.config/config.fish
+!dots/.config/fish/user-functions/*
 !dots/.zshrc
 !dots/.zsh/get-plugins.sh
 !dots/.oh-my-zsh
@@ -31,7 +32,7 @@
 !other-files/sublime/Themes/*
 !dots/.vim/vimrc
 !dots/.vim/autoload/plug.vim
-
+dots/.vim/plugged/
 # Linux
 !dots/.config/polybar/*
 !dots/.config/openbox/*

@@ -10,3 +10,5 @@
 
 # bash completion
 # [[ -f /usr/local/share/bash-completion/bash_completion ]] &&  . /usr/local/share/bash-completion/bash_completion
+
+export PATH="$HOME/.cargo/bin:$PATH"

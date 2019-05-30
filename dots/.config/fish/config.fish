@@ -2,6 +2,7 @@ set fish_user_paths $HOME/.local/bin $PATH
 if not type -q fisher
     echo "Fisher not found, installing..."
     curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
+    source $HOME/.config/fish/config.fish
     echo "Finished"
 end
 if not type -q bass
@@ -11,13 +12,11 @@ if not type -q bass
     #echo "Finished"
 end
 
-# prompts
-# fisher add matchai/spacefish
-# fisher add fishpkg/fish-prompt-metro
-
-if type -q bass
-    bass source ~/.aliases
+#if type -q bass
+#    bass source ~/.aliases
+#end
+for func in ~/.config/fish/user-functions/*
+	echo "Loading $func"
+	source $func
 end
 
-set -U EDITOR vim
-set -U VISUAL code

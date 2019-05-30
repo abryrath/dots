@@ -127,3 +127,5 @@ export MANPATH="$MANPATH:/usr/local/share/man:/usr/share/man"
 [ -x $(command -v op) ] && {
     [ -z "${OP_SESSION_my}" ] || eval $(op signin my)
 }
+
+export PATH="$HOME/.cargo/bin:$PATH"
