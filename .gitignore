@@ -30,7 +30,7 @@
 !other-files/sublime/User/*.sublime-keymap
 !other-files/sublime/User/*.sublime-settings
 !other-files/sublime/Themes/*
-!dots/.vim/vimrc
+!dots/.vimrc
 !dots/.vim/autoload/plug.vim
 dots/.vim/plugged/
 # Linux
