@@ -38,6 +38,8 @@ dots/.vim/plugged/
 !dots/.config/openbox/*
 !dots/.config/tint2/*
 !dots/.config/bspwm/*
+!dots/.config/i3/*
+!dots/.config/i3blocks/*
 !dots/.config/sxhkd/*
 !dots/.config/rofi/*
 !dots/.config/compton/*
