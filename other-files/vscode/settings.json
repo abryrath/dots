@@ -24,7 +24,7 @@
     "breadcrumbs.enabled": true,
     "workbench.settings.editor": "json",
     "workbench.statusBar.feedback.visible": false,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": -1,
     "emmet.triggerExpansionOnTab": true,
     "git.enableSmartCommit": true,
     "javascript.updateImportsOnFileMove.enabled": "always",
@@ -118,5 +118,6 @@
         "TODO",
         "DONE"
     ],
-    "editor.wordWrap": "off"
+    "editor.wordWrap": "off",
+    "workbench.iconTheme": "material-icon-theme"
 }
