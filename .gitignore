@@ -33,6 +33,8 @@
 !dots/.vimrc
 !dots/.vim/autoload/plug.vim
 dots/.vim/plugged/
+!dots/.tmux.d/*
+
 # Linux
 !dots/.config/polybar/*
 !dots/.config/openbox/*
