@@ -1,64 +1,103 @@
-! Dracula Xresources palette
-*.foreground: #F8F8F2
-*.background: #282A36
+!!!!!!!!!!!!!!!!!!!!!!!!
+! snazzy color  scheme !
+!!!!!!!!!!!!!!!!!!!!!!!!
+
+*.background: #282a36
+*.foreground: #eff0eb
+
 ! black
-*.color0:     #000000
-*.color8:     #4D4D4D
+*.color0  : #2E3436
+*.color8  : #686868
+
 ! red
-*.color1:     #FF5555
-*.color9:     #FF6E67
+*.color1  : #ff5c57
+*.color9  : #ff5c57
+
 ! green
-*.color2:     #50FA7B
-*.color10:    #5AF78E
+*.color2  : #5af78e
+*.color10 : #5af78e
+
 ! yellow
-*.color3:     #F1FA8C
-*.color11:    #F4F99D
+*.color3  : #f3f99d
+*.color11 : #f3f99d
+
 ! blue
-*.color4:     #BD93F9
-*.color12:    #CAA9FA
+*.color4  : #57c7ff
+*.color12 : #57c7ff
+
 ! magenta
-*.color5:     #FF79C6
-*.color13:    #FF92D0
-! cyan 
-*.color6:     #8BE9FD
-*.color14:    #9AEDFE
+*.color5  : #ff6ac1
+*.color13 : #ff6ac1
+
+! cyan
+*.color6  : #9aedfe
+*.color14 : #9aedfe
+
 ! white
-*.color7:     #BFBFBF
-*.color15:    #E6E6E6
+*.color7  : #f1f1f0
+*.color15 : #eff0eb
+
+! Dracula Xresources palette
+! *.foreground: #F8F8F2
+! *.background: #282A36
+! black
+! *.color0:     #000000
+! *.color8:     #4D4D4D
+! red
+! *.color1:     #FF5555
+! *.color9:     #FF6E67
+! green
+! *.color2:     #50FA7B
+! *.color10:    #5AF78E
+! yellow
+! *.color3:     #F1FA8C
+! *.color11:    #F4F99D
+! blue
+! *.color4:     #BD93F9
+! *.color12:    #CAA9FA
+! magenta
+! *.color5:     #FF79C6
+! *.color13:    #FF92D0
+! cyan 
+! *.color6:     #8BE9FD
+! *.color14:    #9AEDFE
+! white
+! *.color7:     #BFBFBF
+! *.color15:    #E6E6E6
 
 
 ! ------------------------------------------------------------------------------
-! URxvt configs
+! * configs
 ! ------------------------------------------------------------------------------
 
-URxvt.geometry: 		72x18
-URxvt*letterSpace: 	    -1
-URxvt.lineSpace: 		0
-URxvt*internalBorder:   24
-URxvt*externalBorder:   0
-URxvt*depth:            32
-URxvt*saveline:         2000
-URxvt*termName:         rxvt-256color
-URxvt*iso14755:         false
-URxvt*scrollBar:        false
-URxvt*scrollBar_right:  false
-URxvt.perl-ext-common:  default,clipboard,url-select,keyboard-select
-URxvt.copyCommand:      xclip -i -selection clipboard
-URxvt.pasteCommand:     xclip -o -selection clipboard
-URxvt.keysym.M-c:       perl:clipboard:copy
-URxvt.keysym.M-v:       perl:clipboard:paste
-URxvt.keysym.M-C-v:     perl:clipboard:paste_escaped
-URxvt.keysym.M-Escape:  perl:keyboard-select:activate
-URxvt.keysym.Shift-Up:	command:\033]720;1\007
-URxvt.keysym.Shift-Down:command:\033]721;1\007
+*.geometry: 		72x18
+**letterSpace: 	    -1
+*.lineSpace: 		0
+**internalBorder:   24
+**externalBorder:   0
+**depth:            32
+**saveline:         2000
+**termName:         rxvt-256color
+**iso14755:         false
+**scrollBar:        false
+**scrollBar_right:  false
+*.perl-ext-common:  default,clipboard,url-select,keyboard-select
+*.copyCommand:      xclip -i -selection clipboard
+*.pasteCommand:     xclip -o -selection clipboard
+*.keysym.M-c:       perl:clipboard:copy
+*.keysym.M-v:       perl:clipboard:paste
+*.keysym.M-C-v:     perl:clipboard:paste_escaped
+*.keysym.M-Escape:  perl:keyboard-select:activate
+*.keysym.Shift-Up:	command:\033]720;1\007
+*.keysym.Shift-Down:command:\033]721;1\007
 
-URxvt.keysym.M-s:       perl:keyboard-select:search
-URxvt.keysym.M-u:       perl:url-select:select_next
-URxvt.urlLauncher:      /usr/bin/xdg-open
-URxvt.underlineURLs:    true
-URxvt.urlButton:        1
-URxvt*buffered:         false          
-URxvt.urgentOnBell: 	True
+*.keysym.M-s:       perl:keyboard-select:search
+*.keysym.M-u:       perl:url-select:select_next
+*.urlLauncher:      /usr/bin/xdg-open
+*.underlineURLs:    true
+*.urlButton:        1
+**buffered:         false          
+*.urgentOnBell: 	True
 
 ! ------------------------------------------------------------------------------
 ! Xft Font Configuration
@@ -72,5 +111,5 @@ Xft.antialias: 1
 Xft.rgba: rgb
 
 ! fonts
-URxvt.font: xft:Ubuntu\ mono\ derivative\ Powerline:pixelsize=14
-URxvt.boldFont: xft:Ubuntu\ mono\ derivative\ Powerline:bold:pixelsize=14
+*.font: xft:Ubuntu\ mono\ derivative\ Powerline:pixelsize=14
+*.boldFont: xft:Ubuntu\ mono\ derivative\ Powerline:bold:pixelsize=14

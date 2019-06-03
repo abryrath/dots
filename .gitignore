@@ -17,6 +17,7 @@
 !dots/.emacs
 !dots/.emacs.d/*.el
 !dots/.tmux.conf
+!dots/.tmux/plugins/*
 !dots/.local/bin/mac-packages
 !dots/.local/bin/vivaldi
 !dots/.local/bin/alacritty-colorscheme

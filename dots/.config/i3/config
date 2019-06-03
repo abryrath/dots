@@ -1,5 +1,5 @@
 # Fonts/Variables {{{
-font pango:Fira Code 8
+font pango:Iosevka Term SS05 16
 
 set $mod Mod1
 
@@ -231,6 +231,6 @@ exec --no-startup-id { nitrogen --restore || xsetroot -solid '#b0b0b0' } &
 # exec xfce4-panel &
 # }}}
 
-# bar {
-#     status_command i3blocks
-# }
+bar {
+    status_command i3blocks
+}
