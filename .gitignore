@@ -6,31 +6,31 @@
 !dots/.config/fish/fishfile
 !dots/.config/config.fish
 !dots/.config/fish/user-functions/*
-!dots/.zshrc
-!dots/.zsh/get-plugins.sh
-!dots/.oh-my-zsh
-!dots/.bashrc
-!dots/.bash_profile
-!dots/.profile
-!dots/.aliases
-!dots/.aliases.d/*.sh
-!dots/.emacs
-!dots/.emacs.d/*.el
+# !dots/.zshrc
+# !dots/.zsh/get-plugins.sh
+# !dots/.oh-my-zsh
+# !dots/.bashrc
+# !dots/.bash_profile
+# !dots/.profile
+# !dots/.aliases
+# !dots/.aliases.d/*.sh
+# !dots/.emacs
+# !dots/.emacs.d/*.el
 !dots/.tmux.conf
 !dots/.tmux/plugins/*
 !dots/.local/bin/mac-packages
-!dots/.local/bin/vivaldi
-!dots/.local/bin/alacritty-colorscheme
+# !dots/.local/bin/vivaldi
+!dots/.local/bin/_alacritty-colorscheme
 !dots/.config/fish/config.fish
 !dots/.config/kitty/kitty.conf
-!dots/.config/termite/*
-!dots/.hyper.js
+# !dots/.config/termite/*
+# !dots/.hyper.js
 !dots/.config/alacritty/alacritty.yml
 !other-files/vscode/settings.json
 !other-files/vscode/keybindings.json
-!other-files/sublime/User/*.sublime-keymap
-!other-files/sublime/User/*.sublime-settings
-!other-files/sublime/Themes/*
+# !other-files/sublime/User/*.sublime-keymap
+# !other-files/sublime/User/*.sublime-settings
+# !other-files/sublime/Themes/*
 !dots/.vimrc
 !dots/.vim/autoload/plug.vim
 dots/.vim/plugged/
@@ -55,8 +55,8 @@ dots/.vim/plugged/
 !dots/.local/bin/brightness-change
 
 # macOS
-!dots/.chunkwmrc
-!dots/.skhdrc
+# !dots/.chunkwmrc
+# !dots/.skhdrc
 !dots/.local/bin/use-php
 !dots/.local/bin/create-vhost
 !dots/.local/bin/backups.sh

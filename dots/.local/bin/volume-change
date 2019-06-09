@@ -18,3 +18,7 @@ fi
 
 echo "${cmd}"
 bash -c "$cmd"
+
+if [[ "$2" == "1" ]]; then
+	notify-send "Audio" "$(pamixer --get-volume)"
+fi

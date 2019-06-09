@@ -16,7 +16,7 @@ end
 #    bass source ~/.aliases
 #end
 for func in ~/.config/fish/user-functions/*
-	echo "Loading $func"
+# 	echo "Loading $func"
 	source $func
 end
 

@@ -1,3 +1,4 @@
+# vim: set ft=ini :
 [colors]
 background = ${xrdb:background:#282A36}
 foreground = ${xrdb:foreground:#F8F8F2}
@@ -25,51 +26,10 @@ border = ${xrdb:color15}
 margin-top = 0
 margin-bottom = 0
 
-
-[section/base]
-#monitor = ${env:MONITOR:eDP1}
-enable-ipc = true
-override-redirect = true
-bottom = false
-
-height = 340
-offset-y = -400
-fixed-center = true
-#radius-bottom = 30
-
-background = ${colors.background}
-foreground = ${colors.foreground}
-
-border-bottom-color = ${colors.border}
-border-left-color   = ${colors.border}
-border-right-color  = ${colors.border}
-border-bottom-size = 0
-border-left-size = 0
-border-right-size = 0
-
-overline-size = 300
-overline-color = ${colors.background}
-
-spacing = 1
-padding-left = 0
-padding-right = 0
-module-margin-left = 2
-module-margin-right = 2
-
-# Fonts
-# Very large offset to move the text to the bottom of the bar
-font-0 = EnvyCodeR:size=10;153
-font-1 = "DejaVu Sans:pixelsize=13;153"
-font-2 = "Font Awesome 5 Free:style=Solid:pixelsize=18;153"
-font-3 = "Font Awesome 5 Free:style=Regular:pixelsize=18;153"
-font-4 = "Font Awesome 5 Brands:pixelsize=18;153"
-
-
 [bar/full]
-#monitor = ${env:MONITOR:eDP1}
 enable-ipc = true
 override-redirect = false
-bottom = false
+bottom = true
 
 height = 28
 width = 100%
@@ -82,84 +42,41 @@ module-margin-right = 2
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-font-0 = EnvyCodeR:size=10;1
-font-1 = Font\ Awesome\ 5\ Free:size=15;0
-font-2 = Wuncon\ Siji:size=15;0
-font-3 = Hack\ Nerd\ Font:size=16;2
+tray-position = right
+tray-scale = 1
 
-# font-1 = "Envy Code R:pixelsize=13;3"
-# font-2 = "Font Awesome 5 Free:style=Solid:pixelsize=18;3"
-# font-3 = "Font Awesome 5 Free:style=Regular:pixelsize=18;3"
-# font-4 = "Font Awesome 5 Brands:pixelsize=18;3"
+font-0 = "Iosevka Term SS05:size=14;1"
+font-1 = Siji:size=15;0
 
-modules-left = bspwm
+modules-left = i3
 modules-center = xwindow
-modules-right = backlight volume date options_open
+modules-right = wireless-network battery date
 padding-right = 2
 
 
-#-----------------------------------------------------------------------------#
-#--------------------------------- Left bar ----------------------------------#
-#-----------------------------------------------------------------------------#
-
-#[bar/left]
-#inherit = section/base
-#width = 30%
-#offset-x = -30
-#padding-left = 5
-#modules-left = bspwm
-
-#------------------------------- Left modules --------------------------------#
-
-
-#-----------------------------------------------------------------------------#
-#-------------------------------- Center bar ---------------------------------#
-#-----------------------------------------------------------------------------#
-
-#[bar/center]
-#inherit = section/base
-#width = 20%
-#offset-x = 40%
-#modules-center = xwindow
-
-#------------------------------ Center modules -------------------------------#
-
-# [module/xwindow]
-# type = internal/xwindow
-# label = %{T2}%title:0:30:...%%{T-}
-
-#-----------------------------------------------------------------------------#
-#-------------------------------- Right bar ----------------------------------#
-#-----------------------------------------------------------------------------#
-
-#[bar/right]
-#inherit = section/base
-#padding-right = 7
-#width = 30%
-#offset-x = 1374
-#modules-right = backlight volume date options_close
-
 #-----------------------------=- Right modules -------------------------------#
 
-[module/song]
-type = custom/script
-exec = ~/bin/music get_title
-format = "%{T2}<label>%{T-}"
-interval = 3
-
-[module/options_open]
-type = custom/text
-content-foreground = ${colors.foreground}
-content = ""
-click-left = ~/.local/bin/polybar_wrapper options
-
-[module/options_close]
-type = custom/text
-content-foreground = ${colors.blue}
-content = ""
-click-left = ~/.local/bin/polybar_wrapper options
-
 # abry
+[module/i3]
+type = internal/i3
+format-prefix = i3
+format-prefix-foreground = ${colors.cyan}
+format-prefix-padding = 2
+
+format = <label-state> <label-mode>
+label-focused = %name%
+label-focused-padding = 1
+label-focused-background = ${colors.magenta}
+label-focused-foreground = ${colors.background}
+
+label-unfocused = %name%
+label-unfocused-padding = 1
+
+label-urgent = %index%
+
+label-empty = %name%
+label-empty-padding = 1
+
 [module/bspwm]
 type = internal/bspwm
 format-prefix = bspwm
@@ -175,14 +92,6 @@ label-floating = [float]
 label-locked = [locked]
 label-sticky = [sticky]
 label-private = [priv]
-
-ws-icon-0 = term;
-ws-icon-1 = emacs;
-ws-icon-2 = chrome;
-ws-icon-3 = spotify;
-ws-icon-4 = web;hi
-ws-icon-5 = chat;
-ws-icon-default = hi
 
 label-focused = %name%
 #label-focused-font = 2
@@ -208,14 +117,14 @@ label-empty-padding = 1
 # 
 
 [module/volume]
-type = internal/volume
+type = internal/alsa
 format-volume = <label-volume> <bar-volume>
-format-volume-prefix = 
+format-volume-prefix = vol
 label-volume = 
 label-volume-foreground = ${colors.black-alt}
 #${colors.foreground}
 format-muted = <label-muted>
-format-muted-prefix = 
+format-muted-prefix = mute
 format-muted-prefix-foreground = ${colors.black-alt}
 format-muted-foreground = ${colors.black-alt}
 label-muted = [muted]
@@ -223,18 +132,18 @@ label-muted-width = 15
 bar-volume-width = 10
 bar-volume-foreground-0 = ${colors.green}
 bar-volume-foreground-1 = ${colors.green}
-bar-volume-foreground-2 = ${colors.green}
+bar-volume-foreground-2 = ${colors.green}occupied
 bar-volume-foreground-3 = ${colors.green}
 bar-volume-foreground-4 = ${colors.green}
 bar-volume-foreground-5 = ${colors.yellow}
 bar-volume-foreground-6 = ${colors.red}
 bar-volume-gradient = false
-bar-volume-indicator = 
+bar-volume-indicator = .
 bar-volume-indicator-font = 0
-bar-volume-fill = 
+bar-volume-fill = |
 #/
 bar-volume-fill-font = 0
-bar-volume-empty = 
+bar-volume-empty = .
 bar-volume-empty-font = 0
 bar-volume-empty-foreground = ${colors.black-alt}
 
@@ -242,18 +151,17 @@ bar-volume-empty-foreground = ${colors.black-alt}
 [module/date]
 type = internal/date
 interval = 5.0
-date = 
+date = "%A, %B %e"
 date-alt = " %Y-%m-%d"
 time = %l:%M%P
 time-alt = %H:%M:%S
-format-prefix = time
+# format-prefix = time
 format-prefix-foreground = ${colors.black-alt}
 #${colors.foreground}
 label = %date% %time%
 
 [module/xwindow]
 type = internal/xwindow
-
 
 [module/wired-network]
 type = internal/network
@@ -266,7 +174,7 @@ ping-interval = 5
 
 format-connected = <ramp-signal> <label-connected>
 label-connected = %essid% %downspeed:9%
-ramp-signal-0 = 
+ramp-signal-0 = 
 
 [module/cpu]
 type = internal/cpu
@@ -296,27 +204,27 @@ format-discharging = <ramp-capacity> <label-discharging>
 label-charging =  %percentage%%
 label-discharging = %percentage%%
 
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-3 = 
-ramp-capacity-4 = 
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
 
-animation-charging-0 = 
+animation-charging-0 = 
 
 
 [module/backlight]
 type = internal/backlight
 interval = 1
 card = intel_backlight
-format-prefix = 
+format-prefix = bak
 format = <label> <bar>
-label = 
+label = backlight
 
 bar-width = 10
-bar-indicator = 
+bar-indicator = |
 bar-indicator-foreground = ${colors.foreground}
-bar-fill = 
+bar-fill = |
 bar-fill-foreground = ${colors.yellow}
-bar-empty = 
+bar-empty = .
 bar-empty-foreground = ${colors.black-alt}
