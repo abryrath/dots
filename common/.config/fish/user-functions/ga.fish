@@ -1,1 +1,3 @@
-/Users/abryrath/.dots/installer/src/../../common/.config/fish/user-functions/ga.fish
+function ga
+	git add $argv
+end

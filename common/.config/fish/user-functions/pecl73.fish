@@ -1,1 +1,3 @@
-/Users/abryrath/.dots/installer/src/../../common/.config/fish/user-functions/pecl73.fish
+function pecl73
+	/usr/local/opt/php@7.3/bin/pecl $argv
+end

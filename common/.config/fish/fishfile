@@ -1,1 +1,5 @@
-/Users/abryrath/.dots/installer/src/../../common/.config/fish/fishfile
+edc/bass
+fishpkg/fish-prompt-metro
+FabioAntunes/fish-nvm
+ojiry/fish-tmux
+abryrath/fish-craft

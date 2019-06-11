@@ -1,1 +1,3 @@
-/Users/abryrath/.dots/installer/src/../../common/.config/fish/user-functions/a.restart.fish
+function a.restart
+	sudo apachectl restart
+end

@@ -1,1 +1,3 @@
-/Users/abryrath/.dots/installer/src/../../common/.config/fish/user-functions/cd.afm.fish
+function cd.afm
+	cd $UNION_SITES/american-forest-management
+end

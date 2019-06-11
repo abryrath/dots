@@ -1,1 +1,3 @@
-/Users/abryrath/.dots/installer/src/../../common/.config/fish/functions/git_is_empty.fish
+function git_is_empty -d "Test if a repository is empty"
+    git_is_repo; and test -z (command git rev-list -n 1 --all 2>/dev/null)
+end

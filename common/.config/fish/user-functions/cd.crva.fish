@@ -1,1 +1,3 @@
-/Users/abryrath/.dots/installer/src/../../common/.config/fish/user-functions/cd.crva.fish
+function cd.crva
+	cd $UNION_SITES/crva-cluster $argv
+end

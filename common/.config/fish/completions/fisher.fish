@@ -1,1 +1,1 @@
-/Users/abryrath/.dots/installer/src/../../common/.config/fish/completions/fisher.fish
+fisher complete

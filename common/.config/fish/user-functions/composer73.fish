@@ -1,1 +1,3 @@
-/Users/abryrath/.dots/installer/src/../../common/.config/fish/user-functions/composer73.fish
+function composer73
+	php73 (which composer)
+end

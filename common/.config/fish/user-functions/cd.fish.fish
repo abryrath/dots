@@ -1,1 +1,4 @@
-/Users/abryrath/.dots/installer/src/../../common/.config/fish/user-functions/cd.fish.fish
+function cd.fish
+	cd $DOTS/dots/.config/fish/ $argv
+end
+

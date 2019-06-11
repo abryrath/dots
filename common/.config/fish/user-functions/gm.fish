@@ -1,1 +1,3 @@
-/Users/abryrath/.dots/installer/src/../../common/.config/fish/user-functions/gm.fish
+function gm
+	git merge $argv
+end

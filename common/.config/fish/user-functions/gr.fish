@@ -1,1 +1,3 @@
-/Users/abryrath/.dots/installer/src/../../common/.config/fish/user-functions/gr.fish
+function gr
+	git reset $argv
+end

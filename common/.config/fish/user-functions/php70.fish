@@ -1,1 +1,3 @@
-/Users/abryrath/.dots/installer/src/../../common/.config/fish/user-functions/php70.fish
+function php70
+	/usr/local/opt/php@7.0/bin/php $argv
+end

@@ -1,1 +1,3 @@
-/Users/abryrath/.dots/installer/src/../../common/.config/fish/user-functions/cd.cooke.fish
+function cd.cooke
+	cd /Users/abryrath/Union/Sites/cooke-bieler-com $argv
+end

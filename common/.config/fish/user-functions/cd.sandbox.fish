@@ -1,1 +1,3 @@
-/Users/abryrath/.dots/installer/src/../../common/.config/fish/user-functions/cd.sandbox.fish
+function cd.sandbox
+	cd $UNION_SITES/craft3-sandbox $argv
+end

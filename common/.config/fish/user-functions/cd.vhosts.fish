@@ -1,1 +1,4 @@
-/Users/abryrath/.dots/installer/src/../../common/.config/fish/user-functions/cd.vhosts.fish
+function cd.vhosts
+	cd $DOTS/other-files/vhosts
+end
+

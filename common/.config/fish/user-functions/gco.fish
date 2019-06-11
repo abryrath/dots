@@ -1,1 +1,3 @@
-/Users/abryrath/.dots/installer/src/../../common/.config/fish/user-functions/gco.fish
+function gco
+	git checkout $argv
+end

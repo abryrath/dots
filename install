@@ -1,8 +1,14 @@
-#!/usr/bin/env php
-<?php
+#!/usr/bin/env fish
 
-require_once 'installer/vendor/autoload.php';
+stow common 
 
-$installer = new \abryrath\installer\Installer();
+if uname -a | grep 'Darwin' > /dev/null
+	# MacOS stuff
+	stow dots-mac
+	stow -d misc-mac -t ~/Library/Application\ Support/Code/User/ vscode
+else
+	# Linux stuff
+	stow dots-linux
+end
 
-$installer->run();
+

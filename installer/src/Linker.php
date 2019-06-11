@@ -70,7 +70,7 @@ class Linker
             // $this->logger->debug("mkdir($targetDir, 644, true)");
             $output = [];
             $user = getenv('USER');
-            $cmd = "sudo mkdir -p $targetDir && sudo chown -R $user $targetDir && chmod 644 $targetDir";
+            $cmd = "mkdir -p $targetDir && chown -R $user $targetDir && chmod 755 $targetDir";
             $this->logger->debug("cmd: $cmd");
             exec($cmd, $output);
             $this->logger->debug('output: ' . json_encode($output));

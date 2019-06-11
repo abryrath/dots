@@ -1,1 +1,3 @@
-/Users/abryrath/.dots/installer/src/../../common/.config/fish/user-functions/cd.vanguard-ca.fish
+function cd.vanguard-ca
+	cd $UNION_SITES/ca-vanguardcleaning-com $argv
+end

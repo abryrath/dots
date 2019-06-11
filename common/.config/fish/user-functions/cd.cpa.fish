@@ -1,1 +1,3 @@
-/Users/abryrath/.dots/installer/src/../../common/.config/fish/user-functions/cd.cpa.fish
+function cd.cpa
+	cd $UNION_SITES/channelpa-com
+end

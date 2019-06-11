@@ -1,1 +1,8 @@
-/Users/abryrath/.dots/installer/src/../../common/.config/fish/functions/segment_close.fish
+function segment_close
+    if test ! -z "$segment"
+        printf "$segment "
+        set segment
+        set segment_color
+    end
+    set_color normal
+end

@@ -1,1 +1,7 @@
-/Users/abryrath/.dots/installer/src/../../common/.config/fish/functions/pwd_is_home.fish
+function pwd_is_home
+    switch "$PWD"
+        case ~{,/\*}
+        case \*
+          return 1
+    end
+end

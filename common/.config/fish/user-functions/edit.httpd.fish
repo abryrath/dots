@@ -1,1 +1,3 @@
-/Users/abryrath/.dots/installer/src/../../common/.config/fish/user-functions/edit.httpd.fish
+function edit.httpd
+	$EDITOR /usr/local/etc/httpd/httpd.conf
+end

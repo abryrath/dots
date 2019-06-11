@@ -1,1 +1,3 @@
-/Users/abryrath/.dots/installer/src/../../common/.config/fish/user-functions/edit.alacritty.fish
+function edit.alacritty
+	$EDITOR $DOTS/dots/.config/alacritty/alacritty.yml
+end

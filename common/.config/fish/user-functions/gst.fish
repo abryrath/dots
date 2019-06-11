@@ -1,1 +1,3 @@
-/Users/abryrath/.dots/installer/src/../../common/.config/fish/user-functions/gst.fish
+function gst
+	git status $agv
+end
