@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+
+usage() { echo "Usage: $0 [-h] [-u <user>]" 1>&2; exit 1; }
+
+while getopts ":u:" o; do
+    case "${o}" in
+        u)
+            u=${OPTARG}
+            ;;
+        *)
+            usage
+            ;;
+    esac
+done
+
+shift $((OPTIND-1))
+
+if [ -z "${u}" ]; then
+    u="abryrath@gmail.com"
+elif [ $u == "union" ]; then 
+    u="abry.rath@union.co"
+fi
+
+echo "User: ${u}"
+
+case "${u}" in
+    abryrath@gmail.com)
+        dataDir=""
+        ;;
+    abry.rath@union.co)
+        d="$HOME/.opera/union/"
+        if [ ! -d "${d}" ]; then mkdir -p "${d}"; fi
+        dataDir="--user-data-dir=${d}"
+        ;;
+esac
+
+echo "Data Dir: ${dataDir}"
+        
+
+case $(uname -s) in
+    Darwin)
+        executable="/Applications/Opera.app/Contents/MacOS/Opera"
+        ;;
+    *)
+        executable=$(which opera)
+        ;;
+esac
+
+if [ -z "${executable}" ]; then
+    ehco "Could not locate executable";
+    exit 1;
+fi
+
+eval "${executable} ${dataDir}"

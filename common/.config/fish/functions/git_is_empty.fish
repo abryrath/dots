@@ -1,0 +1,1 @@
+/Users/abryrath/.dots/installer/src/../../common/.config/fish/functions/git_is_empty.fish

@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+# Run craft v3 Union module 'core/mgirate' action, if we are in a craft project dir
+
+[ -f $PWD/craft ] && {
+	/usr/local/opt/php@7.1/bin/php $PWD/craft | grep sync-db/sync 2>&1
+	if [ $? -eq 0 ]; then
+		/usr/local/opt/php@7.1/bin/php $PWD/craft sync-db/sync "$1"
+	else
+		php craft core/migrate "$1"
+	fi
+	exit
+}
+
+[ -f $PWD/artisan ] &&
+	[[ $PWD =~ "american-forest-management" ]] &&
+	{
+		/usr/local/opt/php@7.1/bin/php artisan utility:syncdb
+		exit
+	}
+echo "Error!"

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///Users/abryrath/.local/share/meld/recent-7brcot4i.meldcmp" added="2018-09-05T13:32:37Z" modified="2018-09-05T13:32:37Z" visited="2018-09-05T13:32:38Z">
+    <title>Version control: ~/Union/Sites/team-app</title>
+    <desc>Version control comparison
+file:///Users/abryrath/Union/Sites/team-app</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-meld-comparison"/>
+        <bookmark:applications>
+          <bookmark:application name="Meld" exec="&apos;/private/var/folders/57/g8yws76n6t96gjvpjs9hr8kr0000gn/T/AppTranslocation/37BF078E-8D11-4A10-9CDC-B71790B82732/d/Meld.app/Contents/Resources/meld --comparison-file %u&apos;" modified="2018-09-05T13:32:37Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///Users/abryrath/.local/share/meld/recent-5wsnwd7c.meldcmp" added="2018-09-06T11:46:37Z" modified="2018-09-06T11:46:37Z" visited="2018-09-06T11:46:37Z">
+    <title>0dOUDa_EngagementModel.php : EngagementModel.php</title>
+    <desc>File comparison
+file:///var/folders/57/g8yws76n6t96gjvpjs9hr8kr0000gn/T/0dOUDa_EngagementModel.php, file:///Users/abryrath/Union/Sites/team-app/app/Models/Engagements/EngagementModel.php</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-meld-comparison"/>
+        <bookmark:applications>
+          <bookmark:application name="Meld" exec="&apos;/Applications/Meld.app/Contents/Resources/meld --comparison-file %u&apos;" modified="2018-09-06T11:46:37Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///Users/abryrath/.local/share/meld/recent-e9kd4e84.meldcmp" added="2018-09-11T12:27:43Z" modified="2018-09-11T12:27:43Z" visited="2018-09-11T12:27:44Z">
+    <title>.env : .env.example</title>
+    <desc>File comparison
+file:///Users/abryrath/Union/Sites/craft-pamlicocapital-com/.env, file:///Users/abryrath/Union/Sites/craft-pamlicocapital-com/.env.example</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-meld-comparison"/>
+        <bookmark:applications>
+          <bookmark:application name="Meld" exec="&apos;/Applications/Meld.app/Contents/Resources/meld --comparison-file %u&apos;" modified="2018-09-11T12:27:43Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///Users/abryrath/.local/share/meld/recent-1ob0t_wj.meldcmp" added="2018-09-24T18:44:54Z" modified="2018-09-24T18:44:54Z" visited="2018-09-24T18:44:55Z">
+    <title>Version control: ~/Union/Sites/discoveryplace-v3</title>
+    <desc>Version control comparison
+file:///Users/abryrath/Union/Sites/discoveryplace-v3</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-meld-comparison"/>
+        <bookmark:applications>
+          <bookmark:application name="Meld" exec="&apos;/Applications/Meld.app/Contents/Resources/meld --comparison-file %u&apos;" modified="2018-09-24T18:44:54Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///Users/abryrath/.local/share/meld/recent-wqd233gc.meldcmp" added="2018-09-24T19:04:18Z" modified="2018-09-24T19:04:18Z" visited="2018-09-24T19:04:18Z">
+    <title>hi0oVb_.env.example : V6PBsa_.env.example</title>
+    <desc>File comparison
+file:///var/folders/57/g8yws76n6t96gjvpjs9hr8kr0000gn/T/hi0oVb_.env.example, file:///var/folders/57/g8yws76n6t96gjvpjs9hr8kr0000gn/T/V6PBsa_.env.example</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-meld-comparison"/>
+        <bookmark:applications>
+          <bookmark:application name="Meld" exec="&apos;/Applications/Meld.app/Contents/Resources/meld --comparison-file %u&apos;" modified="2018-09-24T19:04:18Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///Users/abryrath/.local/share/meld/recent-65zi0d91.meldcmp" added="2018-09-24T19:04:49Z" modified="2018-09-24T19:04:49Z" visited="2018-09-24T19:04:50Z">
+    <title>jYKKu9_composer.lock : VVLQq9_composer.lock</title>
+    <desc>File comparison
+file:///var/folders/57/g8yws76n6t96gjvpjs9hr8kr0000gn/T/jYKKu9_composer.lock, file:///var/folders/57/g8yws76n6t96gjvpjs9hr8kr0000gn/T/VVLQq9_composer.lock</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-meld-comparison"/>
+        <bookmark:applications>
+          <bookmark:application name="Meld" exec="&apos;/Applications/Meld.app/Contents/Resources/meld --comparison-file %u&apos;" modified="2018-09-24T19:04:49Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///Users/abryrath/.local/share/meld/recent-30tfyrku.meldcmp" added="2018-09-24T19:18:34Z" modified="2018-09-24T19:18:34Z" visited="2018-09-24T19:18:35Z">
+    <title>l9Bwia_.env.example : 1szPga_.env.example</title>
+    <desc>File comparison
+file:///var/folders/57/g8yws76n6t96gjvpjs9hr8kr0000gn/T/l9Bwia_.env.example, file:///var/folders/57/g8yws76n6t96gjvpjs9hr8kr0000gn/T/1szPga_.env.example</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-meld-comparison"/>
+        <bookmark:applications>
+          <bookmark:application name="Meld" exec="&apos;/Applications/Meld.app/Contents/Resources/meld --comparison-file %u&apos;" modified="2018-09-24T19:18:34Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///Users/abryrath/.local/share/meld/recent-kz9cccnp.meldcmp" added="2018-09-24T19:18:49Z" modified="2018-09-24T19:18:49Z" visited="2018-09-24T19:18:49Z">
+    <title>9jnOea_README.md : b9aPeb_README.md</title>
+    <desc>File comparison
+file:///var/folders/57/g8yws76n6t96gjvpjs9hr8kr0000gn/T/9jnOea_README.md, file:///var/folders/57/g8yws76n6t96gjvpjs9hr8kr0000gn/T/b9aPeb_README.md</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-meld-comparison"/>
+        <bookmark:applications>
+          <bookmark:application name="Meld" exec="&apos;/Applications/Meld.app/Contents/Resources/meld --comparison-file %u&apos;" modified="2018-09-24T19:18:49Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

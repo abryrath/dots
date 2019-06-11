@@ -1,0 +1,8 @@
+#!/usr/bin/env php
+<?php
+
+require_once 'installer/vendor/autoload.php';
+
+$installer = new \abryrath\installer\Installer();
+
+$installer->run();

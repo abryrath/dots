@@ -1,0 +1,1 @@
+/Users/abryrath/.dots/installer/src/../../common/.config/fish/functions/fish_right_prompt.fish

@@ -1,0 +1,1 @@
+/Users/abryrath/.dots/installer/src/../../common/.config/fish/functions/pwd_is_home.fish

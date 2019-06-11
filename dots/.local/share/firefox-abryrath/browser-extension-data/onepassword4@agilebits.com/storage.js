@@ -1,0 +1,1 @@
+{"OPExtensionIdentifier":"6870CFED7AC8A76177DF755FB6BE73B5","6870CFED7AC8A76177DF755FB6BE73B5":"{\"extId\":\"6870CFED7AC8A76177DF755FB6BE73B5\",\"method\":\"auth-sma-hmac256\",\"extSecret\":\"olkrwhugbri2bjz-tnudtw\",\"state\":\"new\"}"}

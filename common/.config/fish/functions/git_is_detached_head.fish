@@ -1,0 +1,1 @@
+/Users/abryrath/.dots/installer/src/../../common/.config/fish/functions/git_is_detached_head.fish
