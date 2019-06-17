@@ -118,5 +118,7 @@
         "TODO",
         "DONE"
     ],
-    "editor.wordWrap": "off"
+    "editor.wordWrap": "off",
+    "vim.easymotion": true,
+    "vim.useSystemClipboard": true
 }
