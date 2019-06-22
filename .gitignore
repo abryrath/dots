@@ -1,2 +1,4 @@
 common/.config/fisher/
+common/.tmux/plugins/
 dots/
+*.swp
