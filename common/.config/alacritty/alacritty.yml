@@ -88,10 +88,8 @@ tabspaces: 8
 font:
   # Normal (roman) font face
   normal:
-    family: CodeNewRoman Nerd Font # Nerd Font Complete
-    style: Book # Regular
+    family: CodeNewRoman Nerd Font
 
-  # Bold font face
   bold:
     family: CodeNewRoman Nerd Font
     style: Bold
@@ -102,7 +100,7 @@ font:
     style: Italic
 
   # Point size
-  size: 11.0
+  size: 12.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -275,7 +273,7 @@ cursor:
   #   - ▇ Block
   #   - _ Underline
   #   - | Beam
-  style: Block
+  style: Beam
 
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
