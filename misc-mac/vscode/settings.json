@@ -2,7 +2,8 @@
     "php.validate.enable": true,
     "php.validate.executablePath": "/usr/local/opt/php@7.2/bin/php",
     "php.validate.run": "onType",
-    "editor.fontFamily": "M+ 1m",
+    "editor.fontFamily": "CodeNewRoman Nerd Font",
+    // "editor.fontFamily": "M+ 1m",
     // , CodeNewRoman Nerd Font, Iosevka Term, Fira Code, UbuntuMonoNerdFontComplete-Regular, OfficeCodePro, DejaVuSansMonoNerdFontComplete-Book, AnkaCoder-r, Hack, AnkaCoder, undefined, Ubuntu Mono derivative Powerline, EnvyCode-r, AnkaCoder-r, monospace",
     "editor.fontSize": 14,
     "terminal.integrated.fontSize": 12,
@@ -17,15 +18,15 @@
     "files.associations": {
         "*.twig": "twig",
         "*.html": "twig",
-        "*.stub": "php",
+        "*.stub": "php"
     },
     "explorer.confirmDragAndDrop": false,
     "workbench.editor.showTabs": true, 
-    "workbench.colorTheme": "Adapta Nokto",
+    "workbench.colorTheme": "Material Theme High Contrast",
     "breadcrumbs.enabled": true,
     "workbench.settings.editor": "json",
-    "workbench.statusBar.feedback.visible": false,
-    "window.zoomLevel": 0,
+    // "workbench.statusBar.feedback.visible": false,
+    "window.zoomLevel": -1,
     "emmet.triggerExpansionOnTab": true,
     "git.enableSmartCommit": true,
     "javascript.updateImportsOnFileMove.enabled": "always",
@@ -75,49 +76,28 @@
     "eslint.enable": true,
     "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
     "javascript.preferences.quoteStyle": "single",
-    "prettier.eslintIntegration": true,
-    "prettier.singleQuote": true,
-    "prettier.bracketSpacing": false,
-    "prettier.tslintIntegration": false,
     "typescript.format.enable": true,
-    "prettier.tabWidth": 4,
-    "prettier.disableLanguages": [
-        "typescript-react",
-        "typescript",
-        "TypeScript React",
-        "tsx",
-        "ts"
-    ],
     "[typescriptreact]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "[php]": {
         "editor.defaultFormatter": "kokororin.vscode-phpfmt"
     },
-    "[twig]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
     "[json]": {
         "editor.defaultFormatter": "HookyQR.beautify"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "dayNightThemeSwitcher.dayTheme": "Atom One Light",
     "dayNightThemeSwitcher.nightTheme": "Snazzy Plus w/ Italics",
     "[yaml]": {
         "editor.defaultFormatter": "redhat.vscode-yaml"
     },
-    "[scss]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
     "editor.gotoLocation.multiple": "goto",
-    "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
     "org.todoKeywords": [
         "TODO",
         "DONE"
     ],
-    "editor.wordWrap": "off"
+    "editor.wordWrap": "off",
+    "[javascript]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    }
 }
