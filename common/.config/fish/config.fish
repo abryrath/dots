@@ -20,3 +20,4 @@ for func in ~/.config/fish/user-functions/*
 	source $func
 end
 
+set -g fish_user_paths "/usr/local/sbin" $fish_user_paths

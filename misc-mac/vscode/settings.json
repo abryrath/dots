@@ -22,12 +22,10 @@
     },
     "explorer.confirmDragAndDrop": false,
     "workbench.editor.showTabs": true, 
-    "workbench.colorTheme": "Material Theme High Contrast",
+    "workbench.colorTheme": "Snazzy Plus - Darker w/ Italics",
     "breadcrumbs.enabled": true,
     "workbench.settings.editor": "json",
-    // "workbench.statusBar.feedback.visible": false,
-    "window.zoomLevel": -1,
-    "emmet.triggerExpansionOnTab": true,
+    "window.zoomLevel": -2,
     "git.enableSmartCommit": true,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "gitlens.views.repositories.files.layout": "tree",
@@ -44,60 +42,54 @@
     "psalm.connectToServerWithTcp": false,
     "git.autofetch": true,
     "terminal.integrated.shell.osx": "/usr/local/bin/fish",
-    "auto-close-tag.excludedTags": [
-        "area",
-        "base",
-        "br",
-        "col",
-        "command",
-        "embed",
-        "hr",
-        "img",
-        "input",
-        "keygen",
-        "link",
-        "meta",
-        "param",
-        "source",
-        "int",
-        "Entry",
-        "MatrixBlock",
-        "SuperTableBlockElement",
-        "array",
-        "User",
-        "string",
-        "float",
-        "User",
-        "GiftCardCode"
-    ],
-    "auto-close-tag.SublimeText3Mode": true,
     "circleci.apiKey": "69ef7a3a6e0b15123f6485c0451ed176f84151a8",
     "typescript.updateImportsOnFileMove.enabled": "always",
-    "eslint.enable": true,
+    "javascript.implicitProjectConfig.experimentalDecorators": true,
     "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
     "javascript.preferences.quoteStyle": "single",
-    "typescript.format.enable": true,
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "[php]": {
-        "editor.defaultFormatter": "kokororin.vscode-phpfmt"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
-    },
     "dayNightThemeSwitcher.dayTheme": "Atom One Light",
     "dayNightThemeSwitcher.nightTheme": "Snazzy Plus w/ Italics",
-    "[yaml]": {
-        "editor.defaultFormatter": "redhat.vscode-yaml"
-    },
     "editor.gotoLocation.multiple": "goto",
     "org.todoKeywords": [
         "TODO",
         "DONE"
     ],
     "editor.wordWrap": "off",
+    "vim.enableNeovim": true,
+    "vim.neovimPath": "/usr/local/bin/nvim",
+    "vetur.format.options.tabSize": 2,
+    "eslint.enable": true,
+    // "eslint.runtime": "/usr/local/bin/eslint",
+    "eslint.nodePath": "/Users/abryrath/.config/yarn/global/node_modules",
+    "prettier.singleQuote": true,
+    // "prettier.eslintIntegration": true,
+    "prettier.tabWidth": 2,
+    "prettier.trailingComma": "all",
+    "prettier.jsxBracketSameLine": false,
+    // "prettier.eslintIntegration": true,
+    "vetur.format.defaultFormatter.js": "prettier-eslint",
+    "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "intelephense.licenceKey": "00ARN52YI6W2WW1",
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    },
+    "intelephense.completion.insertUseDeclaration": true,
+    "editor.disableTranslate3d": true,
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
         "editor.defaultFormatter": "HookyQR.beautify"
     }
 }

@@ -1,3 +1,4 @@
+.DS_Store
 common/.config/fisher/
 common/.tmux/plugins/
 dots/
