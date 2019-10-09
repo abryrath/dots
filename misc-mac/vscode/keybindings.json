@@ -20,7 +20,7 @@
         "command": "workbench.action.closeActiveEditor"
     },
     {
-        "key": "ctrl+x 3",
+        "key": "ctrl+x right",
         "command": "workbench.action.splitEditor"
     },
     {
@@ -437,5 +437,43 @@
     {
         "key": "shift+cmd+f",
         "command": "-workbench.action.findInFiles"
+    },
+    {
+        "key": "shift+cmd+\\",
+        "command": "-editor.action.jumpToBracket",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+\\",
+        "command": "-workbench.action.splitEditor"
+    },
+    {
+        "key": "shift+cmd+\\",
+        "command": "-editor.action.jumpToBracket",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+\\",
+        "command": "-workbench.action.splitEditor"
+    },
+    {
+        "key": "cmd+\\",
+        "command": "-workbench.action.splitEditor"
+    },
+    {
+        "key": "ctrl+x x",
+        "command": "workbench.action.nextPanelView"
+    },
+    {
+        "key": "ctrl+x x",
+        "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "ctrl+x z",
+        "command": "workbench.action.previousEditor"
     }
+    // {
+    //     "key": "alt+cmd+right",
+    //     "command": "-workbench.action.nextEditor"
+    // }
 ]

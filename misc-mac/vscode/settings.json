@@ -1,52 +1,32 @@
 {
-    "php.validate.enable": true,
-    "php.validate.executablePath": "/usr/local/opt/php@7.2/bin/php",
-    "php.validate.run": "onType",
-    "editor.fontFamily": "CodeNewRoman Nerd Font",
-    // "editor.fontFamily": "M+ 1m",
-    // , CodeNewRoman Nerd Font, Iosevka Term, Fira Code, UbuntuMonoNerdFontComplete-Regular, OfficeCodePro, DejaVuSansMonoNerdFontComplete-Book, AnkaCoder-r, Hack, AnkaCoder, undefined, Ubuntu Mono derivative Powerline, EnvyCode-r, AnkaCoder-r, monospace",
-    "editor.fontSize": 14,
-    "terminal.integrated.fontSize": 12,
-    "editor.fontLigatures": true,
-    "telemetry.enableTelemetry": false,
-    "git.confirmSync": false,
-    "phpcs.enable": true,
-    "phpcs.executablePath": "/Users/abryrath/.composer/vendor/bin/phpcs",
-    "phpcs.standard": "PSR2",
-    "php.suggest.basic": false,
+    // Aesthetics and Preferences
     "explorer.confirmDelete": false,
-    "files.associations": {
-        "*.twig": "twig",
-        "*.html": "twig",
-        "*.stub": "php"
-    },
     "explorer.confirmDragAndDrop": false,
     "workbench.editor.showTabs": true, 
     "workbench.colorTheme": "Snazzy Plus - Darker w/ Italics",
     "breadcrumbs.enabled": true,
     "workbench.settings.editor": "json",
-    "window.zoomLevel": -2,
-    "git.enableSmartCommit": true,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "gitlens.views.repositories.files.layout": "tree",
-    "shellformat.path": "/Users/abryrath/go/bin/shfmt",
     "editor.tabSize": 4,
     "editor.trimAutoWhitespace": true,
     "editor.insertSpaces": true,
     "editor.detectIndentation": false,
     "editor.renderWhitespace": "boundary",
     "window.titleBarStyle": "native",
-    "psalm.phpExecutablePath": "/usr/local/opt/php@7.2/bin/php",
-    "psalm.enableDebugLog": true,
-    "psalm.psalmScriptPath": "/Users/abryrath/.composer/vendor/bin/psalm-language-server",
-    "psalm.connectToServerWithTcp": false,
+    "editor.fontFamily": "UbuntuMonoNerdFontComplete-Regular",
+    "window.zoomLevel": -2,
+    "git.enableSmartCommit": true,
+    "editor.wordWrap": "off",
+    // "CodeNewRoman Nerd Font",
+    // "editor.fontFamily": "M+ 1m",
+    // , CodeNewRoman Nerd Font, Iosevka Term, Fira Code, UbuntuMonoNerdFontComplete-Regular, OfficeCodePro, DejaVuSansMonoNerdFontComplete-Book, AnkaCoder-r, Hack, AnkaCoder, undefined, Ubuntu Mono derivative Powerline, EnvyCode-r, AnkaCoder-r, monospace",
+    "editor.fontSize": 16,
+    "terminal.integrated.fontSize": 10,
+    "editor.fontLigatures": true,
+    "telemetry.enableTelemetry": false,
+    "git.confirmSync": false,
     "git.autofetch": true,
     "terminal.integrated.shell.osx": "/usr/local/bin/fish",
     "circleci.apiKey": "69ef7a3a6e0b15123f6485c0451ed176f84151a8",
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "javascript.implicitProjectConfig.experimentalDecorators": true,
-    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
-    "javascript.preferences.quoteStyle": "single",
     "dayNightThemeSwitcher.dayTheme": "Atom One Light",
     "dayNightThemeSwitcher.nightTheme": "Snazzy Plus w/ Italics",
     "editor.gotoLocation.multiple": "goto",
@@ -54,20 +34,58 @@
         "TODO",
         "DONE"
     ],
-    "editor.wordWrap": "off",
-    "vim.enableNeovim": true,
-    "vim.neovimPath": "/usr/local/bin/nvim",
-    "vetur.format.options.tabSize": 2,
+
+    // PHP - VS Code
+    "php.validate.enable": true,
+    "php.validate.executablePath": "/usr/local/bin/php",
+    "php.validate.run": "onType",
+    "php.suggest.basic": false,
+    
+    // PHP Code Sniffer
+    "phpcs.enable": true,
+    "phpcs.executablePath": "/Users/abryrath/.composer/vendor/bin/phpcs",
+    "phpcs.standard": "PSR2",
+    
+    // Intelephense (PHP)
+    "intelephense.licenceKey": "00ARN52YI6W2WW1",
+    "intelephense.completion.insertUseDeclaration": true,
+    
+    // Psalm (PHP)
+    "psalm.phpExecutablePath": "/usr/local/bin/php",
+    "psalm.enableDebugLog": true,
+    "psalm.psalmScriptPath": "/Users/abryrath/.composer/vendor/bin/psalm-language-server",
+    "psalm.connectToServerWithTcp": false,
+    
+    // GitLens
+    "gitlens.views.repositories.files.layout": "tree",
+
+    // Javascript
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "javascript.implicitProjectConfig.experimentalDecorators": true,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+    "javascript.preferences.quoteStyle": "single",
     "eslint.enable": true,
-    // "eslint.runtime": "/usr/local/bin/eslint",
     "eslint.nodePath": "/Users/abryrath/.config/yarn/global/node_modules",
     "prettier.singleQuote": true,
-    // "prettier.eslintIntegration": true,
     "prettier.tabWidth": 2,
     "prettier.trailingComma": "all",
     "prettier.jsxBracketSameLine": false,
-    // "prettier.eslintIntegration": true,
+
+    // Vetur (Vue.js)
+    "vetur.format.options.tabSize": 2,
     "vetur.format.defaultFormatter.js": "prettier-eslint",
+    
+    
+        // File Associations
+        "files.associations": {
+            "*.twig": "twig",
+            "*.html": "twig",
+            "*.stub": "php"
+        },
+    // Misc Formatters
+    
+    "shellformat.path": "/Users/abryrath/go/bin/shfmt",
     "[yaml]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -80,12 +98,9 @@
     "[jsonc]": {
         "editor.defaultFormatter": "HookyQR.beautify"
     },
-    "intelephense.licenceKey": "00ARN52YI6W2WW1",
     "[php]": {
         "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
     },
-    "intelephense.completion.insertUseDeclaration": true,
-    "editor.disableTranslate3d": true,
     "[javascriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
