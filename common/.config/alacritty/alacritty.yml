@@ -70,7 +70,6 @@ scrolling:
   # to allow mouse scrolling for applications like `man`.
   #
   # Specifying `0` will disable faux scrolling.
-  faux_multiplier: 3
 
   # Scroll to the bottom when new text is written to the terminal.
   auto_scroll: false
@@ -88,19 +87,19 @@ tabspaces: 2
 font:
   # Normal (roman) font face
   normal:
-    family: CodeNewRoman Nerd Font
+    family: Monoid 
 
   bold:
-    family: CodeNewRoman Nerd Font
+    family: Monoid
     style: Bold
 
   # Italic font face
   italic:
-    family: CodeNewRoman Nerd Font
+    family: Monoid
     style: Italic
 
   # Point size
-  size: 12.0
+  size: 10
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -261,7 +260,7 @@ selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>"
 
   # When set to `true`, selected text will be copied to the primary clipboard.
-  save_to_clipboard: false
+  save_to_clipboard: true
 
 # Allow terminal applications to change Alacritty's window title.
 dynamic_title: true

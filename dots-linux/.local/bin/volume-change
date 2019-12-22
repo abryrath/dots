@@ -1,0 +1,73 @@
+#!/usr/bin/env bash
+
+set -x
+
+main() {
+    mode="$1"
+    inc="$2"
+    op=""
+    case $mode in
+        "up")
+            op="Volume Up ${2}%"
+            set_up $inc
+            ;;
+        "down")
+            op="Volume Down ${2}%"
+            set_down $inc
+            ;;
+        *)
+            op="Toggle Volume"
+            toggle
+            ;;
+    esac
+    new_level=$(get_current_level)
+    notify "${op}" "New level: ${new_level}"
+}
+
+help() {
+    printf "Usage: volume-change [up|down|mute|unmute] [increment]\n"
+}
+
+default_inc() {
+    if [ -z $1 ]; then
+        echo "3%"
+    else
+        echo "${1}%"
+    fi
+    
+}
+
+set_up() {
+    inc=$(default_inc $1)
+    amixer set Master "${inc}+"
+}
+
+set_down() {
+    inc=$(default_inc $1)
+    amixer set Master "${inc}-"
+    
+    notify "Volume Down" ""
+}
+
+toggle() {
+    amixer set Master toggle
+}
+
+get_current_level() {
+    amixer sget Master | grep 'Right:' | awk -F'[][]' '{ print $2 }'
+}
+
+new_level() {
+    notify-send -a "volume-change" "$1" -u low
+}
+
+notify() {
+	notify-send "$1" "$2" -u low -a "volume-change"
+}
+
+if [ -z $1 ]; then
+    help
+    exit 1
+fi
+
+main "$1" "$2"

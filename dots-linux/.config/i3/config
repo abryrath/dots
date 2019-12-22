@@ -1,7 +1,7 @@
 # Fonts/Variables {{{
-font pango:Iosevka Term SS05 16
+font pango:Monoid 8
 
-set $mod Mod1
+set $mod Mod4
 
 # use these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
@@ -14,25 +14,27 @@ set $right semicolon
 floating_modifier $mod
 # }}}
 
+border_radius 4
+
 # Colors {{{
-set_from_resource $bg i3wm.background #282a36
-set_from_resource $fg i3wm.foreground #f8f8f2
-set_from_resource $color0  i3wm.color0     #000000
-set_from_resource $color8  i3wm.color8     #4d4d4d
-set_from_resource $color1  i3wm.color1     #ff5555
-set_from_resource $color9  i3wm.color9     #ff6e67
-set_from_resource $color2  i3wm.color2     #50fa7b
-set_from_resource $color10 i3wm.color10    #5af78e
-set_from_resource $color3  i3wm.color3     #f1fa8c
-set_from_resource $color11 i3wm.color11    #f4f99d
-set_from_resource $color4  i3wm.color4     #bd93f9
-set_from_resource $color12 i3wm.color12    #caa9fa
-set_from_resource $color5  i3wm.color5     #ff79c6
-set_from_resource $color13 i3wm.color13    #ff92d0
-set_from_resource $color6  i3wm.color6     #8be9fd
-set_from_resource $color14 i3wm.color14    #9aedfe
-set_from_resource $color7  i3wm.color7     #bfbfbf
-set_from_resource $color15 i3wm.color15    #e6e6e6
+    set_from_resource $bg i3wm.background #000000
+    set_from_resource $fg i3wm.foreground #f8f8f2
+#    set_from_resource $color0  i3wm.color0     #000000
+#    set_from_resource $color8  i3wm.color8     #4d4d4d
+#    set_from_resource $color1  i3wm.color1     #ff5555
+#    set_from_resource $color9  i3wm.color9     #ff6e67
+#    set_from_resource $color2  i3wm.color2     #50fa7b
+#    set_from_resource $color10 i3wm.color10    #5af78e
+#    set_from_resource $color3  i3wm.color3     #f1fa8c
+#    set_from_resource $color11 i3wm.color11    #f4f99d
+#    set_from_resource $color4  i3wm.color4     #bd93f9
+#    set_from_resource $color12 i3wm.color12    #caa9fa
+#    set_from_resource $color5  i3wm.color5     #ff79c6
+#    set_from_resource $color13 i3wm.color13    #ff92d0
+#    set_from_resource $color6  i3wm.color6     #8be9fd
+#    set_from_resource $color14 i3wm.color14    #9aedfe
+#    set_from_resource $color7  i3wm.color7     #bfbfbf
+#    set_from_resource $color15 i3wm.color15    #e6e6e6
 
 # }}}
 
@@ -50,7 +52,9 @@ bindsym $mod+m exec rofi -show run
 bindsym $mod+Tab exec rofi -show window
 # bindsym $mod+l exec rofi -show fb -modi fb:$HOME/.local/bin/rofi-theme-switcher.sh
 
-bindsym XF86AudioLowerVolume exec $HOME/.local/bin/volume-change down 1
+bindsym XF86AudioLowerVolume exec $HOME/.local/bin/volume-change down 5
+bindsym XF86AudioRaiseVolume exec $HOME/.local/bin/volume-change up 5
+bindsym $mod+p exec $HOME/.local/bin/battery
 # change focus2
 #bindsym $mod+$left focus left
 #bindsym $mod+$down focus down
@@ -141,19 +145,15 @@ bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
-# }}}
-
-# Restart/Reload {{{
+# Restart/Reload 
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-# }}}
 
-# Resize {{{
-# resize window (you can also use the mouse for that)
+# Resize 
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
 
@@ -161,16 +161,16 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym $left       resize shrink width 10 px or 10 ppt
-        bindsym $down       resize grow height 10 px or 10 ppt
-        bindsym $up         resize shrink height 10 px or 10 ppt
-        bindsym $right      resize grow width 10 px or 10 ppt
+        bindsym $left       resize shrink width 10 px or 2 ppt
+        bindsym $down       resize grow height 10 px or 2 ppt
+        bindsym $up         resize shrink height 10 px or 2 ppt
+        bindsym $right      resize grow width 10 px or 2 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left        resize shrink width 10 px or 10 ppt
-        bindsym Down        resize grow height 10 px or 10 ppt
-        bindsym Up          resize shrink height 10 px or 10 ppt
-        bindsym Right       resize grow width 10 px or 10 ppt
+        bindsym Left        resize shrink width 10 px or 2 ppt
+        bindsym Down        resize grow height 10 px or 2 ppt
+        bindsym Up          resize shrink height 10 px or 2 ppt
+        bindsym Right       resize grow width 10 px or 2 ppt
 
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
@@ -179,12 +179,11 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-# }}}
 
-# Window Rules {{{
+# Window Rules 
 # new_window pixel 5
 # new_float pixel 5
-for_window [class="^.*"] border pixel 5
+for_window [class="^.*"] border pixel 0
 set $focused             $color12
 set $focused_in          $color2
 set $unfocused           $color3
@@ -197,44 +196,18 @@ client.focused           $focused     $bg       $fg     $focused        $focused
 #client.unfocused         $unfocused   $bg       $fg     $unfocused      $unfocused
 #client.urgent            $urgent      $bg       $fg     $urgent         $urgent
 #client.placeholder       $placeholder $bg       $fg     $placeholder    $placeholder
-# }}}
 
-# Gaps {{{
-gaps inner 5
-gaps outer 5
+# Gaps
+gaps inner 10
+gaps outer 10
 smart_gaps on
-#}}}
 
-# Bar {{{
-#exec --no-startup-id $HOME/.local/bin/powerline-lemonbar.sh &> $HOME/.powerline-lemonbar.log
-#exec "killall powerline-lemonbar & powerline-lemonbar --i3 --height 16 -- -a 40 -b -f 'Source Code Pro for Powerline-11' -f 'FontAwesome-11'"
-# }}}
 
 # Composition, X, etc {{{
 exec --no-startup-id compton --config $HOME/.config/compton/compton.conf &
-# exec --no-startup-id emacs --daemon &
 
-# exec xfce4-session
+exec --no-startup-id $HOME/.screenlayout/default.sh
+
 exec --no-startup-id dunst &
-# exec --no-startup-id $HOME/.local/bin/xrandr.sh &
-exec --no-startup-id compton &
 exec --no-startup-id { nitrogen --restore || xsetroot -solid '#b0b0b0' } &
-# exec xfconfd &
-# exec xfsettingsd &
-# exec xfce4-volumed-pulse &
-# exec xfce4-power-manager &
-# exec xfce4-panel &
-# }}}
-# bar {
-exec --no-startup-id polybar full
-#}
-
-# bar {
-#	colors {
-#		background #282a36
-#		statusline #eff0eb
-#		separator #ff6ac1
-#	}
-#	status_command i3blocks
-# }
 
