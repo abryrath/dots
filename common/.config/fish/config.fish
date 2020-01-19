@@ -21,3 +21,7 @@ for func in ~/.config/fish/user-functions/*
 end
 
 set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
+
+if test -e ~/.ghcup/.env
+  bass source ~/.ghcup/.env
+end
