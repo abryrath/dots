@@ -1,10 +1,10 @@
 {
     // Aesthetics and Preferences
+    "workbench.editor.enablePreview": false,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "workbench.editor.showTabs": true, 
-    "workbench.colorTheme": "Snazzy Plus - Darker w/ Italics",
-    "breadcrumbs.enabled": true,
+    "workbench.colorTheme": "Material Theme High Contrast",
     "workbench.settings.editor": "json",
     "editor.tabSize": 4,
     "editor.trimAutoWhitespace": true,
@@ -12,14 +12,19 @@
     "editor.detectIndentation": false,
     "editor.renderWhitespace": "boundary",
     "window.titleBarStyle": "native",
-    "editor.fontFamily": "UbuntuMonoNerdFontComplete-Regular",
-    "window.zoomLevel": -2,
+    "editor.fontFamily": "Monoid",
+    // "editor.fontFamily": "Hasklig",
+    // "editor.fontFamily": "CodeNewRoman Nerd Font",
+    "window.zoomLevel": -1,
     "git.enableSmartCommit": true,
-    "editor.wordWrap": "off",
+    "scm.defaultViewMode": "tree",
+    "editor.wordWrap": "on",
+    "workbench.activityBar.visible": true,
+    "search.useIgnoreFiles": false,
     // "CodeNewRoman Nerd Font",
     // "editor.fontFamily": "M+ 1m",
     // , CodeNewRoman Nerd Font, Iosevka Term, Fira Code, UbuntuMonoNerdFontComplete-Regular, OfficeCodePro, DejaVuSansMonoNerdFontComplete-Book, AnkaCoder-r, Hack, AnkaCoder, undefined, Ubuntu Mono derivative Powerline, EnvyCode-r, AnkaCoder-r, monospace",
-    "editor.fontSize": 16,
+    "editor.fontSize": 12,
     "terminal.integrated.fontSize": 10,
     "editor.fontLigatures": true,
     "telemetry.enableTelemetry": false,
@@ -30,10 +35,7 @@
     "dayNightThemeSwitcher.dayTheme": "Atom One Light",
     "dayNightThemeSwitcher.nightTheme": "Snazzy Plus w/ Italics",
     "editor.gotoLocation.multiple": "goto",
-    "org.todoKeywords": [
-        "TODO",
-        "DONE"
-    ],
+    "editor.useTabStops": false,
 
     // PHP - VS Code
     "php.validate.enable": true,
@@ -44,10 +46,7 @@
     // PHP Code Sniffer
     "phpcs.enable": true,
     "phpcs.executablePath": "/Users/abryrath/.composer/vendor/bin/phpcs",
-    "phpcs.standard": "PSR2",
-    
-    // Intelephense (PHP)
-    "intelephense.licenceKey": "00ARN52YI6W2WW1",
+    "phpcs.standard": "PSR12",
     "intelephense.completion.insertUseDeclaration": true,
     
     // Psalm (PHP)
@@ -106,5 +105,26 @@
     },
     "[css]": {
         "editor.defaultFormatter": "HookyQR.beautify"
-    }
+    },
+    "workbench.panel.defaultLocation": "bottom",
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.sideBar.location": "left",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[elixir]": {
+        "editor.defaultFormatter": "JakeBecker.elixir-ls"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[twig]": {
+        "editor.useTabStops": false
+    },
+    "workbench.startupEditor": "newUntitledFile"
 }
