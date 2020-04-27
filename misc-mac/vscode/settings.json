@@ -3,8 +3,8 @@
     "workbench.editor.enablePreview": false,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
-    "workbench.editor.showTabs": true, 
-    "workbench.colorTheme": "Material Theme High Contrast",
+    "workbench.editor.showTabs": true,
+    "workbench.colorTheme": "Snazzy Plus - Darker w/ Italics",
     "workbench.settings.editor": "json",
     "editor.tabSize": 4,
     "editor.trimAutoWhitespace": true,
@@ -12,18 +12,14 @@
     "editor.detectIndentation": false,
     "editor.renderWhitespace": "boundary",
     "window.titleBarStyle": "native",
-    "editor.fontFamily": "Monoid",
-    // "editor.fontFamily": "Hasklig",
-    // "editor.fontFamily": "CodeNewRoman Nerd Font",
+    "editor.fontFamily": "CozetteVector",
+    "editor.cursorBlinking": "smooth",
     "window.zoomLevel": -1,
     "git.enableSmartCommit": true,
-    "scm.defaultViewMode": "tree",
+    "scm.defaultViewMode": "list",
     "editor.wordWrap": "on",
     "workbench.activityBar.visible": true,
     "search.useIgnoreFiles": false,
-    // "CodeNewRoman Nerd Font",
-    // "editor.fontFamily": "M+ 1m",
-    // , CodeNewRoman Nerd Font, Iosevka Term, Fira Code, UbuntuMonoNerdFontComplete-Regular, OfficeCodePro, DejaVuSansMonoNerdFontComplete-Book, AnkaCoder-r, Hack, AnkaCoder, undefined, Ubuntu Mono derivative Powerline, EnvyCode-r, AnkaCoder-r, monospace",
     "editor.fontSize": 12,
     "terminal.integrated.fontSize": 10,
     "editor.fontLigatures": true,
@@ -34,7 +30,6 @@
     "circleci.apiKey": "69ef7a3a6e0b15123f6485c0451ed176f84151a8",
     "dayNightThemeSwitcher.dayTheme": "Atom One Light",
     "dayNightThemeSwitcher.nightTheme": "Snazzy Plus w/ Italics",
-    "editor.gotoLocation.multiple": "goto",
     "editor.useTabStops": false,
 
     // PHP - VS Code
@@ -42,19 +37,19 @@
     "php.validate.executablePath": "/usr/local/bin/php",
     "php.validate.run": "onType",
     "php.suggest.basic": false,
-    
+
     // PHP Code Sniffer
     "phpcs.enable": true,
     "phpcs.executablePath": "/Users/abryrath/.composer/vendor/bin/phpcs",
     "phpcs.standard": "PSR12",
     "intelephense.completion.insertUseDeclaration": true,
-    
+
     // Psalm (PHP)
     "psalm.phpExecutablePath": "/usr/local/bin/php",
     "psalm.enableDebugLog": true,
     "psalm.psalmScriptPath": "/Users/abryrath/.composer/vendor/bin/psalm-language-server",
     "psalm.connectToServerWithTcp": false,
-    
+
     // GitLens
     "gitlens.views.repositories.files.layout": "tree",
 
@@ -74,16 +69,17 @@
     // Vetur (Vue.js)
     "vetur.format.options.tabSize": 2,
     "vetur.format.defaultFormatter.js": "prettier-eslint",
-    
-    
-        // File Associations
-        "files.associations": {
-            "*.twig": "twig",
-            "*.html": "twig",
-            "*.stub": "php"
-        },
+
+    // File Associations
+    "files.associations": {
+        "*.twig": "twig",
+        "*.html": "twig",
+        "*.stub": "php"
+    },
+    "twig-language-2.indentStyle": "space",
+
     // Misc Formatters
-    
+
     "shellformat.path": "/Users/abryrath/go/bin/shfmt",
     "[yaml]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -118,7 +114,8 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[elixir]": {
-        "editor.defaultFormatter": "JakeBecker.elixir-ls"
+        "editor.defaultFormatter": "JakeBecker.elixir-ls",
+        "editor.acceptSuggestionOnEnter": "on"
     },
     "[scss]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -126,5 +123,21 @@
     "[twig]": {
         "editor.useTabStops": false
     },
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    // Haskell
+    "editor.snippetSuggestions": "none",
+    "haskelly.codeCompletion": true,
+    "haskelly.snippets.custom": {
+        "do": {
+            "prefix": "do",
+            "body": ["do"],
+            "description": "override"
+        }
+    },
+    "rust-client.rustupPath": "~/.cargo/bin/rustup",
+    "rust-client.rlsPath": "~/.cargo/bin/rls",
+    "elixir.elixirEnv": "dev",
+    "[vue]": {
+        "editor.defaultFormatter": "octref.vetur"
+    }
 }

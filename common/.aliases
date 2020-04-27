@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+alias ga="git add"
+alias gst="git status"
+alias gcm="git commit -m"
+alias gco="git checkout"
+alias gr="git reset --hard"
+alias gph="git push origin"
+alias gpl="git pull origin"

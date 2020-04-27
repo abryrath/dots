@@ -1,0 +1,94 @@
+{
+    // Global Editor Options
+    "editor.wordWrap": "on",
+    "editor.fontFamily": "CozetteVector, Menlo, Monaco, 'Courier New', monospace",
+    "workbench.editor.enablePreview": false,
+    "workbench.settings.editor": "json",
+    "window.zoomLevel": 0,
+    "editor.wordWrapColumn": 100,
+    "emmet.triggerExpansionOnTab": true,
+
+    //  Whitespace
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+
+    // Theme
+    "workbench.colorTheme": "Snazzy",
+    "window.nativeTabs": true,
+    "window.titleBarStyle": "native",
+    "workbench.iconTheme": "vs-nomo-dark",
+
+    // Search
+    "search.useIgnoreFiles": false,
+
+    // Git
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+
+    //
+    // PHP
+    //
+    "php.validate.enable": true,
+    "php.validate.executablePath": "/usr/local/opt/php/bin/php",
+    "php.validate.run": "onType",
+    "php.suggest.basic": false,
+    "phpSniffer.standard": "PSR12",
+    "phpSniffer.run": "onType",
+    "psalm.phpExecutablePath": "/usr/local/opt/php/bin/php",
+    "psalm.psalmScriptPath": "/Users/abryrath/.composer/vendor/bin/psalm-language-server",
+
+    //
+    // Twig
+    //
+    "twigcs.enable": true,
+    "twigcs.executablePath": "/Users/abryrath/.composer/vendor/bin/twigcs",
+    "twigcs.enabledWarning": true,
+    "files.associations": {
+        "*.html": "twig"
+    },
+
+    // Vue
+    "vetur.format.defaultFormatter.ts": "prettier",
+    "prettier.singleQuote": true,
+    //
+    // Language-Specific Editor Options
+    //
+    "[typescript]": {
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[javascript]": {
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[vue]": {
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+        "editor.tabSize": 4
+    },
+    "[twig]": {
+        "editor.tabSize": 4,
+        "editor.defaultFormatter":"mblode.twig-language-2"
+    },
+
+    //
+    // Blade
+    //
+    "blade.format.enable": true,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.trailingComma": "all",
+    "prettier.arrowParens": "always",
+    "workbench.activityBar.visible": true,
+    "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}

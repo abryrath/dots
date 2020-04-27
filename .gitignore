@@ -1,5 +1,6 @@
 .DS_Store
 common/.config/fisher/
 common/.tmux/plugins/
+common/.config/fish/functions/*
 dots/
 *.swp
