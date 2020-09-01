@@ -1,143 +1,134 @@
 {
-    // Aesthetics and Preferences
-    "workbench.editor.enablePreview": false,
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "workbench.editor.showTabs": true,
-    "workbench.colorTheme": "Snazzy Plus - Darker w/ Italics",
-    "workbench.settings.editor": "json",
-    "editor.tabSize": 4,
-    "editor.trimAutoWhitespace": true,
-    "editor.insertSpaces": true,
-    "editor.detectIndentation": false,
-    "editor.renderWhitespace": "boundary",
-    "window.titleBarStyle": "native",
-    "editor.fontFamily": "CozetteVector",
-    "editor.cursorBlinking": "smooth",
-    "window.zoomLevel": -1,
-    "git.enableSmartCommit": true,
-    "scm.defaultViewMode": "list",
+    // Global Editor Options
     "editor.wordWrap": "on",
-    "workbench.activityBar.visible": true,
-    "search.useIgnoreFiles": false,
-    "editor.fontSize": 12,
-    "terminal.integrated.fontSize": 10,
-    "editor.fontLigatures": true,
-    "telemetry.enableTelemetry": false,
-    "git.confirmSync": false,
-    "git.autofetch": true,
-    "terminal.integrated.shell.osx": "/usr/local/bin/fish",
-    "circleci.apiKey": "69ef7a3a6e0b15123f6485c0451ed176f84151a8",
-    "dayNightThemeSwitcher.dayTheme": "Atom One Light",
-    "dayNightThemeSwitcher.nightTheme": "Snazzy Plus w/ Italics",
-    "editor.useTabStops": false,
+    "editor.fontFamily": "CozetteVector, Menlo, Monaco, 'Courier New', monospace",
+    // "editor.fontFamily": "Fira Code",
+    "workbench.editor.enablePreview": false,
+    "workbench.settings.editor": "json",
+    "window.zoomLevel": -1,
+    "editor.wordWrapColumn": 100,
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.side": "left",
+    "editor.minimap.size": "fit",
+    "emmet.triggerExpansionOnTab": true,
 
-    // PHP - VS Code
+    //  Whitespace
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+
+    // Theme
+    "workbench.colorTheme": "Community Material Theme Darker High Contrast",
+    "window.nativeTabs": true,
+    "window.titleBarStyle": "native",
+    "workbench.iconTheme": "vs-nomo-dark",
+
+    // Search
+    "search.useIgnoreFiles": false,
+
+    // Git
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+
+    //
+    // PHP
+    //
     "php.validate.enable": true,
-    "php.validate.executablePath": "/usr/local/bin/php",
+    "php.validate.executablePath": "/usr/local/opt/php/bin/php",
     "php.validate.run": "onType",
     "php.suggest.basic": false,
-
-    // PHP Code Sniffer
-    "phpcs.enable": true,
-    "phpcs.executablePath": "/Users/abryrath/.composer/vendor/bin/phpcs",
-    "phpcs.standard": "PSR12",
-    "intelephense.completion.insertUseDeclaration": true,
-
-    // Psalm (PHP)
-    "psalm.phpExecutablePath": "/usr/local/bin/php",
-    "psalm.enableDebugLog": true,
+    "phpSniffer.standard": "PSR12",
+    "phpSniffer.run": "onType",
+    "phpSniffer.executablesFolder": "/Users/abryrath/.composer/vendor/bin",
+    "psalm.phpExecutablePath": "/usr/local/opt/php/bin/php",
     "psalm.psalmScriptPath": "/Users/abryrath/.composer/vendor/bin/psalm-language-server",
-    "psalm.connectToServerWithTcp": false,
 
-    // GitLens
-    "gitlens.views.repositories.files.layout": "tree",
-
-    // Javascript
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "javascript.implicitProjectConfig.experimentalDecorators": true,
-    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
-    "javascript.preferences.quoteStyle": "single",
-    "eslint.enable": true,
-    "eslint.nodePath": "/Users/abryrath/.config/yarn/global/node_modules",
-    "prettier.singleQuote": true,
-    "prettier.tabWidth": 2,
-    "prettier.trailingComma": "all",
-    "prettier.jsxBracketSameLine": false,
-
-    // Vetur (Vue.js)
-    "vetur.format.options.tabSize": 2,
-    "vetur.format.defaultFormatter.js": "prettier-eslint",
-
-    // File Associations
+    //
+    // Twig
+    //
+    "twigcs.enable": true,
+    "twigcs.executablePath": "/Users/abryrath/.composer/vendor/bin/twigcs",
+    "twigcs.enabledWarning": true,
     "files.associations": {
-        "*.twig": "twig",
-        "*.html": "twig",
-        "*.stub": "php"
+        "*.html": "twig"
     },
-    "twig-language-2.indentStyle": "space",
 
-    // Misc Formatters
-
-    "shellformat.path": "/Users/abryrath/go/bin/shfmt",
-    "[yaml]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // Vue
+    "vetur.format.defaultFormatter.ts": "prettier",
+    "prettier.singleQuote": true,
+    //
+    // Language-Specific Editor Options
+    //
+    "[typescript]": {
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
     },
     "[javascript]": {
+        "editor.tabSize": 2,
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "[vue]": {
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+        "editor.tabSize": 4
+    },
+    "[twig]": {
+        "editor.tabSize": 4,
+        "editor.defaultFormatter":"mblode.twig-language-2"
+    },
+
+    //
+    // Blade
+    //
+    "blade.format.enable": true,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "[jsonc]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
-    },
-    "[php]": {
-        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
-    },
-    "[javascriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[css]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
-    },
-    "workbench.panel.defaultLocation": "bottom",
-    "[typescript]": {
+    "prettier.trailingComma": "all",
+    "prettier.arrowParens": "always",
+    "workbench.activityBar.visible": true,
+    "[yaml]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "workbench.sideBar.location": "left",
-    "[html]": {
+    // Rust
+    // "rust-client.rustupPath": "$HOME/.cargo/bin/rustup",
+    // "rust-client.rlsPath": "$HOME/.cargo/bin/rls",
+    // "rust-client.channel": "stable",
+    // "rust.cargoEnv": {
+    // },
+    // "rust.cargoPath": "$HOME/.cargo/bin/cargo",
+    "rust.showOutput": true,
+    "rust.rustup": {
+        "toolchain": "stable-x86_64-apple-darwin",
+        "nightlyToolchain": "nightly-x86_64-apple-darwin"
+    },
+    "rust.mode": "rls",
+    "rust.rls": {
+        "useRustfmt": true
+    },
+    "[rust]": {
+        "editor.defaultFormatter": "kalitaalexey.vscode-rust"
+    },
+    "[javascriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "[elixir]": {
-        "editor.defaultFormatter": "JakeBecker.elixir-ls",
-        "editor.acceptSuggestionOnEnter": "on"
-    },
-    "[scss]": {
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "[twig]": {
-        "editor.useTabStops": false
-    },
-    "workbench.startupEditor": "newUntitledFile",
-    // Haskell
-    "editor.snippetSuggestions": "none",
-    "haskelly.codeCompletion": true,
-    "haskelly.snippets.custom": {
-        "do": {
-            "prefix": "do",
-            "body": ["do"],
-            "description": "override"
-        }
-    },
-    "rust-client.rustupPath": "~/.cargo/bin/rustup",
-    "rust-client.rlsPath": "~/.cargo/bin/rls",
-    "elixir.elixirEnv": "dev",
-    "[vue]": {
-        "editor.defaultFormatter": "octref.vetur"
+    "dashboard.projectData": null,
+    "[haskell]": {
+        "editor.defaultFormatter": "MaxGabriel.brittany"
     }
+    // "rust.cargoHomePath": "$HOME/.cargo"
 }
